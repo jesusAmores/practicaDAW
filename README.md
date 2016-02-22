@@ -6,14 +6,14 @@ Descripción: La aplicación web consiste en un gimnasio en el cual se muestra d
              La parte pública de la aplicación consiste en lo mencionado anteriormente, siendo la parte privada un módulo solo accesible              mediante cuenta de usuario y contraseña en el cual se puede gestionar los entrenamientos disponibles y demás servicios                   ofertados.  
              
 Entidades: 
-          -Usuario:
-          -Tarifa:
-          -Clases colectivas:
-          -Productos:
-          -Inscripción:
+          -Usuario: contiene datos obtenidos tras el registro tales como nombre, apelidos, fecha de nacimiento, etc.
+          -Tarifa: entidad asociada a cada usuario. 
+          -Clases colectivas: contiene los diferentes tipos de clases ofertadas.
+          -Productos: los usuarios pueden adquirir cualquiera de los diferentes tipos de productos ofertados, caracterizados por un                 nombre, descripción y precio.
+          -Inscripción: formulario en el cual se han de introducir una serie de datos para poder ser usuario del gimnasio.
           
 Equipo de desarrollo:
-                      Blanca Romero Rico () ()
-                      María Ballesteros López () ()
-                      Héctor () ()
+                      Blanca Romero Rico () (bromerori)
+                      María Ballesteros López (m.ballesteroslo@alumnos.urjc.es) (mariablopez)
+                      Hector Dominguez Diego (h.dominguezd@alumnos.urjc.es) (HDominguezD)
                       Jesús Amores Fernandez-Caballero (j.amoresf@alumnos.urjc.es) (jesusAmores)
