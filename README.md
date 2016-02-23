@@ -1,5 +1,5 @@
 # practicaDAW
-Nombre de la aplicación:
+Nombre de la aplicación: UGym
 
 Descripción: La aplicación web consiste en un gimnasio en el cual se muestra diferente información como precios, ofertas, instalaciones,              ubicación,etc.
              Desde la misma pagina web se pueden registrar clientes, los cuales tienen acceso a la reserva de clases colectivas y a la                compra de diferentes tipos de entrenamiento, dietas, productos, gestión de ficha técnica, etc. 
@@ -13,7 +13,7 @@ Entidades:
           -Inscripción: formulario en el cual se han de introducir una serie de datos para poder ser usuario del gimnasio.
           
 Equipo de desarrollo:
-                      Blanca Romero Rico () (bromerori)
+                      Blanca Romero Rico (b.romerori@alumnos.urjc.es) (bromerori)
                       María Ballesteros López (m.ballesteroslo@alumnos.urjc.es) (mariablopez)
                       Hector Dominguez Diego (h.dominguezd@alumnos.urjc.es) (HDominguezD)
                       Jesús Amores Fernandez-Caballero (j.amoresf@alumnos.urjc.es) (jesusAmores)
