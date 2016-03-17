@@ -1,0 +1,14 @@
+body{
+    background-color: #E7E8E6;
+}
+
+#img-header{
+    height: 300px;
+    width: 1370px;
+}
+
+#img-logo{
+    position: relative;
+    bottom: 300px;
+    padding-left: 40%;
+}
