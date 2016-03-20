@@ -1,0 +1,41 @@
+#header{
+    height: 150px;
+    background-color: burlywood;
+}
+
+@media (max-width: 458px){
+    #header{
+        height: 280px;
+    }
+}
+
+#logoTitle{
+    float: left;
+    position: relative;
+    top: 25px;
+}
+
+#img-logo{
+    position: relative;
+    float:left;
+    height: 100px;
+    top: 5px;
+    left: 20px;
+}
+
+#title{
+    position: relative;
+    top: 65px;
+    float: left;
+}
+
+#title > span{
+    font-size: 2.8em;
+    font-family: sans-serif;
+}
+
+#cerrarSesion{
+    position: relative;
+    float: right;
+    top: 60px;
+}
