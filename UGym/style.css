@@ -2,6 +2,10 @@ body{
     background-color: #E7E8E6;
 }
 
+header{
+    height: 300px;
+}
+
 #img-header{
     height: 300px;
     width: 1370px;
@@ -11,4 +15,11 @@ body{
     position: relative;
     bottom: 300px;
     padding-left: 40%;
+}
+
+#menu{
+    width: 50%;
+    position: relative;
+    bottom: 70px;
+    left: 49%;
 }
