@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulario de registro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+       <div class="row">
+           <h1 class="text-center">Formulario de registro de clientes</h1>
+       </div>
+        <div class="row">
+            <div class="col-sm-9 col-md-6">
+                <h2>Introduce los datos del nuevo miembro de UGym</h2>
+                <p>Más tarde el propio usuario podrá modificar estos datos desde su área personal.</p>
+            </div>
+            <div class="col-sm-9 col-md-6">
+                <form role="form">
+                   <div class="form-group">
+                        <!--Campo NOMBRE-->
+                        <label>  Nombre:</label>
+                        <input type="text" class="form-control" id="inputNombre"  placeholder="Introduce el nombre del nuevo cliente">
+                       
+                        <!--campo APELLIDOS-->
+                        <label>  Apellidos:</label>
+                        <input type="text" class="form-control" id="inputApellidos"  placeholder="Introduce los apellidos del nuevo cliente">
+                       
+                        <!--campo DNI-->
+                        <label>  DNI:</label>
+                        <input type="text" class="form-control" id="inputDNI"  placeholder="Introduce el DNI del nuevo cliente">
+                       
+                        <!--campo EMAIL-->
+                        <label for="email">  Email:</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Introduce el email del nuevo cliente">
+                       
+                        <!--campo DIRECCION-->
+                        <label> Direccion:</label>
+                        <input type="text" class="form-control" id="inputDireccion" placeholder="Introduce la direccion del nuevo cliente">
+                        
+                        <label> Codigo postal:</label>
+                        <input type="text" class="form-control" id="inputCodPostal" placeholder="Introduce el codigo postal del nuevo cliente">
+                        
+                       <label> Localidad:</label>
+                       <input type="text" class="form-control" id="inputLocalidad" placeholder="Introduce aqui la localidad del nuevo cliente">
+                       
+                       <lable> Provincia</lable>
+                       <input type="text" class="form-control" id="inputProvincia" placeholder="Introdce aqui la provincia del nuevo cliente">
+                       
+                        <!--campo TELEFONO-->
+                       <label> Telefono:</label>
+                       <input type="number" class="form-control" id="inputTelefono" placeholder="Introduce aqui el telefono de contacto del nuevo cliente">
+                       
+                        <!--campo SEXO-->
+                        <label>Sexo: </label>
+                        <input type="radio" name="sexo" id="inputSexoH"  value="h"> Hombre
+                        <input type="radio" name="sexo" id="inputSexoM"  value="m"> Mujer 
+                    </div>
+                </form>
+                                <button type="submit" class="btn btn-primary disabled btn-lg">Enviar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
