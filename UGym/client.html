@@ -22,7 +22,7 @@
                     <span>Área Clientes</span>
                 </div>
                 <div id="cerrarSesion" class="col-md-2">
-                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-off"></span> Cerrar Sesión</button>
+                    <a href="index.html"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-off"></span> Cerrar Sesión</button></a>
                 </div>
             </div>
         </div> 
@@ -39,7 +39,8 @@
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="clasesColectivas">
-                                <table class="table table-bordered">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
                                     <thead>
                                         <tr>
                                             <th></th>   
@@ -92,10 +93,70 @@
                                             <td><a href="#">TRX (0/20)</a></td>
                                         </tr>     
                                     </tbody>
-                                </table>
+                                </table>    
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="tienda">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                            <div role="tabpanel" class="tab-pane" id="ficha">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,.</div>
+                            <div role="tabpanel" class="tab-pane" id="ficha">
+                                <form class="form-horizontal" role="form">  
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-md-offset-3 col-md-1 control-label" >Nombre</label>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" id="inputName" value="Jesús" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputSurname" class="col-md-offset-3 col-md-1 control-label">Apellidos</label>
+                                        <div class="col-md-4">
+                                          <input type="text" class="form-control" id="inputSurname" value="Amores Fernández-Caballero" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputDate" class="col-md-offset-2 col-md-2 control-label">Fecha de nacimiento</label>
+                                        <div class="col-md-4">
+                                          <input type="text" class="form-control" id="inputDate" value="02/04/1994" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputAddress" class="col-md-offset-3 col-md-1 control-label">Dirección</label>
+                                        <div class="col-md-4">
+                                          <input type="text" class="form-control" id="inputAddress" value="C/Falsa 123">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputLocation" class="col-md-offset-3 col-md-1 control-label">Población</label>
+                                        <div class="col-md-4">
+                                          <input type="text" class="form-control" id="inputLocation" value="Fuenlabrada, Madrid">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPhoneNumber" class="col-md-offset-3 col-md-1 control-label">Teléfono</label>
+                                        <div class="col-md-4">
+                                          <input type="tel" class="form-control" id="inputPhoneNumber" value="677123331">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="col-md-offset-3 col-md-1 control-label">Email</label>
+                                        <div class="col-md-4">
+                                          <input type="email" class="form-control" id="inputEmail" value="amanterechoncho@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input" class="col-md-offset-2 col-md-2 control-label">Tarifa elegida</label>
+                                        <span id="selectedRate" class="col-md-2">Mensual (20€)</span>
+                                        <span id="changeRate" class="col-md-2"><a href="#">Deseo cambiar mi tarifa</a></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <span id="deleteUser" class="col-md-offset-4 col-md-2"><a href="#">Quiero darme de baja</a></span>
+                                    </div>
+                                    <div id="groupB" class="form-group">
+                                        <div class="col-md-offset-4 col-md-4">
+                                            <button type="submit" class="btn btn-default">Cancelar</button>
+                                            <button id="saveChanges" type="submit" class="btn btn-default">Guardar Cambios</button>
+                                        </div>
+                                    </div>
+                                </form>    
+                            </div>
                         </div>
                     </div>
                 </div>

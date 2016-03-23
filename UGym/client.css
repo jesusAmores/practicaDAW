@@ -48,8 +48,23 @@
     padding-left: 0px;
 }
 
+/*#restPage > div{
+    width: 1326px;
+    margin-right: auto;
+    margin-left: 0px;
+}
+
+#restPage > div > div{
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 1326px;
+}*/
+
 .nav-tabs { 
     border-bottom: 2px solid #DDD; 
+    padding: 5px;
+    padding-bottom: 0px;
+    font-size: 1.2em;
 }
     
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { 
@@ -102,6 +117,12 @@
 }
 
 /*clases colectivas*/
+
+#clasesColectivas{
+    padding-top: 72px;
+    padding-bottom: 73px;
+}
+
 .table{
     text-align: center;
 }
@@ -125,10 +146,13 @@
 .table > thead > tr > th{
     background-color: #ffffaf;
     text-align: center;
+    font-size: 1.1em;
 }
 
 tbody > tr > td:first-child{
     font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
 }
 
 tbody > tr:nth-child(odd){
@@ -141,8 +165,8 @@ tbody > tr:nth-child(even){
 
 tbody > tr > td > a{
     color: #000000;
-    font-family: sans-serif;
-    font-size: 1em;
+    font-family: cursive;
+    font-size: 1.2em;
 }
 
 tbody > tr > td > a:hover{
@@ -154,3 +178,54 @@ tbody > tr > td > a:focus{
     text-decoration: none;
 }
 /*fin navegacion*/
+
+/*Ficha*/
+.form-group > label{
+    font-size: 1.1em;
+}
+
+#selectedRate{
+    position: relative;
+    top: 7px;
+    left: 13px;
+}
+
+#deleteUser{
+    position: relative;
+    top: 7px;
+    left: 13px;
+    font-size: 1.2em;
+}
+
+#changeRate{
+    position: relative;
+    top: 7px;
+}
+
+#groupB{
+    position: relative;
+    top: 10px;
+}
+
+#saveChanges{
+    float: right;
+}
+
+@media (max-width: 990px){
+    #selectedRate{
+        position: relative;
+        top: 0px;
+    }
+    
+    #changeRate{
+        position: relative;
+        top: 0px;
+    }
+    
+    #deleteUser{
+        position: relative;
+        left: 0px;
+    }
+}
+
+/*Fin Ficha*/
