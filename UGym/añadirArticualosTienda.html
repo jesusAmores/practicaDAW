@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ficha para añadir artículos en la tienda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+       <div class="row">
+           <h1 class="text-center">Ficha para añadir artículos en la tienda</h1>
+       </div>
+        <div class="row">
+            <div class="col-sm-9 col-md-6">
+                <h2>Introduce los datos del nuevo producto a incluir en la tienda</h2>
+                <p>Todos los prodcutos a los que se le hayan realizado esta ficha, serán incluidos en la tienda del propio gimnasio.</p>
+            </div>
+            <div class="col-sm-9 col-md-6">
+                <form role="form">
+                   <div class="form-group">
+                        <!--Campo NOMBRE-->
+                        <label>  Nombre del producto:</label>
+                        <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nombre del producto">
+                       
+                        <!--campo DESCRIPCION-->
+                        <label>  Descripción del producto:</label>
+                        <input type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una breve descripción del producto">
+                       
+                       <!--campo TIPO DEL PRODUCTO-->
+                        <label for="select"> Tipo del producto:</label>
+                        <select id="tipoProducto" class="form-control">
+                                <option> </option>
+                                <option>Producto alimentario</option>
+                                <option>Bebidas</option>
+                                <option>Complementos alimentarios</option>
+                                <option>Vestimenta</option>
+                                <option>Calzado</option>
+                                <option>Complementos</option>
+                            </select>
+                       
+                       <!--campo PRECIO-->
+                        <label>  Precio del producto:</label>
+                       <input type="number" class="form-control" id="inputPrecioP" placeholder="Introduce el precio  del producto">
+                       
+                       
+                       <!--campo IMAGEN DEL PRODUCTO-->
+                        <!--imagen ya guardada en una carpeta-->
+                        <label>Imagen del producto:</label>
+                        <input type="text" class="form-control" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la imagen">
+                        <button type="submit"  class="btn btn-primary disabled btn-xs">Cargar imagen</button>
+                       
+                        
+                       
+                        
+                       
+                       
+                        
+                    </div>
+                </form>
+                                <button type="submit" class="btn btn-primary disabled btn-lg">Incluir en la tienda</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
