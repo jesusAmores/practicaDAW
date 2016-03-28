@@ -17,3 +17,25 @@ Equipo de desarrollo:
                       María Ballesteros López (m.ballesteroslo@alumnos.urjc.es) (mariablopez)
                       Hector Dominguez Diego (h.dominguezd@alumnos.urjc.es) (HDominguezD)
                       Jesús Amores Fernandez-Caballero (j.amoresf@alumnos.urjc.es) (jesusAmores)
+
+Fase 2
+
+Nota: los pasos a continuación detallados han sido probados en terminales con sistema operativo Windows.
+
+- Software necesario para ejecutar esta fase: Brackets.
+
+- Pasos a seguir para ejecutar la fase 2:
+  
+  1º Acceder al siguiente repositorio (https://github.com/jesusAmores/practicaDAW.git).
+  2º Pulsar el botón "download Zip" para descargarnos los archivos fuente.
+  3º Descomprimir el .zip en el directorio deseado.
+  4º Abrir brackets, seleccionar la carpeta con los archivos y ejecutar.
+
+- Explicación y uso de las pantallas
+
+  - Área clientes (client.html y client.css):
+    Estos archivos hacen referencia al módulo área clientes en el cual los usuarios del gimnasio acceden para hacer reservas de clases     colectivas, comprar artículos y ver y modificar sus datos personales. En la parte superior, hay un botón de cierre de sesión que      nos devuelve a la página principal de la aplicación.
+    Este módulo posee una barra de navegación con 3 pestañas que hacen referencia a las ventanas de reserva de clases colectivas, la      tienda y la ventana de datos personales.
+    La ventana Clases colectivas posee una tabla de horarios en la que cada recuadro indica la clase colectiva y la ocupación.
+    La ventana Tienda tiene a su vez un menú de navegación con tres opciones que hacen referencia a un tipo concreto de artículo. Esta     ventana posee un botón llamado "carrito de compra" cuya función es listar los elementos que el usuario añade al carrito.
+    En la ventana Mi ficha aparece un formulario con campos modificables y algunos bloqueados. Aquí podemos cambiar de contraseña,        cambiar nuestra tarifa o desapuntarnos del gimnasio.
