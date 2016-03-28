@@ -1,14 +1,36 @@
 /*cabecera*/
 #header{
     height: 150px;
-    background-color: burlywood;
+    box-shadow: inset 0 0 20px 5px #a2a2a2;
+    background: url(img/fondoceleste.png);
 }
 
 @media (max-width: 458px){
     #header{
         height: 280px;
     }
+    
+    #logoTitle{
+        left: 1em;
+    }
+    
+    #title{
+        padding-left: 2em;
+    }
+    
+    #cerrarSesion{
+        right: 3em;
+    }
+    
 }
+
+@media (max-width: 295px){
+    #header{
+        height: 310px;
+    }
+}
+
+
 
 #logoTitle{
     float: left;
@@ -40,35 +62,31 @@
     float: right;
     top: 60px;
 }
+
+#cerrarSesion > a > button{
+    box-shadow: 2px 2px #a2a2a2;
+}
 /*fin cabecera*/
 
 /*navegación*/
-#restPage{
-    padding-right: 0px;
-    padding-left: 0px;
-}
 
-/*#restPage > div{
-    width: 1326px;
-    margin-right: auto;
-    margin-left: 0px;
-}
-
-#restPage > div > div{
+#restPage > .row > .col-md-12{
     padding-right: 0px;
-    padding-left: 0px;
-    width: 1326px;
-}*/
+    padding-left: 0px; 
+}
 
 .nav-tabs { 
     border-bottom: 2px solid #DDD; 
     padding: 5px;
     padding-bottom: 0px;
     font-size: 1.2em;
+    box-shadow: inset 0 2px 5px 0 #a2a2a2;
+    background-color: #e8e8e8;
 }
     
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { 
     border-width: 0; 
+    background-color: #e8e8e8;
 }
 
 .nav-tabs > li > a { 
@@ -79,7 +97,8 @@
 .nav-tabs > li.active > a, .nav-tabs > li > a:hover { 
     border: none; 
     color: #4285F4 !important; 
-    background: transparent; 
+    background: transparent;
+    background-color: #e8e8e8;
 }
 
 .nav-tabs > li > a::after { 
@@ -108,19 +127,21 @@
 }
 
 .tab-content{
-    padding:20px
+    padding:20px;
+    background-color: #fbfbfb;
 }
 
 .card {
     background: #FFF none repeat scroll 0% 0%; 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);  
 }
+/*fin navegacion*/
 
 /*clases colectivas*/
 
 #clasesColectivas{
-    padding-top: 72px;
-    padding-bottom: 73px;
+    padding-top: 80px;
+    padding-bottom: 81px;
 }
 
 .table{
@@ -128,19 +149,19 @@
 }
 
 .table-bordered > thead > tr{
-    border: 2px solid #000000;
+    border: 2px ridge #6f6f6f;
 }
 
 .table-bordered > thead > tr > th{
-    border: 2px solid #000000;
+    border: 2px ridge #6f6f6f;
 }
 
 .table-bordered > tbody > tr{
-    border: 2px solid #000000;
+    border: 2px ridge #6f6f6f;
 }
 
 .table-bordered > tbody > tr > td{
-    border: 2px solid #000000;
+    border: 2px ridge #6f6f6f;
 }
 
 .table > thead > tr > th{
@@ -156,11 +177,11 @@ tbody > tr > td:first-child{
 }
 
 tbody > tr:nth-child(odd){
-    background-color: #ffca3b;    
+    background-color: #ffd86e;    
 }
 
 tbody > tr:nth-child(even){
-    background-color: #d08c30;    
+    background-color: #ffae41;    
 }
 
 tbody > tr > td > a{
@@ -177,7 +198,7 @@ tbody > tr > td > a:hover{
 tbody > tr > td > a:focus{
     text-decoration: none;
 }
-/*fin navegacion*/
+/*fin clases colectivas*/
 
 /*Ficha*/
 .form-group > label{
@@ -190,6 +211,22 @@ tbody > tr > td > a:focus{
     left: 13px;
 }
 
+#changeUserPassword{
+    position: relative;
+    left: 13px;
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+#changeUserPassword > a{
+    text-decoration: none;
+}
+
+#changeUserPassword > a:hover{
+    color: #003080;
+}
+
 #deleteUser{
     position: relative;
     top: 7px;
@@ -197,14 +234,34 @@ tbody > tr > td > a:focus{
     font-size: 1.2em;
 }
 
+#deleteUser > a{
+    text-decoration: none;
+}
+
+#deleteUser > a:hover{
+    color: #003080;
+}
+
 #changeRate{
     position: relative;
     top: 7px;
 }
 
+#changeRate > a{
+    text-decoration: none;
+}
+
+#changeRate > a:hover{
+    color: #003080;
+}
+
 #groupB{
     position: relative;
     top: 10px;
+}
+
+#groupB > .col-md-4 > button{
+    box-shadow: inset 0 0 10px 0 #adadad;    
 }
 
 #saveChanges{
@@ -241,7 +298,8 @@ tbody > tr > td > a:focus{
 }
 
 #nav-tabs-wrapper{
-    background-color: antiquewhite;  
+    background-color: antiquewhite; 
+    box-shadow: inset 0 0 5px 2px #5750ff;    
     
 }
 
@@ -305,7 +363,8 @@ tbody > tr > td > a:focus{
 .listItems{
     background-color: antiquewhite;
     border-radius: 5px; 
-    border: 1px solid #3e3b3b;
+    border: 1px solid #9d9d9d;
+    box-shadow: inset 0 0 5px 2px #5750ff;
 }
 
 .textItem{
@@ -337,6 +396,10 @@ tbody > tr > td > a:focus{
     padding-left: 0px;
     position: relative;
     top: 2em;
+}
+
+.addItem > button{
+    box-shadow: 2px 2px #a2a2a2;
 }
 
 .priceItem{
@@ -377,8 +440,24 @@ tbody > tr > td > a:focus{
     }
 }
 
+@media (max-width: 768px){
+    #paySection > .btn-group > button{
+        position: relative;
+        left: 3em;
+    }
+    
+    .dropdown-menu{
+        position: relative;
+        left: 3em;    
+    }
+}
+
 #paySection{
     padding-left: 0em;
+}
+
+#paySection > .btn-group > button{
+    box-shadow: 2px 2px #a2a2a2;
 }
 
 .dropdown-menu{
@@ -397,8 +476,6 @@ tbody > tr > td > a:focus{
     padding-top: 0.5em;
     text-align: center;
 }
-
-
 
 .dropdown-menu > li > a:hover{
     background-color: #d2e3ff;

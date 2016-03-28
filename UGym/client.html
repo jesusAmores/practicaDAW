@@ -13,7 +13,7 @@
     </head>
     
     <body>
-        <div class="container-fluid">
+        <div id="mainHeader" class="container-fluid">
             <div id="header" class="row">
                 <div id="logoTitle" class="col-md-2">
                     <img id="img-logo" class="img-responsive" src="img/logo.png">    
@@ -29,14 +29,13 @@
         <div id="restPage" class="container-fluid">
 	        <div class="row">
 		        <div class="col-md-12">
-                    <div class="card"><!-- Nav tabs -->
+                    <div class="card">
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active"><a href="#clasesColectivas" aria-controls="clasesColectivas" role="tab" data-toggle="tab">Clases colectivas</a></li>
                             <li role="presentation"><a href="#tienda" aria-controls="tienda" role="tab" data-toggle="tab">Tienda</a></li>
                             <li role="presentation"><a href="#ficha" aria-controls="ficha" role="tab" data-toggle="tab">Mi ficha</a></li>
                         </ul>
 
-                        <!-- Tab panes -->
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="clasesColectivas">
                                 <div class="table-responsive">
@@ -112,7 +111,7 @@
                                                 <div class="container-fluid listItems">
                                                     <div class="row item">
                                                         <div class="col-md-3 pictureItem">
-                                                           <img class="img-responsive img-circle" src="img/camiseta.jpg">  
+                                                           <img class="img-responsive img-circle" src="img/camisetaF.jpg">  
                                                         </div>
                                                         <div class="col-md-6 textItem">
                                                             <div class="col-md-12">Camiseta de entrenamiento</div>
@@ -126,7 +125,7 @@
                                                     </div>
                                                     <div class="row item">
                                                         <div class="col-md-3 pictureItem">
-                                                            <img class="img-responsive img-circle" src="img/bote%20proteinas.jpg"> 
+                                                            <img class="img-responsive img-circle" src="img/mejor-proteina-nitrotech-300x300.jpg"> 
                                                         </div>
                                                         <div class="col-md-6 textItem">
                                                             <div class="col-md-12">Proteina en polvo</div>
@@ -144,7 +143,7 @@
                                                 <div class="container-fluid listItems">
                                                     <div class="row item">
                                                         <div class="col-md-3 pictureItem">
-                                                           <img class="img-responsive img-circle" src="img/definicion-muscular.jpg">  
+                                                           <img class="img-responsive img-circle" src="img/img_rutina_de_ejercicios_con_pesas_40209_300_square.jpg">  
                                                         </div>
                                                         <div class="col-md-6 textItem">
                                                             <div class="col-md-12">Entrenamiento de definición</div>
@@ -177,7 +176,7 @@
                                                 <div class="container-fluid listItems">
                                                     <div class="row item">
                                                         <div class="col-md-3 pictureItem">
-                                                           <img class="img-responsive img-circle" src="img/alimentos-dieta-mediterranea.png">  
+                                                           <img class="img-responsive img-circle" src="img/Dieta-mediterranea-para-adelgazar.jpg">  
                                                         </div>
                                                         <div class="col-md-6 textItem">
                                                             <div class="col-md-12">Dieta Mediterránea</div>
@@ -191,7 +190,7 @@
                                                     </div>
                                                     <div class="row item">
                                                         <div class="col-md-3 pictureItem">
-                                                            <img class="img-responsive img-circle" src="img/pi%C3%B1a_fruta02.jpg"> 
+                                                            <img class="img-responsive img-circle" src="img/pina.jpg"> 
                                                         </div>
                                                         <div class="col-md-6 textItem">
                                                             <div class="col-md-12">Dieta de la piña</div>
@@ -209,7 +208,7 @@
                                     </div>
                                     <div id="paySection" class="col-sm-2">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-shopping-cart"></span> Carrito de compra <span class="badge">1</span> <span class="caret"></span></button>   
+                                            <button type="button" class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-shopping-cart"></span> Carrito de compra <span class="badge">2</span> <span class="caret"></span></button>   
                                             <ul class="dropdown-menu">
                                                 <li>
                                                     <div class="col-md-12">      
@@ -259,6 +258,12 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
+                                        <label for="inputDNI" class="col-md-offset-2 col-md-2 control-label">DNI</label>
+                                        <div class="col-md-4">
+                                          <input type="text" class="form-control" id="inputDNI" value="12345678X" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="inputAddress" class="col-md-offset-3 col-md-1 control-label">Dirección</label>
                                         <div class="col-md-4">
                                           <input type="text" class="form-control" id="inputAddress" value="C/Falsa 123">
@@ -268,6 +273,12 @@
                                         <label for="inputLocation" class="col-md-offset-3 col-md-1 control-label">Población</label>
                                         <div class="col-md-4">
                                           <input type="text" class="form-control" id="inputLocation" value="Fuenlabrada, Madrid">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputCodigoPostal" class="col-md-offset-2 col-md-2 control-label">Código postal</label>
+                                        <div class="col-md-4">
+                                          <input type="text" class="form-control" id="inputCódigoPostal" value="28945">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -281,6 +292,9 @@
                                         <div class="col-md-4">
                                           <input type="email" class="form-control" id="inputEmail" value="amanterechoncho@gmail.com">
                                         </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span id="changeUserPassword" class="col-md-offset-4 col-md-3"><a href="#">Quiero cambiar mi contraeña</a></span>    
                                     </div>
                                     <div class="form-group">
                                         <label for="input" class="col-md-offset-2 col-md-2 control-label">Tarifa elegida</label>
