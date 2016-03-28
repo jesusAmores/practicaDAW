@@ -36,7 +36,7 @@ Nota: los pasos a continuación detallados han sido probados en terminales con s
   - Página principal (index.html y style.css): 
     Estos archivos hacen referencia a la página principal, la cuál será la primera página que el usuario vea al entrar en la web.
     Gracias a esta página el usuario podrá realizar numerosas funciones como conocer las actividades, instalaciones y tarifas de          nuestro gimnasio entre otras cosas.
-    Este módulo dispone de un menú horizontal con enlaces a las secciones de "actividades", "instalaciones", "tarifas" y "galería",      además de dos botones: uno para iniciar sesión, donde se abrirá un formulario (donde deberemos introducir nuestro ID y nuestra contraseña) así como un enlace a una página de recuperación de datos a la que deberemos acceder en el caso de que hallamos olvidado nuestro ID o nuestra contraseña introduciendo el email que tengamos asociado a nuestra cuenta, y otro que nos explica las numerosas ventajas de hacernos socios.
+    Este módulo dispone de un menú horizontal con enlaces a las secciones de "actividades", "instalaciones", "tarifas" y "galería",      además de dos botones: uno para iniciar sesión, donde se abrirá un formulario (donde deberemos introducir nuestro ID y nuestra     contraseña) así como un enlace a una página de recuperación de datos a la que deberemos acceder en el caso de que hallamos olvidado nuestro ID o nuestra contraseña introduciendo el email que tengamos asociado a nuestra cuenta, y otro que nos explica las numerosas ventajas de hacernos socios.
     La sección de actividades contiene la explicación de 4 tipos de actividades (Fitness, pilates, spinning y zumba).
     La sección de instalaciones contiene un menú de navegación por las tres partes del gimnasio mas importantes (zona de máquinas,        piscina y sauna) con una pequeña descripción y una imagen de cada una de ellas.
     En la sección de tarifas podemos encontrar diferentes formas de contacto y la dirección del gimnasio.
@@ -49,3 +49,16 @@ Nota: los pasos a continuación detallados han sido probados en terminales con s
     La ventana Tienda tiene a su vez un menú de navegación con tres opciones que hacen referencia a un tipo concreto de artículo. Esta     ventana posee un botón llamado "carrito de compra" cuya función es listar los elementos que el usuario añade al carrito.
     En la ventana Mi ficha aparece un formulario con campos modificables y algunos bloqueados. Aquí podemos cambiar de contraseña,        cambiar nuestra tarifa o desapuntarnos del gimnasio.
 
+  - Área registro de clientes (registroCliente.html):
+    Este archivo hace refencia a la parte de resgistro del cliente. Hemos considerado que esta sección deberá estar incluida en la        parte privada de la página web porque ser socio de un gimnasio tiene un coste y los trámites deberán hacerse en presencia del         futuro cliente para evitar futuros problemas. Además, solo podrán acceder a rellenar las fichas los miembros del equipo de gestión     del gimnasio. En la ficha de registro se deben rellenar los campos: nombre, primer y segundo apellido, DNI, EMAIL, dirección          (donde se debe elegir el tipo de vía donde vive el cliente), un número de teléfono, fecha de nacimiento y sexo del cliente. Tras      rellenar todos los campos, la persona que se ha encargado de rellenar la ficha deberá pulsasr sobre el botón enviar y la              información sera enviada a la base de datos de los clientes.  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
