@@ -6,7 +6,7 @@ Descripción: La aplicación web consiste en un gimnasio en el cual se muestra d
              La parte pública de la aplicación consiste en lo mencionado anteriormente, siendo la parte privada un módulo solo accesible              mediante cuenta de usuario y contraseña en el cual se puede gestionar los entrenamientos disponibles y demás servicios                   ofertados.  
              
 Entidades: 
-          -Usuario: contiene datos obtenidos tras el registro tales como nombre, apelidos, fecha de nacimiento, etc.
+          -Usuario: contiene datos obtenidos tras el registro tales como nombre, apellidos, fecha de nacimiento, etc.
           -Tarifa: entidad asociada a cada usuario. 
           -Clases colectivas: contiene los diferentes tipos de clases ofertadas.
           -Productos: los usuarios pueden adquirir cualquiera de los diferentes tipos de productos ofertados, caracterizados por un                 nombre, descripción y precio.
@@ -15,8 +15,8 @@ Entidades:
 Equipo de desarrollo:
                       Blanca Romero Rico (b.romerori@alumnos.urjc.es) (bromerori)
                       María Ballesteros López (m.ballesteroslo@alumnos.urjc.es) (mariablopez)
-                      Hector Dominguez Diego (h.dominguezd@alumnos.urjc.es) (HDominguezD)
-                      Jesús Amores Fernandez-Caballero (j.amoresf@alumnos.urjc.es) (jesusAmores)
+                      Héctor Domínguez Diego (h.dominguezd@alumnos.urjc.es) (HDominguezD)
+                      Jesús Amores Fernández-Caballero (j.amoresf@alumnos.urjc.es) (jesusAmores)
 
 Fase 2
 
@@ -36,11 +36,11 @@ Nota: los pasos a continuación detallados han sido probados en terminales con s
   - Página principal (index.html y style.css): 
     Estos archivos hacen referencia a la página principal, la cuál será la primera página que el usuario vea al entrar en la web.
     Gracias a esta página el usuario podrá realizar numerosas funciones como conocer las actividades, instalaciones y tarifas de          nuestro gimnasio entre otras cosas.
-    Este módulo dispone de un menú horizontal con enlances a las secciones de "actividades", "instalaciones", "tarifas" y "galería",      además de dos otones: uno para iniciar sesión y otro que nos explica las numerosas ventajas de hacernos socios.
-    La sección de actividades contiene la explicacion de 4 tipos de actividades (Fitness, pilates, spinning y zumba).
-    La seccion de instalaciones contiene un menu de navegacion por las tres partes del gimnasio mas importantes (zona de máquinas,        piscina y sauna) con una pequeña descripcion y una imagen de cada una de ellas.
-    En la seccion de tarifas podemos encontrar diferentes formas de contacto y la direccion del gimnasio.
-    Y en la seccion de galeria encontraremos un carousel de diferentes fotos del gimnasio y sus usuarios.
+    Este módulo dispone de un menú horizontal con enlaces a las secciones de "actividades", "instalaciones", "tarifas" y "galería",      además de dos botones: uno para iniciar sesión, donde se abrirá un formulario (donde deberemos introducir nuestro ID y nuestra contraseña) así como un enlace a una página de recuperación de datos a la que deberemos acceder en el caso de que hallamos olvidado nuestro ID o nuestra contraseña introduciendo el email que tengamos asociado a nuestra cuenta, y otro que nos explica las numerosas ventajas de hacernos socios.
+    La sección de actividades contiene la explicación de 4 tipos de actividades (Fitness, pilates, spinning y zumba).
+    La sección de instalaciones contiene un menú de navegación por las tres partes del gimnasio mas importantes (zona de máquinas,        piscina y sauna) con una pequeña descripción y una imagen de cada una de ellas.
+    En la sección de tarifas podemos encontrar diferentes formas de contacto y la dirección del gimnasio.
+    Y en la sección de galería encontraremos un carousel de diferentes fotos del gimnasio y sus usuarios.
 
   - Área clientes (client.html y client.css):
     Estos archivos hacen referencia al módulo área clientes en el cual los usuarios del gimnasio acceden para hacer reservas de clases     colectivas, comprar artículos y ver y modificar sus datos personales. En la parte superior, hay un botón de cierre de sesión que      nos devuelve a la página principal de la aplicación.
