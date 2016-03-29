@@ -17,11 +17,11 @@ header{
     padding-left: 40%;
 }
 
-.col-md-3{
-    height: 230px;
+.panel{
+    height: auto;
 }
 
-.col-md-3 > h2{
+.panel-heading > h2{
     color: white;
 }
 
@@ -72,6 +72,7 @@ h6{
 #subir{
     position: static;
     text-align: right;
+    background-color: white;
 }
 
 .glyphicon-arrow-up {
