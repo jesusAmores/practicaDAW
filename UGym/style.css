@@ -42,6 +42,10 @@ h6{
     color: white;
 }
 
+.badge{
+    font-size: 20px;
+}
+
 #instalaciones, #gallery{
     background-color: #E7E8E6;
 }

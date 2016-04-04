@@ -1,0 +1,47 @@
+header{
+    height: 300px;
+}
+.col-md-12{
+    padding: 0px;
+}
+
+#img-header{
+    width: 100%;
+    height: 300px;
+    
+}
+
+#img-logo{
+    position: relative;
+    bottom: 300px;
+    padding-left: 40%;
+}
+
+.jumbotron{
+    margin-top: 30px;
+}
+
+label{
+    padding: 10px;
+}
+
+h6{
+    color: white;
+}
+
+#subir{
+    position: static;
+    text-align: right;
+    background-color: white;
+}
+
+.glyphicon-arrow-up {
+    font-size: 30px;
+    padding: 10px;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+}
+
