@@ -198,6 +198,10 @@ tbody > tr > td > a:hover{
 tbody > tr > td > a:focus{
     text-decoration: none;
 }
+
+.contentButton:hover{
+    text-decoration: none;
+}
 /*fin clases colectivas*/
 
 /*Ficha*/
@@ -283,6 +287,32 @@ tbody > tr > td > a:focus{
         position: relative;
         left: 0px;
     }
+}
+
+.chooseTax{
+    margin-bottom: 20px;
+}
+
+.form-group > h4 {
+    padding-left: 1em;
+}
+
+.form-group > .contentForm {
+    padding: 1em 1em 1em 1em;
+}
+
+.form-group > .labelForm {
+    position: relative;
+    top: 0.7em;
+}
+
+.form-group > .radio{
+    padding-left: 2em;
+}
+
+.form-group > .radio > label{
+    font-size: 1.2em;
+    font-family: serif;
 }
 
 /*Fin Ficha*/

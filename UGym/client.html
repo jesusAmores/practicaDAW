@@ -9,7 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="client.css">
-        <link rel="icon" type="image/x-icon" href="img/logo.png">
+        <link rel="icon" type="image/x-icon" href="img/iconoUrjc.ico">
     </head>
     
     <body>
@@ -53,46 +53,95 @@
                                     <tbody>
                                         <tr>
                                             <td>16:00-17:00</td>
-                                            <td><a href="#">Spinning (0/20)</a></td>
-                                            <td><a href="#">Boxeo (0/20)</a></td>
-                                            <td><a href="#">TRX (0/20)</a></td>
-                                            <td><a href="#">Spinning (0/20)</a></td>
-                                            <td><a href="#">Spinning (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Spinning (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#noReserva">Boxeo (20/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">TRX (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Spinning (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Spinning (0/20)</a></td>
                                         </tr>
                                         <tr>
                                             <td>17:00-18:00</td>
-                                            <td><a href="#">Boxeo (0/20)</a></td>
-                                            <td><a href="#">Spinning (0/20)</a></td>
-                                            <td><a href="#">Boxeo (0/20)</a></td>
-                                            <td><a href="#">Body Combat (0/20)</a></td>
-                                            <td><a href="#">Abdominales (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Boxeo (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Spinning (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Boxeo (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Body Combat (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Abdominales (0/20)</a></td>
                                         </tr>
                                         <tr>
                                             <td>18:00-19:00</td>
-                                            <td><a href="#">Abdominales (0/20)</a></td>
-                                            <td><a href="#">Pilates (0/20)</a></td>
-                                            <td><a href="#">Spinning (0/20)</a></td>
-                                            <td><a href="#">Abdominales (0/20)</a></td>
-                                            <td><a href="#">Boxeo (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Abdominales (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Pilates (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Spinning (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Abdominales (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Boxeo (0/20)</a></td>
                                         </tr>
                                         <tr>
                                             <td>19:00-20:00 </td>
-                                            <td><a href="#">TRX (0/20)</a></td>
-                                            <td><a href="#">Body Combat (0/20)</a></td>
-                                            <td><a href="#">Body Pump (0/20)</a></td>
-                                            <td><a href="#">TRX (0/20)</a></td>
-                                            <td><a href="#">Pilates (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">TRX (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Body Combat (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Body Pump (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">TRX (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Pilates (0/20)</a></td>
                                         </tr>
                                         <tr>
                                             <td>20:00-21:00</td>
-                                            <td><a href="#">Body Combat (0/20)</a></td>
-                                            <td><a href="#">Abdominales (0/20)</a></td>
-                                            <td><a href="#">Pilates (0/20)</a></td>
-                                            <td><a href="#">Body Pump (0/20)</a></td>
-                                            <td><a href="#">TRX (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Body Combat (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Abdominales (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Pilates (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">Body Pump (0/20)</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#reservarClase">TRX (0/20)</a></td>
                                         </tr>     
                                     </tbody>
                                 </table>    
+                                </div>
+                                <!-- Ventana emergente de reservar clase -->
+                                <div class="modal fade" id="reservarClase" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title">Reservar clase</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Estas reservando: <span>Nombre clase colectiva</span> a las <span>hora</span></p>   
+                                                <p>¿Deseas realizar tu reserva?</p>   
+                                                <button type="submit" class="btn btn-default"><a  class="contentButton" href="#" data-toggle="modal" data-target="#reservaConfirmada">Reservar</a></button>
+                                                <button type="submit" class="btn btn-default"><a class="contentButton" href="client.html">Cancelar</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Ventana emergente de confirmación -->
+                                <div class="modal fade" id="reservaConfirmada" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>¡Reserva realizada con éxito!</p>     
+                                                <button type="submit" class="btn btn-default"><a class="contentButton" href="client.html">Aceptar</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Ventana emergente de no se puede reservar -->
+                                <div class="modal fade" id="noReserva" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4>Error</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>No puedes realizar tu reserva: aforo completado</p>     
+                                                <button type="submit" class="btn btn-default"><a class="contentButton" href="client.html">Aceptar</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="tienda">
@@ -294,15 +343,154 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <span id="changeUserPassword" class="col-md-offset-4 col-md-3"><a href="#">Quiero cambiar mi contraeña</a></span>    
+                                        <span id="changeUserPassword" class="col-md-offset-4 col-md-3"><a href="#" data-toggle="modal" data-target="#cambiarContraseña">Quiero cambiar mi contraeña</a></span>
+                                        <!-- Ventana emergente de cambio de contraseña -->
+                                        <div class="modal fade" id="cambiarContraseña" role="dialog">
+                                            <div class="modal-dialog">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title">Cambiar contraseña</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="form-group">
+                                                            <label for="inputPassword" class="col-md-4 control-label labelForm">Contraseña actual</label>
+                                                            <div class="col-md-8 contentForm">
+                                                              <input type="password" class="form-control" id="inputPassword" placeholder="Introduzca su actual contraseña">
+                                                            </div>
+                                                            <label for="inputNewPassword" class="col-md-4 control-label labelForm">Nueva contraseña</label>
+                                                            <div class="col-md-8 contentForm">
+                                                              <input type="password" class="form-control" id="inputNewPassword" placeholder="Introduzca la nueva contraseña">
+                                                            </div>
+                                                            <label for="inputNewPasswordAgain" class="col-md-4 control-label labelForm">Repita la nueva contraseña</label>
+                                                            <div class="col-md-8 contentForm">
+                                                              <input type="password" class="form-control" id="inputNewPasswordAgain" placeholder="Repita la contraseña a cambiar">
+                                                            </div>
+                                                        </div>  
+                                                        <button type="submit" class="btn btn-default"><a class="contentButton" href="client.html">Cambiar</a></button>
+                                                        <button type="submit" class="btn btn-default"><a class="contentButton" href="client.html">Cancelar</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
                                     </div>
                                     <div class="form-group">
                                         <label for="input" class="col-md-offset-2 col-md-2 control-label">Tarifa elegida</label>
                                         <span id="selectedRate" class="col-md-2">Mensual (20€)</span>
-                                        <span id="changeRate" class="col-md-2"><a href="#">Deseo cambiar mi tarifa</a></span>
+                                        <span id="changeRate" class="col-md-2"><a href="#" data-toggle="modal" data-target="#cambiarTarifa">Deseo cambiar mi tarifa</a></span>
+                                        <!-- Ventana emergente de cambio de tarifa -->
+                                        <div class="modal fade" id="cambiarTarifa" role="dialog">
+                                            <div class="modal-dialog">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title">Cambio de tarifa</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="form-group chooseTax">
+                                                            <h4>Escoge tu nueva tarifa:</h4>   
+                                                            <div class="radio">
+                                                                <label>
+                                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                                    Mensual: 20€
+                                                                </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <label>
+                                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                    Trimestral: 50€
+                                                                </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <label>
+                                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option3">
+                                                                    Anual: 190€
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-default"><a class="contentButton" href="client.html">Cambiar tarifa</a></button>
+                                                        <button type="submit" class="btn btn-default"><a class="contentButton" href="client.html">Cancelar</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="form-group">
-                                        <span id="deleteUser" class="col-md-offset-4 col-md-2"><a href="#">Quiero darme de baja</a></span>
+                                        <span id="deleteUser" class="col-md-offset-4 col-md-2"><a href="#" data-toggle="modal" data-target="#darseDeBaja">Quiero darme de baja</a></span>
+                                        <!-- Ventana emergente de darse de baja -->
+                                        <div class="modal fade" id="darseDeBaja" role="dialog">
+                                            <div class="modal-dialog">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title">Darse de baja</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h4>Estamos muy tristes por tu marcha, pero antes, nos gustaría que nos respondieras a unas preguntas:</h4>   
+                                                        <div class="form-group">
+                                                            <div class="col-md-9">
+                                                                <label>¿Porque te marchas?</label>
+                                                                <select class="form-control">
+                                                                    <option>El gimnasio no ha cumplido mis expectativas</option>
+                                                                    <option>La limpieza es escasa</option>
+                                                                    <option>Las clases colectivas no son correctas</option>
+                                                                    <option>Las areas de cardio y musculación están muy llenas</option>
+                                                                    <option>No tengo tiempo para ir</option>
+                                                                    <option>Otros</option>
+                                                                </select>    
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-md-12">
+                                                                <label>Califica tu estancia en el gimnasio:</label>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                    Muy mala
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                    Mala
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                    Normal
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                    Buena
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                    Muy buena
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-default"><a class="contentButton" href="#" data-toggle="modal" data-target="#bajaConfirmada">Confirmar baja</a></button>
+                                                        <button type="submit" class="btn btn-default"><a class="contentButton" href="client.html">Cancelar</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Ventana emergente de confirmación de baja -->
+                                        <div class="modal fade" id="bajaConfirmada" role="dialog">
+                                            <div class="modal-dialog">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Baja confirmada</h4>
+                                                    </div>   
+                                                    <div class="modal-body">
+                                                        <p>La tramitación de tu baja ha sido confirmada. Estarás dado de baja al cerrar sesión</p>     
+                                                        <button type="submit" class="btn btn-default"><a class="contentButton" href="client.html">Aceptar</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div id="groupB" class="form-group">
                                         <div class="col-md-offset-4 col-md-4">
