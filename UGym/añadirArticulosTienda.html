@@ -15,19 +15,29 @@
        </div>
         <div class="row">
             <div class="col-sm-9 col-md-6">
-                <h2>Introduce los datos del nuevo producto a incluir en la tienda</h2>
-                <p>Todos los prodcutos a los que se le hayan realizado esta ficha, serán incluidos en la tienda del propio gimnasio.</p>
+                <h3>Introduce los datos del nuevo producto a incluir en la tienda</h3>
+                <h4>Todos los prodcutos a los que se le hayan realizado esta ficha, serán incluidos en la tienda del propio gimnasio.</h4>
             </div>
             <div class="col-sm-9 col-md-6">
                 <form role="form">
                    <div class="form-group">
+                         <!--Campo CÓDIGO-->
+                        <label>  Código del producto:</label>
+                        <input type="text" class="form-control" id="inputCodigoP"  placeholder="Introduce el codigo del producto">
+                       
+                        <br>
+                       
                         <!--Campo NOMBRE-->
                         <label>  Nombre del producto:</label>
                         <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nombre del producto">
+                        
+                        <br>
                        
                         <!--campo DESCRIPCION-->
                         <label>  Descripción del producto:</label>
                         <input type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una breve descripción del producto">
+                     
+                        <br>
                        
                        <!--campo TIPO DEL PRODUCTO-->
                         <label for="select"> Tipo del producto:</label>
@@ -37,27 +47,25 @@
                                 <option>Entrenamiento</option>
                                 <option>Dieta</option>
                             </select>
+                         
+                        <br>
                        
                        <!--campo PRECIO-->
                         <label>  Precio del producto:</label>
                        <input type="number" class="form-control" id="inputPrecioP" placeholder="Introduce el precio  del producto">
-                       
+                    
+                        <br>
                        
                        <!--campo IMAGEN DEL PRODUCTO-->
                         <!--imagen ya guardada en una carpeta-->
                         <label>Imagen del producto:</label>
-                        <input type="text" class="form-control" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la imagen">
-                        <button type="submit"  class="btn btn-primary disabled btn-xs">Cargar imagen</button>
-                       
-                        
-                       
-                        
-                       
+                        <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la imagen">
+                        <br>
                        
                         
                     </div>
                 </form>
-                                <button type="submit" class="btn btn-primary disabled btn-lg">Incluir en la tienda</button>
+                                <button type="submit" class="btn btn-primary  btn-lg">Incluir en la tienda</button>
             </div>
         </div>
     </div>
