@@ -41,7 +41,25 @@ h6{
 }
 
 footer{
-    text-align: center;
+    color: gray;
     background-color: black;
+}
+
+#contacto > h5, #trabajo > h5{
+    color: white;
+    padding-left: 20px;
+}
+
+#contacto > .glyphicon-ok-circle{
+    color: #FF002F;
+}
+
+#trabajo > a > .glyphicon-ok-circle{
+    color: #40BD50;
+}
+
+#redes-sociales{
+    margin-top: 10px;
+    padding-left: 35px;
 }
 

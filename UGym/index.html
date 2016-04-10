@@ -74,12 +74,12 @@
                                                 <div class="modal-body">
                                                     <form role="form">
                                                         <div class="form-group">
-                                                            <label for="user">Nombre de usuario:</label>
+                                                            <label for="user">DNI:</label>
                                                             <div class="input-group input-group-sm">
                                                                 <span class="input-group-addon">
                                                                     <span class="glyphicon glyphicon-user"></span>
                                                                 </span>
-                                                                <input type="user" class="form-control" id="user" placeholder="Introduce tu nombre de usuario">
+                                                                <input type="user" class="form-control" id="user" placeholder="Introduce tu DNI">
                                                             </div>        
                                                         </div>
                                                         <div class="form-group">
@@ -95,7 +95,7 @@
                                                             <label><input type="checkbox"> No cerrar sesión</label>
                                                         </div>
 
-                                                        <button type="submit" class="btn btn-default"><a href="client.html">Entrar</a></button>
+                                                        <a type="submit" class="btn btn-default" href="client.html">Entrar</a>
                                                         <div>
                                                             <br><a href="recuperacionDeDatos.html">¿Has olvidado tus datos?</a>
                                                         </div>
@@ -158,8 +158,9 @@
                 </div>
                 <div class="jumbotron">
                 <p> En esta sección encontrarás las nuevas actividades añadidas a nuestra carta de actividades.</p>
+                    <p><span class="glyphicon glyphicon-exclamation-sign"></span> Para conocer todo nuestro repertorio de actividades debes ser socio de UGym.</p>
                 <p>¡ No pierdas detalle porque cada poco tiempo actualizamos nuestra carta !</p>
-                <p>Proximamente: Telas aéreas, aquaGym y muchas novedades más.</p>
+                <p>Próximamente: Telas aéreas, aquaGym y muchas novedades más.</p>
                 </div>
             </div>
             <br>
@@ -168,48 +169,80 @@
         </section>
         
         <section id="instalaciones">
+            <br>
             <div class="container">
                 <div class="page-header">
                     <h1>Instalaciones</h1>
-                </div>
-                <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#sala_maquinas">Sala de máquinas</a></li>
-                    <li><a data-toggle="tab" href="#piscina">Piscina</a></li>
-                    <li><a data-toggle="tab" href="#sauna">Sauna</a></li>
-                </ul>
-
-                <div class="tab-content">
-                    <div id="sala_maquinas" class="tab-pane fade in active">
-                        <br><h3>Sala de máquinas</h3><br>
-                        <p> Más de 150 m2  de zona de entrenamiento, pensada para que puedas entrenar con libertad y con todo tipo de equipamiento. Máquinas con carga de discos, poleas, barras, un gran número de mancuernas y bancos para que no esperes. Muchos deportistas se deciden por nuestras instalaciones por la cantidad y variedad de equipamiento que hay a disposición.</p>
-                        <p> Dispondrás de una zona de entrenamiento cardiovascular con equipamiento de última generación. Más de 70 equipos de cardio: cintas de correr, elípticas, steps, remos, bicicletas de diferentes tipos, incluso para personas que padezcan lesiones de espalda o tren inferior. Además tendrás la posibilidad de ver tu programa favorito de TV mientras entrenas, escuchar tu música conectando tu ipod a las máquinas, etc., conocerás una manera más amena y divertida de entrenar.
-                        </p>
-                        <br>
-                        <div align="center"><img src="img/sala_maquinas.jpg" class="img-responsive"></div>
-                        <br>
+                </div>    
+            </div>
+            <div class="container">
+                   
+                <nav class="navbar-inverse">
+                    <ul class="nav navbar-nav" id="menu-instalaciones">
+                        <li class="active" ><a data-toggle="tab" href="#sala_maquinas">Sala de máquinas</a></li>
+                        <li><a data-toggle="tab" href="#piscina">Piscina</a></li>
+                        <li><a data-toggle="tab" href="#sauna">Sauna</a></li>
+                    </ul>        
+                </nav>
+            </div>
+            <div class="container">
+                <div class="tab-content" >
+                    <div  id="sala_maquinas" class="tab-pane fade in active contenido-instalaciones">
+                        <div class="container">
+                            <div class="row">    
+                                <div class="col-md-6">    
+                                    <br><h3>Sala de máquinas</h3><br>
+                                    <p> Más de 150 m2  de zona de entrenamiento, pensada para que puedas entrenar con libertad y con todo tipo de equipamiento. Máquinas con carga de discos, poleas, barras, un gran número de mancuernas y bancos para que no esperes. Muchos deportistas se deciden por nuestras instalaciones por la cantidad y variedad de equipamiento que hay a disposición.</p>
+                                    <p> Dispondrás de una zona de entrenamiento cardiovascular con equipamiento de última generación. Más de 70 equipos de cardio: cintas de correr, elípticas, steps, remos, bicicletas de diferentes tipos, incluso para personas que padezcan lesiones de espalda o tren inferior. Además tendrás la posibilidad de ver tu programa favorito de TV mientras entrenas, escuchar tu música conectando tu ipod a las máquinas, etc., conocerás una manera más amena y divertida de entrenar.
+                                    </p>
+                                    <br>
+                                </div>
+                                <div class="col-md-6">
+                                    <br>    
+                                    <div align="center"><img src="img/sala_maquinas.jpg" class="img-responsive"></div>
+                                    <br>
+                                </div> 
+                            </div>          
+                        </div>
+                    </div>    
+                    <div id="piscina" class="tab-pane fade contenido-instalaciones">
+                        <div class="container">
+                            <div class="row">   
+                                <div class="col-md-6">
+                                    <br><h3>Piscina</h3><br>
+                                    <p> En nuestra piscina de agua salada podrás practicar la natación por libre o bien asistir a uno de los cursos de natación de nuestra amplia oferta.</p>
+                                    <p> Disponemos de cursos tanto de iniciación como de perfeccionamiento o entrenamiento, para bebes, niños y adultos. También ofrecemos cursos para embarazadas y cursos de matronatación, que favorecen el equilibrio, la coordinación, el desarrollo psicomotor, la creatividad y la fuerza muscular del bebe, además de reforzar el vínculo entre los padres y el bebé.</p>
+                                    <br>
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <div align="center"><img src="img/piscina.jpg" class="img-responsive"></div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>        
                     </div>
-                    <div id="piscina" class="tab-pane fade">
-                        <br><h3>Piscina</h3><br>
-                        <p> En nuestra piscina de agua salada podrás practicar la natación por libre o bien asistir a uno de los cursos de natación de nuestra amplia oferta.</p>
-                        <p> Disponemos de cursos tanto de iniciación como de perfeccionamiento o entrenamiento, para bebes, niños y adultos. También ofrecemos cursos para embarazadas y cursos de matronatación, que favorecen el equilibrio, la coordinación, el desarrollo psicomotor, la creatividad y la fuerza muscular del bebe, además de reforzar el vínculo entre los padres y el bebé.</p>
-                        <br>
-                        <div align="center"><img src="img/piscina.jpg" class="img-responsive"></div>
-                        <br>
-                    </div>
-                    <div id="sauna" class="tab-pane fade">
-                        <br><h3>Sauna</h3><br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <br>
-                        <div align="center"><img src="img/sauna.jpg" class="img-responsive"></div>
-                        <br>
-                    </div>  
+                    <div id="sauna" class="tab-pane fade contenido-instalaciones">
+                        <div class="container">
+                            <div class="row">   
+                                <div class="col-md-6">   
+                                    <br><h3>Sauna</h3><br>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <br>
+                                </div>
+                                <div class="col-md-6">
+                                    <br>
+                                    <div align="center"><img src="img/sauna.jpg" class="img-responsive"></div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>    
                 </div>
             </div>
             <br>
-            <br>
-            <br>    
         </section>
         
         <section id="tarifas">
@@ -218,21 +251,64 @@
                     <h1>Tarifas</h1>
                 </div>    
                     <div class="row">
-                        <div class="col-md-7">
-                            <div class="jumbotron">
-                                <br><h3>TARIFAS Y PROMOCIONES</h3><br>
-                                <p>Ven a conocer nuestras mejores tarifas y promociones tanto para adultos como para niños.</p>
-                                <p>Puedes encontrarnos en la siguiente dirección: </p>
-                                <p><kbd>  Calle Tulipán, s/n, 28933 Móstoles, Madrid </kbd></p>
-                            </div>    
+                        <div class="col-md-4">
+                            <div class="jumbotron jumbotron-tarifas">
+                                <h3 style="background-color:#FF9B28"><b>MENSUAL</b></h3>
+                                <h1 style="color:gray">20€</h1>
+                                <hr>
+                                <p>Prueba un mes sin compromiso. Este es el empunjoncito que necesitas para volver al camino de la vida sana y abandonar el sedentarismo. En UGym encontrarás todo lo necesario para sentirte bien y superarte.</p><br><br><br>
+                                <hr>
+                                <a class="btn" href="#mensual" data-toggle="collapse"><span class="glyphicon glyphicon-plus-sign"> info</span></a>
+                                <div id="mensual" class="collapse tarifa">
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> El mejor precio</p>
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Una amplísima gama de actividades colectivas adaptadas a tus necesidades</p>
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Dispón de material de última tecnología apto para todas las edades</p>
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Utiliza nuestras instalaciones sin límites de actividades ni de horarios</p>
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Monitores profesionales siempre a tu disposición en todas nuestras salas</p>
+                                    <hr>
+                                    <h6>Disfruta de nuestras instalaciones <br> L-V de 07:00 a 23:00 <br> S-D 10:00 a 20:00</h6>
+                                </div>
+                            </div>        
                         </div>
-                        <div class="col-md-5">
-                            <div class="jumbotron">
-                                <p>Para más información: </p>
-                                <p><span class="glyphicon glyphicon-ok-circle"> Email: UGym@gmail.com</span></p>
-                                <p><span class="glyphicon glyphicon-ok-circle"> Teléfono: 916655060</span></p>
-                            </div>    
+                        <div class="col-md-4">
+                            <div class="jumbotron jumbotron-tarifas">
+                                <h3 style="background-color:#FF9B28"><b>TRIMESTRAL</b></h3>
+                                <h1 style="color:gray">50€</h1>    
+                                <hr>
+                                <p>Si ya has dado el primer paso y buscas un sitio donde entrenar duro apuesta por este centro deportivo. Cuenta con un equipamiento moderno, buenos profesionales y un montón de clases virtuales para que tonifiques tu cuerpo.</p><br><br>
+                                <hr>
+                                <a class="btn" href="#trimestral" data-toggle="collapse"><span class="glyphicon glyphicon-plus-sign"> info</span></a>
+                                <div id="trimestral" class="collapse tarifa">
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Ahorra un 10%</p>
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Una amplísima gama de actividades colectivas adaptadas a tus necesidades</p>
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Dispón de material de última tecnología apto para todas las edades</p>
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Utiliza nuestras instalaciones sin límites de actividades ni de horarios</p>
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Monitores profesionales siempre a tu disposición en todas nuestras salas</p>
+                                    <hr>
+                                    <h6>Disfruta de nuestras instalaciones <br> L-V de 07:00 a 23:00 <br> S-D 10:00 a 20:00</h6>
+                                </div>
+                            </div>        
                         </div>
+                        <div class="col-md-4">
+                            <div class="jumbotron jumbotron-tarifas">
+                                <h3 style="background-color:#FF9B28"><b>ANUAL</b></h3>
+                                <h1 style="color:gray">180€</h1>    
+                                <hr>
+                                <p>¡Paga una vez y olvídate de las cuotas! <br>
+                                Si estás llevando a cabo una rutina estricta, lo mejor será que busques un gimnasio a la altura de tus necesidades. En UGym no sólo encontrarás un lugar en el que entrenar sin pausas ni prisas, sino que te rodearás de buenos profesionales que te ayudarán a alcanzar tus objetivos más inmediatos.</p>
+                                <hr>
+                                <a class="btn" href="#anual" data-toggle="collapse"><span class="glyphicon glyphicon-plus-sign"> info</span></a>
+                                <div id="anual" class="collapse tarifa">
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Ahorra un 16%</p>
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Una amplísima gama de actividades colectivas adaptadas a tus necesidades</p>
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Dispón de material de última tecnología apto para todas las edades</p>
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Utiliza nuestras instalaciones sin límites de actividades ni de horarios</p>
+                                    <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Monitores profesionales siempre a tu disposición en todas nuestras salas</p>
+                                    <hr>
+                                    <h6>Disfruta de nuestras instalaciones <br> L-V de 07:00 a 23:00 <br> S-D 10:00 a 20:00</h6>
+                                </div>
+                            </div>        
+                        </div>    
                     </div>
             </div>
         </section>
@@ -306,8 +382,27 @@
         <footer>
             <div class="container-fluid">
                 <div class="row">
-                    
-                    <div class="col-md-12">
+                    <div class="col-md-4" id="contacto">
+                        <h5>CONTACTO</h5>
+                        <span class="glyphicon glyphicon-ok-circle"></span> Email: UGym@gmail.com<br>
+                        <span class="glyphicon glyphicon-ok-circle"></span> Telefono: 916 65 50 60<br>
+                        <span class="glyphicon glyphicon-ok-circle"></span> Dirección: Calle Tulipán, s/n, 28933 Móstoles, Madrid    
+                    </div>
+                    <div class="col-md-4 btn-group" id="redes-sociales">
+                        <a  class="btn" href="https://twitter.com/?lang=es"><img class="img-responsive" src="img/twitter.ico" width="50px" height="50px"></a>
+                        <a  class="btn" href="https://www.facebook.com/"><img src="img/facebook.ico" width="50px" height="50px"></a>
+                        <a  class="btn" href="https://plus.google.com/collections/featured"><img src="img/google+.ico" width="50px" height="50px"></a>
+                        <a  class="btn" href="https://www.instagram.com/"><img src="img/instagram.ico" width="50px" height="50px"></a>
+                        <a  class="btn" href="https://www.youtube.com/"><img src="img/youtube.ico" width="50px" height="50px"></a>
+                    </div>
+                    <div class="col-md-4" id="trabajo" align="center">
+                        <h5>TRABAJO</h5>
+                        <a href="solicitudTrabajo.html"><span class="glyphicon glyphicon-ok-circle"></span> Trabaja aquí</a><br>
+                        <a href="solicitudFranquicia.html"><span class="glyphicon glyphicon-ok-circle"></span> Franquicias</a>    
+                    </div>    
+                </div>   
+                <div class="row">
+                    <div class="col-md-12" align="center">
                         <h6><span class="glyphicon glyphicon-copyright-mark"></span> DESIGNED BY UGym Enterprise</h6>
                     </div>
                 </div>
