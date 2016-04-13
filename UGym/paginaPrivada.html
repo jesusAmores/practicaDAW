@@ -48,7 +48,7 @@
                                         </ul>
                                     </div>
                                     <div class="col-sm-7">
-                                        <div class="tab-content">
+                                        <div class="tab-content nuevaClase">
                                             <div role="tabpanel" class="tab-pane fade in active shopSections" id="vtab11">
                                                <div class="row">
                                                 <div class="col-sm-9 col-md-6">
@@ -58,12 +58,12 @@
                                                     <form role="form">
                                                        <div class="form-group">
                                                             <!--Campo NOMBRE-->
-                                                            <label>  Nombre de la actividad:</label>
-                                                            <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nombre de la actividad">
+                                                            <label>  Nombre de la clase:</label>
+                                                            <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nombre de la clase">
 
                                                             <!--campo DESCRIPCION-->
-                                                            <label>  Descripción del producto:</label>
-                                                            <input type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una breve descripción de la actividad">
+                                                            <label>  Descripción:</label>
+                                                            <input type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una breve descripción de la clase">
 
                                                            <!--campo HORARIO-->
                                                             <label for="select"> Horario:</label>
@@ -82,15 +82,14 @@
                                                                     <option>18:00-19:00</option>
                                                                     <option>19:00-20:00</option>
                                                                     <option>20:00-21:00<option>
-                                                                    <option>21:00-22:00</option>
-                                                                </select>
+                                                            </select>
 
-                                                           <!--campo PRECIO-->
-                                                            <label>  Número de plazas:</label>
+                                                           <!--campo PLAZAS-->
+                                                            <label>Número de plazas:</label>
                                                            <input type="number" class="form-control" id="inputplazas" placeholder="Introduce el número de plazas de la actividad">
                                                     </div>
                                                     </form>
-                                                                    <button type="submit" class="btn btn-primary disabled btn-lg">añadir actividad</button>
+                                                        <button type="submit" class="btn btn-primary disabled btn-lg">Añadir actividad</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -154,24 +153,38 @@
                                                             </tbody>
                                                         </table>    
                                                     </div>
-                                                    <!-- Ventana emergente de reservar clase -->
-                                                    <div class="modal fade" id="modificarClase" role="dialog">
-                                                        <div class="modal-dialog">
-                                                            <!-- Modal content-->
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                                        <h4 class="modal-title">Modificar clase</h4>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    <p>Estas modificando: <span>Nombre clase colectiva</span> a las <span>hora</span></p>   
-                                                                    <p>¿Deseas modificar esta clase?</p>   
-                                                                    <button type="submit" class="btn btn-default"><a  class="contentButton" href="#" data-toggle="modal" data-target="#modificacionConfirmada">Modificar</a></button>
-                                                                    <button type="submit" class="btn btn-default"><a class="contentButton" href="paginaPrivada.html">Cancelar</a></button>
-                                                                </div>
+                                              <!-- Ventana emergente de modificar clase -->
+                                            <div class="modal fade" id="modificarClase" role="dialog">
+                                            <div class="modal-dialog">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title">Modificar clase</h4>
+                                                    </div>
+                                                    <div class="modal-body">  
+                                                        <div class="form-group">
+                                                            <div class="col-md-9">
+                                                                <label>Nombre de la clase</label>
+                                                                <input type="text" class="form-control" id="inputNombre"  placeholder="Introduce el nombre de la clase">    
                                                             </div>
                                                         </div>
+                                                        <div class="form-group">
+                                                            <div class="col-md-12">
+                                                                <label>Aforo máximo</label>
+                                                                <input type="number" class="form-control" id="inputAforo"  placeholder=""> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-md-9">
+                                                                <button type="submit" class="btn btn-default"><a class="contentButton" href="#" data-toggle="modal" data-target="#modificacionConfirmada">Guardar cambios</a></button>
+                                                                <button type="submit" class="btn btn-default"><a class="contentButton" href="paginaPrivada.html">Cancelar</a></button>     
+                                                            </div>   
+                                                        </div>
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                                     <!-- Ventana emergente de confirmación -->
                                                     <div class="modal fade" id="modificacionConfirmada" role="dialog">
                                                         <div class="modal-dialog">
@@ -487,7 +500,7 @@
                                     </div>
                                     <div class="col-sm-7">
                                         <div class="tab-content">
-                                            <div role="tabpanel" class="tab-pane fade in active shopSections" id="vtab31">
+                                            <div role="tabpanel" class="tab-pane fade in active shopSections" id="panelNuevoProducto">
                                                  <div class="row">
                                                     <div class="col-sm-9 col-md-6">
                                                         <h2>Introduce los datos de la nueva instalación de UGym</h2>

@@ -139,11 +139,6 @@
 
 /*clases colectivas*/
 
-#clasesColectivas{
-    padding-top: 80px;
-    padding-bottom: 81px;
-}
-
 .table{
     text-align: center;
 }
@@ -201,6 +196,22 @@ tbody > tr > td > a:focus{
 
 .contentButton:hover{
     text-decoration: none;
+}
+
+.tab-pane{
+    padding-top: 0px;
+}
+
+.nuevaClase{
+    padding-bottom: 3em;
+}
+
+#modificarClase > .modal-dialog > .modal-content > .modal-body > .form-group{
+    height: 2em;
+}
+
+#modificarClase > .modal-dialog > .modal-content > .modal-body{
+    padding-bottom: 35px;
 }
 /*fin clases colectivas*/
 
@@ -520,3 +531,23 @@ tbody > tr > td > a:focus{
 }
 
 /*Fin tienda*/
+
+#panelNuevoProducto{
+    padding-bottom: 11em;
+}
+
+#vtab21{
+    padding-bottom: 1.7em;
+}
+
+#vtab33{
+    padding-bottom: 13.5em;
+}
+
+#vtab41{
+    padding-bottom: 10.3em;
+}
+
+#vtab43{
+    padding-bottom: 12em;
+}
