@@ -1,0 +1,166 @@
+header{
+    height: 300px;
+}
+
+/* HEADER */
+
+.col-md-12{
+    padding: 0px;
+}
+
+#img-header{
+    width: 100%;
+    height: 300px;
+    
+}
+
+#img-logo{
+    position: relative;
+    bottom: 300px;
+    padding-left: 40%;
+}
+
+/* ACTIVITIES */
+
+.panel{
+    height: auto;
+}
+
+.panel-heading > h2{
+    color: white;
+}
+
+.col-md-3 > p{
+    //color: white;
+}
+
+h1{
+    text-align: center;
+    //margin: 0
+}
+
+h2,h3{
+    margin:0;
+    text-align: center;
+}
+
+h6{
+    color: white;
+}
+
+.badge{
+    font-size: 20px;
+}
+
+#instalaciones, #gallery{
+    background-color: #E7E8E6;
+}
+
+/* INSTALACIONES */
+
+#menu-instalaciones{
+    width: auto;
+    border-color: black;
+    border-style: solid;
+    border-bottom-style: none;
+}
+
+
+.contenido-instalaciones{
+    border-color:black;
+    border-style: solid;    
+}
+
+/* TARIFAS */
+
+#tarifas > .container > .row > .col-md-4 > .jumbotron-tarifas{
+    padding: 0;
+}
+
+#tarifas > .container > .row > .col-md-4 > .jumbotron-tarifas > h3{
+    padding: 20px;
+    color: white;
+}
+
+#tarifas > .container > .row > .col-md-4 > .jumbotron-tarifas > p, .tarifa > p{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    margin: 0;
+}
+
+hr{
+    margin: 0;
+}
+
+#tarifas > .container > .row > .col-md-4 > .jumbotron-tarifas > a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.tarifa > h6{
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+/* GALERIA */
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+    margin: auto;
+    width: 70%;
+}
+
+
+
+.carousel-control.right{
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0000) 0,rgba(0,0,0,.0) 0%);
+}
+
+.carousel-control.left{
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0000) 0,rgba(0,0,0,.0) 0%);
+}
+
+/* FOOTER */
+
+#subir{
+    position: static;
+    text-align: right;
+    background-color: white;
+}
+
+.glyphicon-arrow-up {
+    position: fixed;
+    top: 600px;
+    right: 0;
+    font-size: 30px;
+    padding: 10px;
+}
+
+footer{
+    color: gray;
+    background-color: black;
+}
+
+#contacto > h5, #trabajo > h5{
+    color: white;
+    padding-left: 20px;
+}
+
+#contacto > .glyphicon-ok-circle{
+    color: #FF002F;
+}
+
+#trabajo > a > .glyphicon-ok-circle{
+    color: #40BD50;
+}
+
+#redes-sociales{
+    margin-top: 10px;
+    padding-left: 35px;
+}
+

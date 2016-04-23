@@ -1,0 +1,166 @@
+<header>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+              <img id="img-header" class="img-responsive"  src="img/header.png">
+          </div>
+          <img id="img-logo" class="img-responsive" src="img/logo.png">
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar-inverse" id="menu">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">UGym</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html#activities">Actividades</a>
+                        </li>
+                        <li>
+                            <a href="index.html#instalaciones">Instalaciones</a>
+                        </li>
+                        <li>
+                            <a href="index.html#tarifas">Tarifas</a>
+                        </li>
+                        <li>
+                            <a href="index.html#gallery">Galería</a>
+                        </li>
+                        <li>
+                            <a href="index.html#cuenta">Quiero una cuenta</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#inicio_sesion"><span class="glyphicon glyphicon-user"></span> Iniciar sesión</a>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="inicio_sesion" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">¡Bienvenid@!</h4>
+                                                <p>Por favor, introduce tus datos para iniciar sesión.</p>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <label for="user">DNI:</label>
+                                                    <div class="input-group input-group-sm">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-user"></span>
+                                                        </span>
+                                                        <input type="user" class="form-control" id="user" placeholder="Introduce tu DNI">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pwd">Contraseña:</label>
+                                                    <div class="input-group input-group-sm">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-lock"></span>
+                                                        </span>
+                                                        <input type="password" class="form-control" id="pwd" placeholder="Introduce tu contraseña">
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox"> No cerrar sesión</label>
+                                                </div>
+
+                                                <a type="submit" class="btn btn-default" href="client.html">Entrar</a>
+                                                <div>
+                                                    <br><a href="recuperacionDeDatos.html">¿Has olvidado tus datos?</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center">Solicitud de trabajo</h1>
+                <p>Estamos buscando personal para incorporación inmediata. Si quieres formar parte de un equipo joven y dinámico, rellena el siguiente formulario y nos pondremos en contacto con usted</p>
+                <form role="form">
+                    <div class="form-group">
+                        <!--Campo NOMBRE-->
+                        <label>  Nombre:</label>
+                        <input class="form-control" type="text" id="inputNombre"  placeholder="Nombre">
+                        <!--campo APELLIDOS-->
+                        <label>  Apellidos:</label>
+                        <input class="form-control" type="text" id="inputApellidos"  placeholder="Apellidos">
+                        <!--campo EMAIL-->
+                        <label for="email">  Correo electronico:</label>
+                        <input class="form-control" type="email" id="inputEmail" placeholder="Correo electronico">
+                        <!--campo TELEFONO-->
+                        <label> Telefono de contacto:</label>
+                        <input class="form-control" type="number" id="inputTelefono" placeholder="Telefono">
+                        <br>
+                        <!--campo CV-->
+                        <h4><b>Adjunta tu Currículum.</b></h4>
+                        <input type="file" class="campo" id="inputCV">
+                        <br><p>Introduce tu currículum aquí en formato Word o Pdf. </p>
+                    </div>
+                </form>
+                <input type="checkBox" name="aceptar" id="inputAceptar">
+                <label>He leido y acepto la Politica de Privacidad.</label><br>
+                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="subir">
+    <a href="index.html" id="home"><span class="glyphicon glyphicon-arrow-up"></span></a>
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" id="contacto">
+                <h5>CONTACTO</h5>
+                <span class="glyphicon glyphicon-ok-circle"></span> Email: UGym@gmail.com<br>
+                <span class="glyphicon glyphicon-ok-circle"></span> Telefono: 916 65 50 60<br>
+                <span class="glyphicon glyphicon-ok-circle"></span> Dirección: Calle Tulipán, s/n, 28933 Móstoles, Madrid
+            </div>
+            <div class="col-md-4 btn-group" id="redes-sociales">
+                <a  class="btn" href="https://twitter.com/?lang=es"><img class="img-responsive" src="img/twitter.ico" width="50px" height="50px"></a>
+                <a  class="btn" href="https://www.facebook.com/"><img src="img/facebook.ico" width="50px" height="50px"></a>
+                <a  class="btn" href="https://plus.google.com/collections/featured"><img src="img/google+.ico" width="50px" height="50px"></a>
+                <a  class="btn" href="https://www.instagram.com/"><img src="img/instagram.ico" width="50px" height="50px"></a>
+                <a  class="btn" href="https://www.youtube.com/"><img src="img/youtube.ico" width="50px" height="50px"></a>
+            </div>
+            <div class="col-md-4" id="trabajo" align="center">
+                <h5>TRABAJO</h5>
+                <a href="solicitudTrabajo.html"><span class="glyphicon glyphicon-ok-circle"></span> Trabaja aquí</a><br>
+                <a href="solicitudFranquicia.html"><span class="glyphicon glyphicon-ok-circle"></span> Franquicias</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" align="center">
+                <h6><span class="glyphicon glyphicon-copyright-mark"></span> DESIGNED BY UGym Enterprise</h6>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,229 @@
+<header>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+              <img id="img-header" class="img-responsive"  src="img/header.png">
+          </div>
+          <img id="img-logo" class="img-responsive" src="img/logo.png">
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar-inverse" id="menu">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">UGym</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html#activities">Actividades</a>
+                        </li>
+                        <li>
+                            <a href="index.html#instalaciones">Instalaciones</a>
+                        </li>
+                        <li>
+                            <a href="index.html#tarifas">Tarifas</a>
+                        </li>
+                        <li>
+                            <a href="index.html#gallery">Galería</a>
+                        </li>
+                        <li>
+                            <a href="index.html#cuenta">Quiero una cuenta</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#inicio_sesion"><span class="glyphicon glyphicon-user"></span> Iniciar sesión</a>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="inicio_sesion" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">¡Bienvenid@!</h4>
+                                                <p>Por favor, introduce tus datos para iniciar sesión.</p>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <label for="user">DNI:</label>
+                                                    <div class="input-group input-group-sm">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-user"></span>
+                                                        </span>
+                                                        <input type="user" class="form-control" id="user" placeholder="Introduce tu DNI">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pwd">Contraseña:</label>
+                                                    <div class="input-group input-group-sm">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-lock"></span>
+                                                        </span>
+                                                        <input type="password" class="form-control" id="pwd" placeholder="Introduce tu contraseña">
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox"> No cerrar sesión</label>
+                                                </div>
+
+                                                <a type="submit" class="btn btn-default" href="client.html">Entrar</a>
+                                                <div>
+                                                    <br><a href="recuperacionDeDatos.html">¿Has olvidado tus datos?</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center">Solicitud de franquicia</h1>
+                <p>Si usted está interesado en recibir más información sobre esta franquicia, por favor, rellene el siguiente cuestionario.</p>
+                <h3><b>DATOS PERSONALES</b></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form role="form">
+                            <div class="form-group">
+
+                                <!--Campo NOMBRE-->
+                                <label>  Nombre:</label>
+                                <input type="text" class="form-control" id="inputNombre"  placeholder="Nombre">
+
+                                <!--campo APELLIDOS-->
+                                <label>  Apellidos:</label>
+                                <input type="text" class="form-control" id="inputApellidos"  placeholder="Apellidos">
+
+                                <!--campo EDAD-->
+                                <label>  Edad:</label>
+                                <input type="number" class="form-control" id="inputEdad"  placeholder="Edad">
+
+                                <!--campo TELEFONO-->
+                                <label> Teléfono:</label>
+                                <input type="number" class="form-control" id="inputTelefono" placeholder="Telefono">
+
+                                <!--campo CORREO-->
+                                <label for="correo">  Correo electronico:</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Correo electronico">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <form role="form">
+                            <div class="form-group">
+
+                                <!--Campo DIRECCION-->
+                                <label>Dirección:</label>
+                                <input type="text" class="form-control" id="inputDireccion"  placeholder="Dirección">
+
+                                <!--campo CP-->
+                                <label> CP:</label>
+                                <input type="number" class="form-control" id="inputCP" placeholder="Código postal">
+
+                                <!--Campo LOCALIDAD-->
+                                <label>Localidad:</label>
+                                <input type="text" class="form-control" id="inputLocalidad"  placeholder="Localidad">
+
+                                <!--Campo PROVINCIA-->
+                                <label>Provincia:</label>
+                                <input type="text" class="form-control" id="inputProvincia"  placeholder="Provincia">
+
+                                <!--Campo PAIS-->
+                                <label>País:</label>
+                                <input type="text" class="form-control" id="inputPais"  placeholder="País">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3><b>DATOS DE APERTURA</b></h3>
+                        <!--Campo RECURSOS-->
+                        <label>Recursos con los que cuenta:</label>
+                        <select>
+                            <option></option>
+                            <option>De 200.000€ a 300.000€</option>
+                            <option>De 300.000€ a 400.000€</option>
+                            <option>Más de 400.000€</option>
+                        </select>
+                        <br>
+                        <!--Campo PROVINCIA-->
+                        <label>¿Posee local propio para ubicar su franquicia?:</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Sí</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                        <br>
+                        <!--Campo M2-->
+                        <label>m2:</label>
+                        <input type="text" class="form" id="inputProvincia"  placeholder="Metros cuadrados">
+                        <br>
+                        <!--Campo OBSERVACIONES-->
+                        <label>Observaciones:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </div>
+
+                <input type="checkBox" name="aceptar" id="inputAceptar">
+                <label>He leido y acepto el AVISO LEGAL</label><br>
+                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="subir">
+    <a href="index.html" id="home"><span class="glyphicon glyphicon-arrow-up"></span></a>
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" id="contacto">
+                <h5>CONTACTO</h5>
+                <span class="glyphicon glyphicon-ok-circle"></span> Email: UGym@gmail.com<br>
+                <span class="glyphicon glyphicon-ok-circle"></span> Telefono: 916 65 50 60<br>
+                <span class="glyphicon glyphicon-ok-circle"></span> Dirección: Calle Tulipán, s/n, 28933 Móstoles, Madrid
+            </div>
+            <div class="col-md-4 btn-group" id="redes-sociales">
+                <a  class="btn" href="https://twitter.com/?lang=es"><img class="img-responsive" src="img/twitter.ico" width="50px" height="50px"></a>
+                <a  class="btn" href="https://www.facebook.com/"><img src="img/facebook.ico" width="50px" height="50px"></a>
+                <a  class="btn" href="https://plus.google.com/collections/featured"><img src="img/google+.ico" width="50px" height="50px"></a>
+                <a  class="btn" href="https://www.instagram.com/"><img src="img/instagram.ico" width="50px" height="50px"></a>
+                <a  class="btn" href="https://www.youtube.com/"><img src="img/youtube.ico" width="50px" height="50px"></a>
+            </div>
+            <div class="col-md-4" id="trabajo" align="center">
+                <h5>TRABAJO</h5>
+                <a href="solicitudTrabajo.html"><span class="glyphicon glyphicon-ok-circle"></span> Trabaja aquí</a><br>
+                <a href="solicitudFranquicia.html"><span class="glyphicon glyphicon-ok-circle"></span> Franquicias</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" align="center">
+                <h6><span class="glyphicon glyphicon-copyright-mark"></span> DESIGNED BY UGym Enterprise</h6>
+            </div>
+        </div>
+    </div>
+</footer>

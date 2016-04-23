@@ -1,0 +1,349 @@
+<header>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+              <img id="img-header" class="img-responsive"  src="img/header.png">
+          </div>
+          <img id="img-logo" class="img-responsive" src="img/logo.png">
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar-inverse" id="menu">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">UGym</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#activities">Actividades</a>
+                        </li>
+                        <li>
+                            <a href="#instalaciones">Instalaciones</a>
+                        </li>
+                        <li>
+                            <a href="#tarifas">Tarifas</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Galería</a>
+                        </li>
+                        <li>
+                            <a href="#cuenta">Quiero una cuenta</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a [routerLink]="['IniciarSesion']" data-toggle="modal" data-target="#inicio_sesion"><span class="glyphicon glyphicon-user"></span> Iniciar sesión</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<section id="activities">
+    <div class="container">
+        <div class="page-header">
+            <h1>Actividades</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color:#4F96FF"><h2><span class="badge">NEW</span> FITNESS</h2></div>
+                    <div class="panel-body">
+                        <p>Todo tu entrenamiento será guiado por nuestro equipo de profesionales, con los que podrás compartir y solventar todo tipo de dudas y errores para optimizar tu forma física.</p>
+                        <img src="img/fitness.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color:#FF9B28"><h2><span class="badge">NEW</span> PILATES</h2></div>
+                    <div class="panel-body">
+                        <p>Espalda Sana, Técnicas de Relajación y Respiración, Stretching, Talleres de trabajo emocional... UGym te ofrece todo un abanico de eventos para que puedas aprender y disfrutar de una vida sana y equilibrada.</p>
+                        <img src="img/pilates.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color:#FF4042"><h2><span class="badge">NEW</span> SPINNING</h2></div>
+                    <div class="panel-body">
+                        <p>Forma parte del pelotón ciclista liderado por nuestros mejores profesionales. Recorreras un sin fín de emociones con la mejor música y las más originales clases temáticas.</p>
+                        <img src="img/spinning.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color:#1BCC5F"><h2><span class="badge">NEW</span> ZUMBA</h2></div>
+                    <div class="panel-body">
+                        <p>Un entrenamiento completo que combina todos los elementos del acondicionamiento físico: trabajo cardiovascular y muscular, equilibrio y flexibilidad, aumento de energía y muchísimos beneficios increíbles que disfrutarás después de cada clase.</p>
+                        <img src="img/zumba.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+        <p> En esta sección encontrarás las nuevas actividades añadidas a nuestra carta de actividades.</p>
+            <p><span class="glyphicon glyphicon-exclamation-sign"></span> Para conocer todo nuestro repertorio de actividades debes ser socio de UGym.</p>
+        <p>¡ No pierdas detalle porque cada poco tiempo actualizamos nuestra carta !</p>
+        <p>Próximamente: Telas aéreas, aquaGym y muchas novedades más.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+</section>
+
+<section id="instalaciones">
+    <br>
+    <div class="container">
+        <div class="page-header">
+            <h1>Instalaciones</h1>
+        </div>
+    </div>
+    <div class="container">
+
+        <nav class="navbar-inverse">
+            <ul class="nav navbar-nav" id="menu-instalaciones">
+                <li class="active" ><a data-toggle="tab" href="#sala_maquinas">Sala de máquinas</a></li>
+                <li><a data-toggle="tab" href="#piscina">Piscina</a></li>
+                <li><a data-toggle="tab" href="#sauna">Sauna</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="tab-content" >
+            <div  id="sala_maquinas" class="tab-pane fade in active contenido-instalaciones">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <br><h3>Sala de máquinas</h3><br>
+                            <p> Más de 150 m2  de zona de entrenamiento, pensada para que puedas entrenar con libertad y con todo tipo de equipamiento. Máquinas con carga de discos, poleas, barras, un gran número de mancuernas y bancos para que no esperes. Muchos deportistas se deciden por nuestras instalaciones por la cantidad y variedad de equipamiento que hay a disposición.</p>
+                            <p> Dispondrás de una zona de entrenamiento cardiovascular con equipamiento de última generación. Más de 70 equipos de cardio: cintas de correr, elípticas, steps, remos, bicicletas de diferentes tipos, incluso para personas que padezcan lesiones de espalda o tren inferior. Además tendrás la posibilidad de ver tu programa favorito de TV mientras entrenas, escuchar tu música conectando tu ipod a las máquinas, etc., conocerás una manera más amena y divertida de entrenar.
+                            </p>
+                            <br>
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <div align="center"><img src="img/sala_maquinas.jpg" class="img-responsive"></div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="piscina" class="tab-pane fade contenido-instalaciones">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <br><h3>Piscina</h3><br>
+                            <p> En nuestra piscina de agua salada podrás practicar la natación por libre o bien asistir a uno de los cursos de natación de nuestra amplia oferta.</p>
+                            <p> Disponemos de cursos tanto de iniciación como de perfeccionamiento o entrenamiento, para bebes, niños y adultos. También ofrecemos cursos para embarazadas y cursos de matronatación, que favorecen el equilibrio, la coordinación, el desarrollo psicomotor, la creatividad y la fuerza muscular del bebe, además de reforzar el vínculo entre los padres y el bebé.</p>
+                            <br>
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <div align="center"><img src="img/piscina.jpg" class="img-responsive"></div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sauna" class="tab-pane fade contenido-instalaciones">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <br><h3>Sauna</h3><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <br>
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <div align="center"><img src="img/sauna.jpg" class="img-responsive"></div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</section>
+
+<section id="tarifas">
+    <div class="container">
+        <div class="page-header">
+            <h1>Tarifas</h1>
+        </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="jumbotron jumbotron-tarifas">
+                        <h3 style="background-color:#FF9B28"><b>MENSUAL</b></h3>
+                        <h1 style="color:gray">20€</h1>
+                        <hr>
+                        <p>Prueba un mes sin compromiso. Este es el empunjoncito que necesitas para volver al camino de la vida sana y abandonar el sedentarismo. En UGym encontrarás todo lo necesario para sentirte bien y superarte.</p><br><br><br>
+                        <hr>
+                        <a class="btn" href="#mensual" data-toggle="collapse"><span class="glyphicon glyphicon-plus-sign"> info</span></a>
+                        <div id="mensual" class="collapse tarifa">
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> El mejor precio</p>
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Una amplísima gama de actividades colectivas adaptadas a tus necesidades</p>
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Dispón de material de última tecnología apto para todas las edades</p>
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Utiliza nuestras instalaciones sin límites de actividades ni de horarios</p>
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Monitores profesionales siempre a tu disposición en todas nuestras salas</p>
+                            <hr>
+                            <h6>Disfruta de nuestras instalaciones <br> L-V de 07:00 a 23:00 <br> S-D 10:00 a 20:00</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="jumbotron jumbotron-tarifas">
+                        <h3 style="background-color:#FF9B28"><b>TRIMESTRAL</b></h3>
+                        <h1 style="color:gray">50€</h1>
+                        <hr>
+                        <p>Si ya has dado el primer paso y buscas un sitio donde entrenar duro apuesta por este centro deportivo. Cuenta con un equipamiento moderno, buenos profesionales y un montón de clases virtuales para que tonifiques tu cuerpo.</p><br><br>
+                        <hr>
+                        <a class="btn" href="#trimestral" data-toggle="collapse"><span class="glyphicon glyphicon-plus-sign"> info</span></a>
+                        <div id="trimestral" class="collapse tarifa">
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Ahorra un 10%</p>
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Una amplísima gama de actividades colectivas adaptadas a tus necesidades</p>
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Dispón de material de última tecnología apto para todas las edades</p>
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Utiliza nuestras instalaciones sin límites de actividades ni de horarios</p>
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Monitores profesionales siempre a tu disposición en todas nuestras salas</p>
+                            <hr>
+                            <h6>Disfruta de nuestras instalaciones <br> L-V de 07:00 a 23:00 <br> S-D 10:00 a 20:00</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="jumbotron jumbotron-tarifas">
+                        <h3 style="background-color:#FF9B28"><b>ANUAL</b></h3>
+                        <h1 style="color:gray">180€</h1>
+                        <hr>
+                        <p>¡Paga una vez y olvídate de las cuotas! <br>
+                        Si estás llevando a cabo una rutina estricta, lo mejor será que busques un gimnasio a la altura de tus necesidades. En UGym no sólo encontrarás un lugar en el que entrenar sin pausas ni prisas, sino que te rodearás de buenos profesionales que te ayudarán a alcanzar tus objetivos más inmediatos.</p>
+                        <hr>
+                        <a class="btn" href="#anual" data-toggle="collapse"><span class="glyphicon glyphicon-plus-sign"> info</span></a>
+                        <div id="anual" class="collapse tarifa">
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Ahorra un 16%</p>
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Una amplísima gama de actividades colectivas adaptadas a tus necesidades</p>
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Dispón de material de última tecnología apto para todas las edades</p>
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Utiliza nuestras instalaciones sin límites de actividades ni de horarios</p>
+                            <p><span class="glyphicon glyphicon-star" style="color:#FF9B28"></span> Monitores profesionales siempre a tu disposición en todas nuestras salas</p>
+                            <hr>
+                            <h6>Disfruta de nuestras instalaciones <br> L-V de 07:00 a 23:00 <br> S-D 10:00 a 20:00</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <div class="container">
+        <div class="page-header">
+            <h1>Galería</h1>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/carousel_1.jpg">
+                </div>
+                <div class="item">
+                    <img src="img/carousel-2.jpg" width="460" height="345">
+                </div>
+                <div class="item">
+                    <img src="img/carousel-3.jpg" width="460" height="345">
+                </div>
+                <div class="item">
+                    <img src="img/carousel-4.jpg" width="460" height="345">
+                </div>
+                </div>
+                <!--Controles derecha e izquierda -->
+                <a class="left carousel-control b" href="#myCarousel" role="button" data-slide="prev">
+                    <span style="color: black" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span style="color: black" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+</section>
+
+<section id="cuenta">
+    <div class="container">
+        <div class="page-header">
+            <h1>¿Todavía no eres socio?</h1><br>
+            <p>Si te registras como socio de UGym obtendrás los siguientes beneficios: </p><br>
+            <table class="table table-striped table-bordered">
+                <tbody>
+                    <tr>
+                        <td>Tienda online</td>
+                            <td>Tendrás acceso a nuestra tienda online donde vendemos distintas dietas, productos y entrenamientos que te ayudarán a ponerte en forma. <span class="glyphicon glyphicon-ok"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Actividades Colectivas</td>
+                        <td>Podrás ver los horarios de las actividades colectivas así como las vacantes libres y apuntarte a las que te interesen. <span class="glyphicon glyphicon-ok"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Área personal</td>
+                        <td>Podrás ver y modificar tus datos personales, cambiar tu propia tarifa o darte de baja de nuestro gimnasio. <span class="glyphicon glyphicon-ok"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <a type="button" class="btn btn-success btn-block btn-lg" href="solicitudSocio.html">¡Hazte socio!</a>
+        </div>
+    </div>
+</section>
+
+<div id="subir">
+    <a href="index.html" id="home"><span class="glyphicon glyphicon-arrow-up"></span></a>
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" id="contacto">
+                <h5>CONTACTO</h5>
+                <span class="glyphicon glyphicon-ok-circle"></span> Email: UGym@gmail.com<br>
+                <span class="glyphicon glyphicon-ok-circle"></span> Telefono: 916 65 50 60<br>
+                <span class="glyphicon glyphicon-ok-circle"></span> Dirección: Calle Tulipán, s/n, 28933 Móstoles, Madrid
+            </div>
+            <div class="col-md-4 btn-group" id="redes-sociales">
+                <a  class="btn" href="https://twitter.com/?lang=es"><img class="img-responsive" src="img/twitter.ico" width="50px" height="50px"></a>
+                <a  class="btn" href="https://www.facebook.com/"><img src="img/facebook.ico" width="50px" height="50px"></a>
+                <a  class="btn" href="https://plus.google.com/collections/featured"><img src="img/google+.ico" width="50px" height="50px"></a>
+                <a  class="btn" href="https://www.instagram.com/"><img src="img/instagram.ico" width="50px" height="50px"></a>
+                <a  class="btn" href="https://www.youtube.com/"><img src="img/youtube.ico" width="50px" height="50px"></a>
+            </div>
+            <div class="col-md-4" id="trabajo" align="center">
+                <h5>TRABAJO</h5>
+                <a [routerLink]="['Trabaja']"><span class="glyphicon glyphicon-ok-circle"></span> Trabaja aquí</a><br>
+                <a [routerLink]="['Franquicia']"><span class="glyphicon glyphicon-ok-circle"></span> Franquicias</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" align="center">
+                <h6><span class="glyphicon glyphicon-copyright-mark"></span> DESIGNED BY UGym Enterprise</h6>
+            </div>
+        </div>
+    </div>
+</footer>
