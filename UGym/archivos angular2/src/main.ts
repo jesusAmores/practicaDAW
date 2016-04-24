@@ -3,7 +3,8 @@ import {AppComponent} from './app/app.component';
 import {provide} from 'angular2/core';
 import {RouteConfig,  ROUTER_DIRECTIVES, ROUTER_PROVIDERS,
         LocationStrategy, HashLocationStrategy} from 'angular2/router';
+import {UsuarioService} from './app/usuario.service';
 
 bootstrap(AppComponent, [
-  ROUTER_PROVIDERS, provide(LocationStrategy, {useClass: HashLocationStrategy})
+  ROUTER_PROVIDERS, UsuarioService, provide(LocationStrategy, {useClass: HashLocationStrategy})
 ]);

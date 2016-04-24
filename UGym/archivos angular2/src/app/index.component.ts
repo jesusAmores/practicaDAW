@@ -19,6 +19,7 @@ export class IndexComponent {
         error => console.log(error)
       );
     }*/
+    adminOrUser(){}
 
 
 }
