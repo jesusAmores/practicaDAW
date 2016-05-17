@@ -1,0 +1,689 @@
+
+<div id="mainHeader" class="container-fluid">
+            <div id="header" class="row">
+                <div id="logoTitle" class="col-md-2">
+                    <img id="img-logo" class="img-responsive" src="app/img/logo.png">    
+                </div>
+                <div id="title" class="col-md-3">
+                    <span>Área Privada</span>
+                </div>
+                <div id="cerrarSesion" class="col-md-2">
+                    <a href="index.html"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-off"></span> Cerrar Sesión</button></a>
+                </div>
+            </div>
+        </div> 
+        <div id="restPage" class="container-fluid">
+	        <div class="row">
+		        <div class="col-md-12">
+                    <div class="card">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#clasesColectivas" aria-controls="clasesColectivas" role="tab" data-toggle="tab">Clases colectivas</a></li>
+                            <li role="presentation"><a href="#articulosTienda" aria-controls="articulosTienda" role="tab" data-toggle="tab">Artículos tienda</a></li>
+                            <li role="presentation"><a href="#instalaciones" aria-controls="instalaciones" role="tab" data-toggle="tab">Instalaciones</a></li>
+                            <li role="presentation"><a href="#actividades" aria-controls="actividades" role="tab" data-toggle="tab">Actividades</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="clasesColectivas">
+                               <div class="row">
+                                    <div id="tableButtons" class="col-sm-3">
+                                        <ul id="nav-tabs-wrapper" class="nav nav-pills nav-stacked well">
+                                          <li class="active"><a href="#vtab11" data-toggle="tab">Añadir clases</a></li>
+                                          <li><a href="#vtab12" data-toggle="tab">modificar clases</a></li>
+                                          <li><a href="#vtab13" data-toggle="tab">Eliminar clases</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="tab-content nuevaClase">
+                                            <div role="tabpanel" class="tab-pane fade in active shopSections" id="vtab11">
+                                               <div class="row">
+                                                <div class="col-sm-9 col-md-6">
+                                                    <h2>Introduce los datos de la nueva clase colectiva</h2>
+                                                </div>
+                                                <div class="col-sm-9 col-md-6">
+                                                    <form role="form">
+                                                       <div class="form-group">
+                                                            <!--Campo NOMBRE-->
+                                                            <label>  Nombre de la clase:</label>
+                                                            <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nombre de la clase">
+
+                                                            <!--campo DESCRIPCION-->
+                                                            <label>  Descripción:</label>
+                                                            <input type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una breve descripción de la clase">
+
+                                                           <!--campo HORARIO-->
+                                                            <label for="select"> Horario:</label>
+                                                            <select id="diaSemana" class="form-control">
+                                                                    <option>Elige un dia </option>
+                                                                    <option>Lunes</option>
+                                                                    <option>Martes</option>
+                                                                    <option>Miercoles</option>
+                                                                    <option>Jueves</option>
+                                                                    <option>Viernes</option>
+                                                                </select>
+                                                            <select id="hora" class="form-control">
+                                                                    <option> Selecciona una hora disponible</option>
+                                                                    <option>16:00-17:00</option>
+                                                                    <option>17:00-18:00</option>
+                                                                    <option>18:00-19:00</option>
+                                                                    <option>19:00-20:00</option>
+                                                                    <option>20:00-21:00<option>
+                                                            </select>
+
+                                                           <!--campo PLAZAS-->
+                                                            <label>Número de plazas:</label>
+                                                           <input type="number" class="form-control" id="inputplazas" placeholder="Introduce el número de plazas de la actividad">
+                                                    </div>
+                                                    </form>
+                                                        <button type="submit" class="btn btn-primary disabled btn-lg">Añadir actividad</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab12">
+                                               <div class="row">
+                                                    <div class="col-sm-9 col-md-12">
+                                                        <h2 class="text-center">Selecciona la clase que quieres modificar</h2>
+                                                        <div class="table-responsive">
+                                                            <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th></th>   
+                                                                    <th>Lunes</th>
+                                                                    <th>Martes</th>
+                                                                    <th>Miercoles</th>
+                                                                    <th>Jueves</th>
+                                                                    <th>Viernes</th>
+                                                                </tr>    
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>16:00-17:00</td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Spinning (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Boxeo (20/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">TRX (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Spinning (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Spinning (0/20)</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:00-18:00</td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Boxeo (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Spinning (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Boxeo (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Body Combat (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Abdominales (0/20)</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>18:00-19:00</td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Abdominales (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Pilates (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Spinning (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Abdominales (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Boxeo (0/20)</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>19:00-20:00 </td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">TRX (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Body Combat (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Body Pump (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">TRX (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Pilates (0/20)</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>20:00-21:00</td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Body Combat (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Abdominales (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Pilates (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">Body Pump (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#modificarClase">TRX (0/20)</a></td>
+                                                                </tr>     
+                                                            </tbody>
+                                                        </table>    
+                                                    </div>
+                                              <!-- Ventana emergente de modificar clase -->
+                                            <div class="modal fade" id="modificarClase" role="dialog">
+                                            <div class="modal-dialog">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title">Modificar clase</h4>
+                                                    </div>
+                                                    <div class="modal-body">  
+                                                        <div class="form-group">
+                                                            <div class="col-md-9">
+                                                                <label>Nombre de la clase</label>
+                                                                <input type="text" class="form-control" id="inputNombre"  placeholder="Introduce el nombre de la clase">    
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-md-12">
+                                                                <label>Aforo máximo</label>
+                                                                <input type="number" class="form-control" id="inputAforo"  placeholder=""> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-md-9">
+                                                                <button type="submit" class="btn btn-default"><a class="contentButton" href="#" data-toggle="modal" data-target="#modificacionConfirmada">Guardar cambios</a></button>
+                                                                <button type="submit" class="btn btn-default"><a class="contentButton" href="paginaPrivada.html">Cancelar</a></button>     
+                                                            </div>   
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                    <!-- Ventana emergente de confirmación -->
+                                                    <div class="modal fade" id="modificacionConfirmada" role="dialog">
+                                                        <div class="modal-dialog">
+                                                            <!-- Modal content-->
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <p>¡Modificación realizada con éxito!</p>     
+                                                                    <button type="submit" class="btn btn-default"><a class="contentButton" href="paginaPrivada.html">Aceptar</a></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           </div>
+                                           <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab13">
+                                           <div class="row">
+                                                    <div class="col-sm-9 col-md-12">
+                                                        <h2 class="text-center">Selecciona la clase que quieres eliminar</h2>
+                                                        <div class="table-responsive">
+                                                            <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th></th>   
+                                                                    <th>Lunes</th>
+                                                                    <th>Martes</th>
+                                                                    <th>Miercoles</th>
+                                                                    <th>Jueves</th>
+                                                                    <th>Viernes</th>
+                                                                </tr>    
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>16:00-17:00</td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Spinning (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Boxeo (20/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">TRX (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Spinning (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Spinning (0/20)</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:00-18:00</td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Boxeo (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Spinning (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Boxeo (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Body Combat (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Abdominales (0/20)</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>18:00-19:00</td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Abdominales (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Pilates (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Spinning (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Abdominales (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Boxeo (0/20)</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>19:00-20:00 </td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">TRX (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Body Combat (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Body Pump (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">TRX (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Pilates (0/20)</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>20:00-21:00</td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Body Combat (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Abdominales (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Pilates (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">Body Pump (0/20)</a></td>
+                                                                    <td><a href="#" data-toggle="modal" data-target="#eliminarClase">TRX (0/20)</a></td>
+                                                                </tr>     
+                                                            </tbody>
+                                                        </table>    
+                                                    </div>
+                                                    <!-- Ventana emergente de reservar clase -->
+                                                    <div class="modal fade" id="eliminarClase" role="dialog">
+                                                        <div class="modal-dialog">
+                                                            <!-- Modal content-->
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                        <h4 class="modal-title">Eliminar clase</h4>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <p>Estas eliminando: <span>Nombre clase colectiva</span> a las <span>hora</span></p>   
+                                                                    <p>¿Deseas eliminar esta clase?</p>   
+                                                                    <button type="submit" class="btn btn-default"><a  class="contentButton" href="#" data-toggle="modal" data-target="#eliminacionConfirmada">Eliminar</a></button>
+                                                                    <button type="submit" class="btn btn-default"><a class="contentButton" href="paginaPrivada.html">Cancelar</a></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Ventana emergente de confirmación -->
+                                                    <div class="modal fade" id="eliminacionConfirmada" role="dialog">
+                                                        <div class="modal-dialog">
+                                                            <!-- Modal content-->
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <p>¡Clase eliminada con éxito!</p>     
+                                                                    <button type="submit" class="btn btn-default"><a class="contentButton" href="paginaPrivada.html">Aceptar</a></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="articulosTienda">
+                                <div class="row">
+                                    <div id="tableButtons" class="col-sm-3">
+                                        <ul id="nav-tabs-wrapper" class="nav nav-pills nav-stacked well">
+                                          <li class="active"><a href="#vtab21" data-toggle="tab">Añadir artículo</a></li>
+                                          <li><a href="#vtab22" data-toggle="tab">modificar artículo</a></li>
+                                          <li><a href="#vtab23" data-toggle="tab">Eliminar Artículo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane fade in active shopSections" id="vtab21">
+                                             <div class="row">
+                                                <div class="col-sm-9 col-md-6">
+                                                    <h2>Introduce los datos del nuevo producto a incluir en la tienda</h2>
+                                                    <p>Todos los productos a los que se le hayan realizado esta ficha, serán incluidos en la tienda del propio gimnasio.</p>
+                                                </div>
+                                                <div class="col-sm-9 col-md-6">
+                                                    <form role="form">
+                                                       <div class="form-group">
+                                                            <!--Campo NOMBRE-->
+                                                            <label>  Nombre del producto:</label>
+                                                            <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nombre del producto">
+
+                                                            <!--campo DESCRIPCION-->
+                                                            <label>  Descripción del producto:</label>
+                                                            <input type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una breve descripción del producto">
+
+                                                           <!--campo TIPO DEL PRODUCTO-->
+                                                            <label for="select"> Tipo del producto:</label>
+                                                            <select id="tipoProducto" class="form-control">
+                                                                    <option> </option>
+                                                                    <option>Producto</option>
+                                                                    <option>Entrenamiento</option>
+                                                                    <option>Dieta</option>
+                                                                </select>
+
+                                                           <!--campo PRECIO-->
+                                                            <label>  Precio del producto:</label>
+                                                           <input type="number" class="form-control" id="inputPrecioP" placeholder="Introduce el precio  del producto">
+
+
+                                                           <!--campo IMAGEN DEL PRODUCTO-->
+                                                            <!--imagen ya guardada en una carpeta-->
+                                                            <label>Imagen del producto:</label>
+                                                            <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la nueva imagen">
+                                                        </div>
+                                                    </form>
+                                                        <button type="submit" class="btn btn-primary disabled btn-lg">Incluir en la tienda</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab22">
+                                           <div class="row">
+                                                <div class="col-sm-9 col-md-6">
+                                                    <h2>Selecciona el producto que quieres modificar</h2>
+                                                    <form role="form">
+                                                       <div class="form-group">
+                                                           <!--campo TIPO DEL PRODUCTO-->
+                                                            <label for="select"> Tipo del producto:</label>
+                                                            <select id="tipoProducto" class="form-control">
+                                                                    <option> </option>
+                                                                    <option>Producto</option>
+                                                                    <option>Entrenamiento</option>
+                                                                    <option>Dieta</option>
+                                                                </select>
+                                                            <!--campo NOMBRE DEL PRODUCTO-->
+                                                            <label for="select"> Nombre del producto:</label>
+                                                            <select id="tipoProducto" class="form-control">
+                                                                    <option> </option>
+                                                                    <option>Camiseta de entrenamiento</option>
+                                                                    <option>Proteína en polvo</option>
+                                                                </select>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-9 col-md-6">
+                                                        <h3>Selecciona los campos que se modificarás del producto.</h3>
+                                                        <br>
+                                                        <form role="form">
+                                                           <div class="form-group">
+                                                                <!--campo Elegir qué modificar-->
+                                                                <label>Campo(s) que se deben editar: </label>
+                                                                <br>
+                                                                <input type="checkbox" name="campo" id="inputCodigoP"  value="c">Nombre del producto
+                                                                <br>
+                                                                <input type="checkbox" name="campo" id="inputNombreP"  value="n">Tipo del producto
+                                                                <br>
+                                                                <input type="checkbox" name="campo" id="inputDescripcionP"  value="d">Descripción del producto
+                                                                <br>
+                                                                <input type="checkbox" name="campo" id="inputTipoP"  value="t">Precio del producto
+                                                                <br>
+                                                                <input type="checkbox" name="campo" id="inputImagenP"  value="i">Imagen del producto
+
+                                                                <br> 
+                                                                <br>
+                                                                <p>Una vez hayas seleccionado qué quieres cambiar, rellena los campos a editar con los nuevos datos</p>
+
+                                                                <!--Campo NOMBRE-->
+                                                                <label>  Nombre del producto:</label>
+                                                                <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nuevo nombre del producto">
+
+                                                               <br>
+
+                                                                <!--campo TIPO DEL PRODUCTO-->
+                                                                <label for="select"> Tipo del producto:</label>
+                                                                <select id="tipoProducto" class="form-control">
+                                                                        <option> </option>
+                                                                        <option>Producto</option>
+                                                                        <option>Entrenamiento</option>
+                                                                        <option>Dieta</option>
+                                                                    </select>
+
+                                                               <br>
+
+                                                                <!--campo DESCRIPCION-->
+                                                                <label>  Descripción del producto:</label>
+                                                                <input type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una nueva y breve descripción del producto">
+
+                                                               <br>
+
+                                                               <!--campo PRECIO-->
+                                                                <label>  Precio del producto:</label>
+                                                               <input type="number" class="form-control" id="inputPrecioP" placeholder="Introduce el nuevo precio del producto">
+
+                                                               <br>
+
+                                                               <!--campo IMAGEN DEL PRODUCTO-->
+                                                                <!--imagen ya guardada en una carpeta-->
+                                                                <label>Imagen del producto:</label>
+                                                                <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la nueva imagen">
+
+                                                               <br>
+
+                                                            </div>
+                                                        </form>
+                                                                        <button type="submit" class="btn btn-primary btn-lg">Modificar producto</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab23">
+                                           <h2>Selecciona el producto que quieres eliminar</h2>
+                                            <form role="form">
+                                               <div class="form-group">
+                                                   <!--campo TIPO DEL PRODUCTO-->
+                                                    <label for="select"> Tipo del producto:</label>
+                                                    <select id="tipoProducto" class="form-control">
+                                                            <option> </option>
+                                                            <option>Producto</option>
+                                                            <option>Entrenamiento</option>
+                                                            <option>Dieta</option>
+                                                        </select>
+                                                    <!--campo NOMBRE DEL PRODUCTO-->
+                                                    <label for="select"> Nombre del producto:</label>
+                                                    <select id="tipoProducto" class="form-control">
+                                                            <option> </option>
+                                                            <option>Camiseta de entrenamiento</option>
+                                                            <option>Proteína en polvo</option>
+                                                        </select>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-primary disabled btn-lg">eliminar producto</button>
+                                                </div>
+
+                                            </form>
+                                                <form role="form">
+                                                    <div class="form-group">  
+                                                        <h3>Formulario para eliminar todos los producto de un mismo tipo</h3>
+                                                        <p>Se eliminarán todos los productos de un mismo tipo</p>
+                                                        <label for="select"> Tipo del producto:</label>
+                                                        <select id="tipoProducto" class="form-control">
+                                                                <option> </option>
+                                                                <option>Producto</option>
+                                                                <option>Entrenamiento</option>
+                                                                <option>Dieta</option>
+                                                            </select>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-primary disabled btn-lg">Eliminar toda una categoria de productos del mismo tipo</button>
+                                                    </div>
+                                                </form>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>            
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="instalaciones">
+                                <div class="row">
+                                    <div id="tableButtons" class="col-sm-3">
+                                        <ul id="nav-tabs-wrapper" class="nav nav-pills nav-stacked well">
+                                          <li class="active"><a href="#vtab31" data-toggle="tab">Añadir Instalación</a></li>
+                                          <li><a href="#vtab32" data-toggle="tab">modificar instalación</a></li>
+                                          <li><a href="#vtab33" data-toggle="tab">Eliminar instalación</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane fade in active shopSections" id="panelNuevoProducto">
+                                                 <div class="row">
+                                                    <div class="col-sm-9 col-md-6">
+                                                        <h2>Introduce los datos de la nueva instalación de UGym</h2>
+                                                    </div>
+                                                    <div class="col-sm-9 col-md-6">
+                                                        <form role="form">
+                                                           <div class="form-group">
+                                                                <!--Campo NOMBRE-->
+                                                                <label>  Nombre de la instalación:</label>
+                                                                <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nombre de la instalación">
+
+                                                                <!--campo DESCRIPCION-->
+                                                                <label>  Descripción de la instalación:</label>
+                                                                <input type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una breve descripción la nueva instalación">
+
+                                                               <!--campo IMAGEN-->
+                                                                <!--imagen ya guardada en una carpeta-->
+                                                                <label>Imagen de la instalación:</label>
+                                                               <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la nueva imagen">
+                                                            </div>
+                                                        </form>
+                                                                        <button type="submit" class="btn btn-primary disabled btn-lg">Añadir instalación</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab32">
+                                                       <div class="row">
+                                                            <div class="col-sm-9 col-md-6">
+                                                                <h2>Selecciona la instalación que quieres modificar:</h2>
+                                                                <form role="form">
+                                                                   <div class="form-group">
+                                                                        <!--campo NOMBRE DE LA INSTALACIÓN-->
+                                                                        <label for="select"> Nombre de la instalación:</label>
+                                                                        <select id="tipoProducto" class="form-control">
+                                                                                <option> </option>
+                                                                                <option>Piscina</option>
+                                                                                <option>Sauna</option>
+                                                                                <option>Sala de máquinas</option>
+                                                                            </select>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="col-sm-9 col-md-6">
+                                                                <form role="form">
+                                                                      <h2>Modifica las propiedades que quieras de la instalación</h2>
+                                                                      <p>Si no modificas alguna propiedad, dicha propiedad no sufrirá cambios.</p>
+                                                                   <div class="form-group">
+                                                                        <!--Campo NOMBRE-->
+                                                                        <label>  Nombre de la instalación:</label>
+                                                                        <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nombre de la instalación">
+
+                                                                        <!--campo DESCRIPCION-->
+                                                                        <label>  Descripción del producto:</label>
+                                                                        <input type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una breve descripción dela instalación">
+
+                                                                       <!--campo IMAGEN DE LA INSTALACIÓN-->
+                                                                        <!--imagen ya guardada en una carpeta-->
+                                                                        <label>Imagen del producto:</label>
+                                                                        <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la nueva imagen">            
+                                                                    </div>
+                                                                </form>
+                                                                                <button type="submit" class="btn btn-primary disabled btn-lg">Modificar instalación</button>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab33">
+                                                           <h2>Selecciona la instalación que quieres eliminar</h2>
+                                                            <form role="form">
+                                                               <div class="form-group">
+                                                                   <!--campo NOMBRE DE LA INSTALACIÓN-->
+                                                                            <label for="select"> Nombre de la instalación:</label>
+                                                                            <select id="tipoProducto" class="form-control">
+                                                                                    <option> </option>
+                                                                                    <option>Piscina</option>
+                                                                                    <option>Sauna</option>
+                                                                                    <option>Sala de máquinas</option>
+                                                                                </select>
+                                                                </div>
+                                                            </form>
+                                                         <button type="submit" class="btn btn-primary disabled btn-lg">Eliminar instalación</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>               
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="actividades">
+                                <div class="row">
+                                    <div id="tableButtons" class="col-sm-3">
+                                        <ul id="nav-tabs-wrapper" class="nav nav-pills nav-stacked well">
+                                          <li class="active"><a href="#vtab41" data-toggle="tab">Añadir actividad</a></li>
+                                          <li><a href="#vtab42" data-toggle="tab">modificar actividad</a></li>
+                                          <li><a href="#vtab43" data-toggle="tab">Eliminar actividad</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane fade in active shopSections" id="vtab41">
+                                             <div class="row">
+                                                <div class="col-sm-9 col-md-6">
+                                                    <h2>Introduce los datos de la nueva actividad</h2>
+                                                    <p>Estas actividades serán expuestas en la página principal del gimnasio.</p>
+                                                </div>
+                                                <div class="col-sm-9 col-md-6">
+                                                    <form role="form">
+                                                       <div class="form-group">
+                                                            <!--Campo NOMBRE-->
+                                                            <label>  Nombre de la actividad:</label>
+                                                            <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nombre del producto">
+
+                                                            <!--campo DESCRIPCION-->
+                                                            <label>  Descripción de la actividad:</label>
+                                                            <input type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una breve descripción de la actividad">
+
+                                                           <!--campo IMAGEN DE LA ACTIVIDAD->
+                                                            <!--imagen ya guardada en una carpeta-->
+                                                            <label>Imagen de la actividad:</label>
+                                                            <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la nueva imagen">
+                                                        </div>
+                                                    </form>
+                                                        <button type="submit" class="btn btn-primary disabled btn-lg">añadir actividad</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab42">
+                                           <div class="row">
+                                                <div class="col-sm-9 col-md-6">
+                                                    <h2>Selecciona la actividad que quieres modificar</h2>
+                                                    <form role="form">
+                                                       <div class="form-group">
+                                                            <!--campo NOMBRE DE LA ACTIVIDAD-->
+                                                            <label for="select"> Nombre de la actividad:</label>
+                                                            <select id="NombreActividad" class="form-control">
+                                                                    <option> </option>
+                                                                    <option>Fitness</option>
+                                                                    <option>Pilates</option>
+                                                                    <option>Spinning</option>
+                                                                    <option>Zumba</option>
+                                                                </select>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-9 col-md-6">
+                                                        <h3>Selecciona los campos que quieres modificar de la actividad.</h3>
+                                                                <p>Los campos que no selecciones permanecerán igual que estaban antes.</p>
+                                                         <form role="form">
+                                                           <div class="form-group">
+                                                                <!--Campo NOMBRE-->
+                                                                <label>  Nombre de la actividad:</label>
+                                                                <input type="text" class="form-control" id="inputNombreA"  placeholder="Introduce el nuevo nombre de la actividad">
+
+                                                               <br>
+                                                               <!--campo DESCRIPCION-->
+                                                                <label>  Descripción de la actividad:</label>
+                                                                <input type="text" class="form-control" id="inputDescripcionA"  placeholder="Introduce una nueva y breve descripción de la actividad">
+
+                                                               <br>
+                                                               <!--campo IMAGEN DE LA ACTIVIDAD-->
+                                                                <!--imagen ya guardada en una carpeta-->
+                                                                <label>Imagen de la actividad:</label>
+                                                                <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la nueva imagen">
+
+                                                               <br>
+
+                                                            </div>
+                                                        </form>
+                                                                        <button type="submit" class="btn btn-primary btn-lg">Modificar actividad</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab43">
+                                          <div class="row">
+                                           <h2>Selecciona la actividad que quieres eliminar</h2>
+                                            <form role="form">
+                                               <div class="form-group">
+                                                    <!--campo NOMBRE DE LA ACTIVIDAD-->
+                                                    <label for="select"> Nombre de la actividad:</label>
+                                                    <select id="NombreActividad" class="form-control">
+                                                            <option> </option>
+                                                            <option>Fitness</option>
+                                                            <option>Pilates</option>
+                                                            <option>Spinning</option>
+                                                            <option>Zumba</option>
+                                                    </select>
+                                                </div>
+                                                <br>
+                                                <button type="submit" class="btn btn-primary disabled btn-lg">eliminar actividad</button>
+                                            </form>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
