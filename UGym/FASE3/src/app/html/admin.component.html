@@ -8,7 +8,7 @@
                     <span>Área Privada</span>
                 </div>
                 <div id="cerrarSesion" class="col-md-2">
-                    <a href="index.html"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-off"></span> Cerrar Sesión</button></a>
+                    <a [routerLink]="['Index']"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-off"></span> Cerrar Sesión</button></a>
                 </div>
             </div>
         </div> 
@@ -21,6 +21,7 @@
                             <li role="presentation"><a href="#articulosTienda" aria-controls="articulosTienda" role="tab" data-toggle="tab">Artículos tienda</a></li>
                             <li role="presentation"><a href="#instalaciones" aria-controls="instalaciones" role="tab" data-toggle="tab">Instalaciones</a></li>
                             <li role="presentation"><a href="#actividades" aria-controls="actividades" role="tab" data-toggle="tab">Actividades</a></li>
+                            <!--<li role="presentation"><a [routerLink]="['Index']" aria-controls="principal" role="tab" data-toggle="tab">Página principal</a></li>-->
                         </ul>
 
                         <div class="tab-content">
@@ -682,6 +683,7 @@
                                     </div>
                                 </div>            
                             </div>
+                            
                         </div>
                     </div>
                 </div>

@@ -55,18 +55,9 @@ export class UserService{
         if(this.isAdmin(user)){
             console.log('Soy admin');        
         }
-        
         else if(this.isClient(user)){
             console.log('Soy cliente');
         }
-        
-        else console.log('Usuario NO registrado');   
-          
-    }
-    
-    
-    
-    
-    
-    
+        else console.log('Usuario NO registrado');      
+    }  
 }

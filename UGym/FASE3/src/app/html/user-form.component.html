@@ -1,0 +1,185 @@
+<header></header>
+
+<nav class="navbar-inverse" id="menu">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                 
+        </button>
+        <a class="navbar-brand" [routerLink]="['Index']"><span class="glyphicon glyphicon-home"></span> UGym</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right"></ul> 
+    </div>
+</nav>        
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center">Solicitud de registro</h1>
+                <h2>Introduce tus datos como nuevo miembro de UGym</h2>
+                <p>Más tarde podrás modificar estos datos desde tu área personal.</p>
+                <form role="form">
+                    <div class="form-group">
+                        <!--Campo NOMBRE-->
+                        <label>  Nombre:</label>
+                        <input type="text" class="form-control" id="inputNombre"  placeholder="Nombre">
+
+                        <!--campo APELLIDOS-->
+                        <label>  Apellidos:</label>
+                        <input type="text" class="form-control" id="inputApellidos"  placeholder="Apellidos">
+
+                        <!--campo DNI-->
+                        <label>  DNI:</label>
+                        <input type="text" class="form-control" id="inputDNI"  placeholder="DNI">
+                        
+                        <!--campo SEXO-->
+                        <label>Sexo: </label>
+                        <input type="radio" name="sexo" id="inputSexoH"  value="h"> Hombre
+                        <input type="radio" name="sexo" id="inputSexoM"  value="m"> Mujer
+                        <br>
+                        
+                        <!--campo FECHA DE NACIMIENTO-->
+                        <label for="select"> Fecha de nacimiento:</label>
+                        <select id="dia">
+                            <option> </option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>        
+                        </select>
+                        
+                        <select id="mes">
+                            <option> </option>
+                            <option>Enero</option>
+                            <option>Febrero</option>
+                            <option>Marzo</option>
+                            <option>Abril</option>
+                            <option>Mayo</option>
+                            <option>Junio</option>
+                            <option>Julio</option>
+                            <option>Agosto</option>
+                            <option>Septiembre</option>
+                            <option>Octubre</option>
+                            <option>Noviembre</option>
+                            <option>Diciembre</option>
+                        </select>
+                        
+                        <select id="dia">
+                            <option> </option>
+                            <option>1998</option>
+                            <option>1997</option>
+                            <option>1996</option>
+                            <option>1995</option>
+                            <option>1994</option>
+                            <option>1993</option>
+                            <option>1992</option>
+                            <option>1991</option>
+                            <option>1990</option>
+                            <option>1989</option>
+                            <option>1988</option>
+                            <option>1987</option>
+                            <option>1986</option>
+                            <option>1985</option>
+                            <option>1984</option>
+                            <option>1983</option>
+                            <option>1982</option>
+                            <option>1981</option>
+                            <option>1980</option>
+                            <option>1979</option>
+                            <option>1978</option>
+                            <option>1976</option>
+                            <option>1975</option>
+                        </select>
+                        <br>
+                        
+                        
+                        <!--campo EMAIL-->
+                        <label for="email">  Correo electronico:</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Correo electronico">
+
+                        <!--campo DIRECCION-->
+                        <label for="select"> Direccion:</label>
+                        <select id="inputTipoVia">
+                            <option> </option>
+                            <option>Calle</option>
+                            <option>Plaza</option>
+                            <option>Avenida</option>
+                            <option>Carretera</option>
+                            <option>Paseo</option>
+                            <option>Boulevard</option>
+                            <option>Via</option>
+                            <option>Camino</option>
+                        </select>
+                        
+                        <input type="text" class="form-control" id="inputDireccion" placeholder="Direccion">
+                        
+                        <label> Codigo postal:</label>
+                        <input type="text" class="form-control" id="inputCodPostal" placeholder="Codigo postal">
+
+                        <label> Localidad:</label>
+                        <input type="text" class="form-control" id="inputLocalidad" placeholder="Localidad">
+
+                        <label> Provincia</label>
+                        <input type="text" class="form-control" id="inputProvincia" placeholder="Provincia">
+
+                        <!--campo TELEFONO-->
+                        <label> Telefono de contacto:</label>
+                        <input type="number" class="form-control" id="inputTelefono" placeholder="Telefono">
+                        
+                        <!--campo PWD-->
+                        <label for="pwd">  Contraseña:</label>
+                        <input type="pwd" class="form-control" id="inputPwd" placeholder="Contraseña">
+                        
+                        <label for="select"> Tarifa:</label>
+                        <select class="form-select select" id="tarifa">
+                            <option> </option>
+                            <option>Mensual (20€)</option>
+                            <option>Trimestral (50€)</option>
+                            <option>Anual (190€)</option>
+                        </select>    
+                        <br>
+                        
+                        <input type="checkBox" name="aceptar" id="inputAceptar"><label>Confirmo que he leido y acepto las condiciones y la Política de datos.</label>
+                            
+                            
+                    </div>
+                </form>
+                <p>Una vez enviada la solicitud, debe acudir a nuestro gimnasio con una fotocopia de su DNI y una foto carnet para dar de alta su cuenta online y recibir su carnet de socio.</p>
+                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+            </div>   
+            
+        </div>    
+    </div>   
+</div>
+
+<footer></footer>
