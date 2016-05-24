@@ -3,23 +3,30 @@ import {Observable} from 'rxjs/Observable';
 import {withObserver} from './utils';
 
 export class Activity{
-    constructor(public nombre:string,
+
+    constructor(public id:number,
+                public nombre:string,
                 public descripcion:string,
-                public imagen:string){}
+                public imagen:string){
+    }
 }
 
 @Injectable()
 export class ActivityService{
     
-    private actividades = [new Activity('Fitness','A','B')];
+    private actividades = [
+        new Activity(1,'FITNESS','Todo tu entrenamiento será guiado por nuestro equipo de profesionales, con los que podrás compartir y solventar todo tipo de dudas y errores para optimizar tu forma física.',''),
+        new Activity(2,'PILATES','Espalda Sana, Técnicas de Relajación y Respiración, Stretching, Talleres de trabajo emocional... UGym te ofrece todo un abanico de eventos para que puedas aprender y disfrutar de una vida sana y equilibrada.','')
+        ];
     
     getActividades(){
         return withObserver(this.actividades);
     }
     
     addActivity(activity:Activity){
+        activity.id = this.actividades.length+1;
         this.actividades.push(activity);
-        return withObserver(undefined);
+        return withObserver(activity);
     }
     
     removeActivity(activity:Activity){

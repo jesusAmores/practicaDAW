@@ -5,6 +5,8 @@
     background: url(app/img/fondoceleste.png);
 }
 
+
+
 @media (max-width: 458px){
     #header{
         height: 280px;

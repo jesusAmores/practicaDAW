@@ -1,12 +1,17 @@
 import {Component} from 'angular2/core';
 import {RouteParams, Router,ROUTER_DIRECTIVES} from 'angular2/router';
-import {User,UserService} from './user.service';
+
+import {HeaderComponent} from './header.component';
+import {NavbarComponent} from './navbar.component';
+
+//import {User,UserService} from 'user.service';
 
 @Component({
 
-    templateUrl:'app/html/admin.component.html',
+    templateUrl:'app/admin/html/admin.component.html',
     styleUrls: ['app/css/admin.component.css'],
-    directives: [ROUTER_DIRECTIVES]
+    directives: [HeaderComponent,
+                 NavbarComponent]
     
 })
 

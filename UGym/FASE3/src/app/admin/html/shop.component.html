@@ -1,0 +1,185 @@
+<header></header>
+<nav></nav>
+<br>
+
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="articulosTienda">
+        <div class="row">
+            <div id="tableButtons" class="col-sm-3">
+                <ul id="nav-tabs-wrapper" class="nav nav-pills nav-stacked well">
+                    <li class="active"><a href="#vtab21" data-toggle="tab">Añadir artículo</a></li>
+                    <li><a href="#vtab22" data-toggle="tab">Modificar artículo</a></li>
+                    <li><a href="#vtab23" data-toggle="tab">Eliminar artículo</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-sm-7">
+                <div class="tab-content">
+<!---------------------------------------- AÑADIR ARTICULO NUEVO ------------------------------------------------------------>                               
+                    <div role="tabpanel" class="tab-pane fade in active shopSections" id="vtab21">
+                        <div class="row">
+                            <div class="col-sm-9 col-md-6">
+                                <h2>Introduce los datos del nuevo producto a incluir en la tienda</h2>
+                                <p>Todos los productos a los que se le hayan realizado esta ficha, serán incluidos en la tienda del propio gimnasio.</p>
+                            </div>
+                            <div class="col-sm-9 col-md-6">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <!--Campo NOMBRE-->
+                                        <label>  Nombre del producto:</label>
+                                        <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nombre del producto">
+                                        <br>
+                                        <!--campo DESCRIPCION-->
+                                        <label>  Descripción del producto:</label>
+                                        <textarea type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una breve descripción del producto"></textarea>
+                                        <br>
+                                        <!--campo TIPO DEL PRODUCTO-->
+                                        <label for="select"> Tipo del producto:</label>
+                                        <select id="tipoProducto" class="form-control">
+                                            <option> </option>
+                                            <option>Producto</option>
+                                            <option>Entrenamiento</option>
+                                            <option>Dieta</option>
+                                        </select>
+                                        <br>
+                                        <!--campo PRECIO-->
+                                        <label>  Precio del producto:</label>
+                                        <input type="number" class="form-control" id="inputPrecioP" placeholder="Introduce el precio  del producto">
+                                        <br>
+                                        <!--campo IMAGEN DEL PRODUCTO-->
+                                        <!--imagen ya guardada en una carpeta-->
+                                        <label>Imagen del producto:</label>
+                                        <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la nueva imagen">
+                                    </div>
+                                </form>
+                                <button type="submit" class="btn btn-primary btn-lg">Incluir en la tienda</button>
+                            </div>
+                        </div>
+                    </div>
+<!---------------------------------------- AÑADIR ARTICULO NUEVO ------------------------------------------------------------>                               
+<!---------------------------------------- MODIFICAR ARTICULO    ------------------------------------------------------------>                
+                    <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab22">
+                        <div class="row">
+                            <div class="col-sm-9 col-md-6">
+                                <h2>Selecciona el producto que quieres modificar</h2>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <!--campo TIPO DEL PRODUCTO-->
+                                        <label for="select"> Tipo del producto:</label>
+                                        <select id="tipoProducto" class="form-control">
+                                            <option> </option>
+                                            <option>Producto</option>
+                                            <option>Entrenamiento</option>
+                                            <option>Dieta</option>
+                                        </select>
+                                        <!--campo NOMBRE DEL PRODUCTO-->
+                                        <label for="select"> Nombre del producto:</label>
+                                        <select id="tipoProducto" class="form-control">
+                                            <option> </option>
+                                            <option>Camiseta de entrenamiento</option>
+                                            <option>Proteína en polvo</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-9 col-md-6">
+                                    <h3>Selecciona los campos que se modificarás del producto.</h3>
+                                    <br>
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <!--campo Elegir qué modificar-->
+                                            <label>Campo(s) que se deben editar: </label>
+                                            <br>
+                                            <input type="checkbox" name="campo" id="inputCodigoP"  value="c">Nombre del producto
+                                            <br>
+                                            <input type="checkbox" name="campo" id="inputNombreP"  value="n">Tipo del producto
+                                            <br>
+                                            <input type="checkbox" name="campo" id="inputDescripcionP"  value="d">Descripción del producto
+                                            <br>
+                                            <input type="checkbox" name="campo" id="inputTipoP"  value="t">Precio del producto
+                                            <br>
+                                            <input type="checkbox" name="campo" id="inputImagenP"  value="i">Imagen del producto
+                                            <br> 
+                                            <br>
+                                            <p>Una vez hayas seleccionado qué quieres cambiar, rellena los campos a editar con los nuevos datos</p>
+                                            <!--Campo NOMBRE-->
+                                            <label>  Nombre del producto:</label>
+                                            <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nuevo nombre del producto">
+                                            <br>
+                                            <!--campo TIPO DEL PRODUCTO-->
+                                            <label for="select"> Tipo del producto:</label>
+                                            <select id="tipoProducto" class="form-control">
+                                                <option> </option>
+                                                <option>Producto</option>
+                                                <option>Entrenamiento</option>
+                                                <option>Dieta</option>
+                                            </select>
+                                            <br>
+                                            <!--campo DESCRIPCION-->
+                                            <label>  Descripción del producto:</label>
+                                            <textarea type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una nueva y breve descripción del producto"></textarea>
+                                            <br>
+                                            <!--campo PRECIO-->
+                                            <label>  Precio del producto:</label>
+                                            <input type="number" class="form-control" id="inputPrecioP" placeholder="Introduce el nuevo precio del producto">
+                                            <br>
+                                            <!--campo IMAGEN DEL PRODUCTO-->
+                                            <!--imagen ya guardada en una carpeta-->
+                                            <label>Imagen del producto:</label>
+                                            <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la nueva imagen">
+                                            <br>
+                                        </div>
+                                    </form>
+                                    <button type="submit" class="btn btn-primary btn-lg">Modificar producto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!---------------------------------------- MODIFICAR ARTICULO    ------------------------------------------------------------>                
+<!---------------------------------------- ELIMINAR ARTICULO     ------------------------------------------------------------>                
+                    <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab23">
+                        <h2>Selecciona el producto que quieres eliminar</h2>
+                        <form role="form">
+                            <div class="form-group">
+                                <!--campo TIPO DEL PRODUCTO-->
+                                <label for="select"> Tipo del producto:</label>
+                                <select id="tipoProducto" class="form-control">
+                                    <option> </option>
+                                    <option>Producto</option>
+                                    <option>Entrenamiento</option>
+                                    <option>Dieta</option>
+                                </select>
+                                <!--campo NOMBRE DEL PRODUCTO-->
+                                <label for="select"> Nombre del producto:</label>
+                                <select id="tipoProducto" class="form-control">
+                                    <option> </option>
+                                    <option>Camiseta de entrenamiento</option>
+                                    <option>Proteína en polvo</option>
+                                </select>
+                                <br>
+                                <button type="submit" class="btn btn-primary btn-lg">Eliminar producto</button>
+                            </div>
+                        </form>
+                        <form role="form">
+                            <div class="form-group">  
+                                <h3>Formulario para eliminar todos los producto de la misma categoría</h3>
+                                <p>Se eliminarán todos los productos de una misma categoría</p>
+                                <label for="select"> Categoría del producto:</label>
+                                <select id="tipoProducto" class="form-control">
+                                    <option> </option>
+                                    <option>Producto</option>
+                                    <option>Entrenamiento</option>
+                                    <option>Dieta</option>
+                                </select>
+                                <br>
+                                <button type="submit" class="btn btn-primary btn-lg">Eliminar categoria</button>
+                            </div>
+                        </form>   
+                    </div>
+<!---------------------------------------- ELIMINAR ARTICULO     ------------------------------------------------------------>                                   
+                </div>
+            </div>        
+        </div>
+    </div>
+</div>                

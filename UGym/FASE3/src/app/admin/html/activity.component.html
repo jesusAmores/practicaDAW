@@ -1,0 +1,96 @@
+<header></header>
+<nav></nav>
+<br>
+
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="actividades">
+        <div class="row">
+            <div id="tableButtons" class="col-sm-3">
+                <ul id="nav-tabs-wrapper" class="nav nav-pills nav-stacked well">
+                    <li class="active"><a href="#vtab41" data-toggle="tab">Añadir actividad</a></li>
+                    <li><a href="#vtab42" data-toggle="tab">Modificar actividad</a></li>
+                    <li><a href="#vtab43" data-toggle="tab">Eliminar actividad</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-7">
+                <div class="tab-content">
+    <!---------------------------------------- AÑADIR ACTIVIDAD NUEVA ------------------------------------------------------------>                
+                    <div role="tabpanel" class="tab-pane fade in active shopSections" id="vtab41">
+                        <div class="row">
+                            <div class="col-sm-9 col-md-6">
+                                <h2>Introduce los datos de la nueva actividad</h2>
+                                <p>Estas actividades serán expuestas en la página principal del gimnasio.</p>
+                            </div>
+                            <div class="col-sm-9 col-md-6">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <!--Campo NOMBRE-->
+                                        <label>  Nombre de la actividad:</label>
+                                        <input type="text" class="form-control" id="inputNombreP" [(ngModel)]="actividad.nombre"  placeholder="Introduce el nombre del producto">
+                                        <br>
+                                        <!--campo DESCRIPCION-->
+                                        <label>Descripción de la actividad:</label>
+                                        <textarea type="text" class="form-control" id="inputDescripcionP" [(ngModel)]="actividad.descripcion"  placeholder="Introduce una breve descripción de la actividad"></textarea>
+                                        <br>
+                                        <!--campo IMAGEN DE LA ACTIVIDAD->
+                                        <!--imagen ya guardada en una carpeta-->
+                                        <label>Imagen de la actividad:</label>
+                                        <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la nueva imagen">
+                                        <br>
+                                    </div>
+                                </form>
+                                <button type="submit" class="btn btn-primary btn-lg" (click)="addActivity()">Añadir actividad</button>
+                            </div>
+                        </div>
+                    </div>
+    <!---------------------------------------- AÑADIR ACTIVIDAD NUEVA ------------------------------------------------------------>
+    <!---------------------------------------- EDITAR ACTIVIDAD       ------------------------------------------------------------>                
+                    <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab42">
+                        <div class="row">
+                            <div class="col-sm-9 col-md-6">
+                                <h2>Selecciona la actividad que quieres modificar</h2>
+                                <ul class="items">
+                                    <li *ngFor="#activity of actividades">
+                                        <a>{{activity.nombre}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-9 col-md-6">
+                                    <h3>Selecciona los campos que quieres modificar de la actividad.</h3>
+                                    <p>Los campos que no selecciones permanecerán igual que estaban antes.</p>
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <!--Campo NOMBRE-->
+                                            <label>  Nombre de la actividad:</label>
+                                            <input type="text" class="form-control" id="inputNombreA"  placeholder="Introduce el nuevo nombre de la actividad">
+                                            <br>
+                                            <!--campo DESCRIPCION-->
+                                            <label>  Descripción de la actividad:</label>
+                                            <input type="text" class="form-control" id="inputDescripcionA"  placeholder="Introduce una nueva y breve descripción de la actividad">
+                                            <br>
+                                            <!--campo IMAGEN DE LA ACTIVIDAD-->
+                                            <!--imagen ya guardada en una carpeta-->
+                                            <label>Imagen de la actividad:</label>
+                                            <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la nueva imagen">
+                                            <br>
+                                        </div>
+                                    </form>
+                                    <button type="submit" class="btn btn-primary btn-lg">Modificar actividad</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    <!---------------------------------------- EDITAR ACTIVIDAD       ------------------------------------------------------------>                
+    <!---------------------------------------- ELIMINAR ACTIVIDAD       ------------------------------------------------------------>                
+                    <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab43">
+                        <div class="row">
+                            <h2>Selecciona la actividad que quieres eliminar</h2>
+                        </div>
+                    </div>
+    <!---------------------------------------- ELIMINAR ACTIVIDAD       ------------------------------------------------------------>                                             
+                </div>
+            </div>
+        </div>            
+    </div>
+</div>
