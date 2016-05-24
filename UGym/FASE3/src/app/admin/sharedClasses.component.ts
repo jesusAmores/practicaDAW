@@ -1,17 +1,20 @@
-import {Component} from 'angular2/core';
-
-//import {Activity,ActivityService} from './activity.service';
-import {HeaderComponent} from './header.component';
-import {NavbarComponent} from './navbar.component';
+import {Component, OnInit} from 'angular2/core';
+import {shared, SharedService} from './sharedClasses.service';
 
 @Component({
-    
-    templateUrl: 'app/admin/html/sharedClasses.component.html',
-    styleUrls: ['app/css/admin.component.css'],
-    
-    directives: [HeaderComponent,
-                 NavbarComponent]
-    
+  selector:'shared',
+  templateUrl:'app/html/shared.component.html',
+  styleUrls: ['app/css/admin.component.css']
 })
 
-export class SharedClassesComponent{}
+export class sharedClassesComponent{
+  colectivas: Shared[];
+  constructor(private sharedService: SharedService){}
+  ngOnInit(){
+    this.sharedService.getSharedClasses().subscribe(
+      colectivas => this.colectivas = colectivas,
+      error => console.log(error)
+    );
+    console.log(this.colectivas);
+  }
+}
