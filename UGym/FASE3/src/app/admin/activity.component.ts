@@ -7,35 +7,35 @@ import {NavbarComponent} from './navbar.component';
 import {Activity,ActivityService} from '../activity.service';
 
 @Component({
-    
+    selector: 'activities',
     templateUrl: 'app/admin/html/activity.component.html',
     styleUrls: ['app/css/admin.component.css'],
-    
+    providers: [ActivityService],
     directives: [ROUTER_DIRECTIVES,
                  HeaderComponent,
                  NavbarComponent]
-    
+
 })
 
 export class ActivityComponent{
-    
+
     constructor(private router:Router, routeParams:RouteParams,private activityService: ActivityService){}
-    
+
     actividades : Activity[];
-    
-    actividad : Activity = new Activity(0,'','','');
+
+    actividad : Activity = new Activity('','','');
 
     ngOnInit(){
-    
+
         this.activityService.getActividades().subscribe(
             actividades => this.actividades = actividades,
-            error => console.log(error)  
+            error => console.log(error)
         );
         console.log(this.actividades);
     }
-    
+
     addActivity(){
         this.activityService.addActivity(this.actividad);
         console.log(this.actividades);
-    }    
+    }
 }
