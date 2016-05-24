@@ -10,8 +10,8 @@ import {Installation, InstallationService}   from './installation.service';
     templateUrl: 'app/html/installation.component.html',
     styleUrls: ['app/css/style.component.css']
 })
-
-export class InstallationComponent implements OnInit{
+export class InstallationComponent{}
+/*export class InstallationComponent implements OnInit{
   installations: Installation[];
 
   constructor(private router: Router, private service: InstallationService){}
@@ -22,4 +22,4 @@ export class InstallationComponent implements OnInit{
       error => console.log(error)
     );
   }
-}
+}*/
