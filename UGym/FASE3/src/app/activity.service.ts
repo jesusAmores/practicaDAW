@@ -30,8 +30,15 @@ export class ActivityService{
     }
     
     addActivity(activity:Activity){
-        activity.id = this.actividades.length+1;
-        this.actividades.push(activity);
+        
+        if(activity.id){
+            let oldActivity = this.actividades.filter(h => h.id === activity.id)[0];
+            oldActivity.nombre = activity.nombre;
+            oldActivity.descripcion = activity.descripcion;
+        } else {
+            activity.id = this.actividades.length+1;
+            this.actividades.push(activity);
+        }
         return withObserver(activity);
     }
     

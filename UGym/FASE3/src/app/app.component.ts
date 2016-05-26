@@ -47,7 +47,7 @@ import {ProductService} from './product.service';
     {path: '/admin/installation', name:'AdminInstallation', component: InstallationComponent},
     {path: '/admin/activities', name:'AdminActivities', component: ActivityComponent},
     
-    {path: '/admin/activities', name:'AdminActivities', component: ActivityComponent},
+    
     {path: '/admin/activity/:id', name: 'ActivityDetail', component: ActivityDetailComponent},
     
     //{path: '/activity/new', name:'ActivityNew', component: ActivityFormComponent},
