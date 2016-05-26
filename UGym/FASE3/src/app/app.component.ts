@@ -16,16 +16,20 @@ import {AdminComponent} from './Admin/admin.component';
 import {SharedClassesComponent} from './admin/sharedClasses.component';
 import {ShopComponent} from './admin/shop.component';
 import {InstallationComponent} from './admin/installation.component';
+
+
 import {ActivityComponent} from './admin/activity.component';
+import {ActivityDetailComponent} from './admin/activity-datail.component';
 
-
+import {SharedService} from './admin/sharedClasses.service';
+import {ProductService} from './product.service';
 
 
 @Component({
     
     selector: 'app' ,
     template: '<router-outlet></router-outlet>',
-    providers: [UserService,ActivityService],
+    providers: [UserService,ActivityService,ProductService,SharedService],
     directives: [ROUTER_DIRECTIVES]
 })
 
@@ -43,7 +47,8 @@ import {ActivityComponent} from './admin/activity.component';
     {path: '/admin/installation', name:'AdminInstallation', component: InstallationComponent},
     {path: '/admin/activities', name:'AdminActivities', component: ActivityComponent},
     
-    
+    {path: '/admin/activities', name:'AdminActivities', component: ActivityComponent},
+    {path: '/admin/activity/:id', name: 'ActivityDetail', component: ActivityDetailComponent},
     
     //{path: '/activity/new', name:'ActivityNew', component: ActivityFormComponent},
     

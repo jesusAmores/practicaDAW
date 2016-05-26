@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component,OnInit} from 'angular2/core';
 import {ROUTER_DIRECTIVES,RouteParams, Router} from 'angular2/router';
 
 import {HeaderComponent} from './header.component';
@@ -10,7 +10,7 @@ import {Activity,ActivityService} from '../activity.service';
     selector: 'activities',
     templateUrl: 'app/admin/html/activity.component.html',
     styleUrls: ['app/css/admin.component.css'],
-    providers: [ActivityService],
+    
     directives: [ROUTER_DIRECTIVES,
                  HeaderComponent,
                  NavbarComponent]
@@ -23,7 +23,7 @@ export class ActivityComponent{
 
     actividades : Activity[];
 
-    actividad : Activity = new Activity('','','');
+    actividad : Activity = new Activity(undefined,'','','');
 
     ngOnInit(){
 
@@ -36,6 +36,7 @@ export class ActivityComponent{
 
     addActivity(){
         this.activityService.addActivity(this.actividad);
+        window.alert("La actividad se ha añadido de forma correcta");
         console.log(this.actividades);
     }
 }

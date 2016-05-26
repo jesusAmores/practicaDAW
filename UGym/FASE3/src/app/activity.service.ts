@@ -23,6 +23,12 @@ export class ActivityService{
         return withObserver(this.actividades);
     }
     
+    getActivity(id: number | string) {
+        let activity = this.actividades.filter(h => h.id === +id)[0];
+        return withObserver(new Activity(activity.id, activity.nombre, activity.descripcion,''));
+        
+    }
+    
     addActivity(activity:Activity){
         activity.id = this.actividades.length+1;
         this.actividades.push(activity);
@@ -37,5 +43,18 @@ export class ActivityService{
             }
         }
         return withObserver(undefined);
+    }
+    
+    editActivity(activity:Activity){
+        
+        if(activity.id){
+            let oldActivity = this.actividades.filter(h => h.id === activity.id)[0];
+            oldActivity.nombre = activity.nombre;
+            oldActivity.descripcion = activity.descripcion;
+        } else {
+            activity.id = this.actividades.length+1;
+            this.actividades.push(activity);
+        }
+        return withObserver(activity);
     }
 }

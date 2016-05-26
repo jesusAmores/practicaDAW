@@ -14,7 +14,7 @@ import {Product,CategoryProduct,ProductService} from '../product.service';
 
     templateUrl:'app/admin/html/admin.component.html',
     styleUrls: ['app/css/admin.component.css'],
-    providers: [ProductService],
+    
     directives: [HeaderComponent,
                  NavbarComponent,
                  ActivityComponent,

@@ -1,11 +1,6 @@
 <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation"><a href="#clasesColectivas" aria-controls="clasesColectivas" role="tab" data-toggle="tab">Clases colectivas</a></li>
-    <li role="presentation"><a href="#articulosTienda" aria-controls="articulosTienda" role="tab" data-toggle="tab">Artículos tienda</a></li>
-    <li role="presentation"><a href="#instalaciones" aria-controls="instalaciones" role="tab" data-toggle="tab">Instalaciones</a></li>
-    <li role="presentation"><a href="#actividades" aria-controls="actividades" role="tab" data-toggle="tab">Actividades</a></li>
+    <li role="presentation"><a href="#clasesColectivas" aria-controls="clasesColectivas" role="tab" data-toggle="tab" [routerLink]="['AdminSharedClasses']">Clases colectivas</a></li>
+    <li role="presentation"><a href="#articulosTienda" aria-controls="articulosTienda" role="tab" data-toggle="tab" [routerLink]="['AdminShop']">Artículos tienda</a></li>
+    <li role="presentation"><a href="#instalaciones" aria-controls="instalaciones" role="tab" data-toggle="tab" [routerLink]="['AdminInstallation']">Instalaciones</a></li>
+    <li role="presentation"><a href="#actividades" aria-controls="actividades" role="tab" data-toggle="tab" [routerLink]="['AdminActivities']">Actividades</a></li>
 </ul>
-
-<!-- [routerLink]="['AdminSharedClasses']"
-    [routerLink]="['AdminShop']"
-    [routerLink]="['AdminInstallation']"
-    [routerLink]="['AdminActivities']"-->
