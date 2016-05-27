@@ -18,7 +18,7 @@
                         <div class="row">
                             <div class="col-sm-9 col-md-6">
                                 <h2>Introduce los datos de la nueva actividad</h2>
-                                <p>Estas actividades serán expuestas en la página principal del gimnasio.</p>
+                                
                             </div>
                             <div class="col-sm-9 col-md-6">
                                 <form role="form">
@@ -34,7 +34,7 @@
                                         <!--campo IMAGEN DE LA ACTIVIDAD->
                                         <!--imagen ya guardada en una carpeta-->
                                         <label>Imagen de la actividad:</label>
-                                        <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la nueva imagen">
+                                        <input type="text" id="inputImagen" placeholder="Nombre de la imagen" [(ngModel)]="actividad.imagen">
                                         <br>
                                     </div>
                                 </form>
@@ -48,6 +48,7 @@
                         <div class="row">
                             <div class="col-sm-9 col-md-6">
                                 <h2>Selecciona la actividad que desea editar/eliminar</h2>
+                                <p>Las 4 primeras actividades serán expuestas en la página principal del gimnasio.</p>
                                 <ul class="items">
                                     <li *ngFor="#activity of actividades">
                                         <a [routerLink]="['ActivityDetail', {id: activity.id}]">{{activity.nombre}}</a>

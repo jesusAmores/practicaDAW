@@ -8,7 +8,7 @@ import {NavbarComponent} from './navbar.component';
 
 @Component({
   
-  templateUrl:'app/html/shared.component.html',
+  templateUrl:'app/admin/html/sharedClasses.component.html',
   styleUrls: ['app/css/admin.component.css'],
 
   directives: [ROUTER_DIRECTIVES,
