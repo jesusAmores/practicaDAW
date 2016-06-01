@@ -13,9 +13,6 @@ export class Activity{
 @Injectable()
 export class ActivityService{
     
-   
-    
-    
     private actividades = [
         new Activity(1,'FITNESS','Todo tu entrenamiento será guiado por nuestro equipo de profesionales, con los que podrás compartir y solventar todo tipo de dudas y errores para optimizar tu forma física.','fitness.jpg'),
         new Activity(2,'PILATES','Espalda Sana, Técnicas de Relajación y Respiración, Stretching, Talleres de trabajo emocional... UGym te ofrece todo un abanico de eventos para que puedas aprender y disfrutar de una vida sana y equilibrada.','pilates.jpg'),
@@ -34,26 +31,14 @@ export class ActivityService{
     }
     
     addActivity(activity:Activity){
-        
-        if(activity.id){
-            let oldActivity = this.actividades.filter(h => h.id === activity.id)[0];
-            oldActivity.nombre = activity.nombre;
-            oldActivity.descripcion = activity.descripcion;
-            oldActivity.imagen = activity.imagen;
-        } else {
-            activity.id = this.actividades.length+1;
-            this.actividades.push(activity);
-            /*for(let i=0; i<this.actividades.length; i++){
-                
-            }*/
-            //this.actividades.push(activity);
-        }
-        return withObserver(activity);
+        activity.id = this.actividades.length+1;
+        this.actividades.unshift(activity);
+        return withObserver(undefined);
     }
     
     removeActivity(activity:Activity){
         for(let i=0; i<this.actividades.length; i++){
-            if(activity.nombre === this.actividades[i].nombre){
+            if(activity.id === this.actividades[i].id){
                 this.actividades.splice(i,1);
                 break;
             }
@@ -62,16 +47,10 @@ export class ActivityService{
     }
     
     editActivity(activity:Activity){
-        
-        if(activity.id){
-            let oldActivity = this.actividades.filter(h => h.id === activity.id)[0];
-            oldActivity.nombre = activity.nombre;
-            oldActivity.descripcion = activity.descripcion;
-            oldActivity.imagen = activity.imagen;
-        } else {
-            activity.id = this.actividades.length+1;
-            this.actividades.push(activity);
-        }
+        let oldActivity = this.actividades.filter(a => a.id === activity.id)[0];
+        oldActivity.nombre = activity.nombre;
+        oldActivity.descripcion = activity.descripcion;
+        oldActivity.imagen = activity.imagen;
         return withObserver(activity);
     }
 }

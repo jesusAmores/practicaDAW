@@ -14,19 +14,17 @@ import {Activity,ActivityService} from '../activity.service';
     directives: [ROUTER_DIRECTIVES,
                  HeaderComponent,
                  NavbarComponent]
-
 })
 
 export class ActivityComponent{
-
-    constructor(private router:Router, routeParams:RouteParams,private activityService: ActivityService){}
 
     actividades : Activity[];
 
     actividad : Activity = new Activity(undefined,'','','');
 
-    ngOnInit(){
+    constructor(private router:Router, routeParams:RouteParams,private activityService: ActivityService){}
 
+    ngOnInit(){
         this.activityService.getActividades().subscribe(
             actividades => this.actividades = actividades,
             error => console.log(error)
@@ -37,6 +35,7 @@ export class ActivityComponent{
     addActivity(){
         this.activityService.addActivity(this.actividad);
         window.alert("La actividad se ha añadido de forma correcta");
+        this.actividad = new Activity(undefined,'','','');
         console.log(this.actividades);
     }
 }

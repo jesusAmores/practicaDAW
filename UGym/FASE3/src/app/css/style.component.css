@@ -2,6 +2,10 @@ header{
     height: 300px;
 }
 
+.modal-backdrop.in {
+    opacity: .0;
+}
+
 /* HEADER */
 
 .col-md-12{
@@ -29,13 +33,13 @@ header{
     color: white;
 }
 
-.col-md-3 > p{
-    //color: white;
-}
+/*.col-md-3 > p{
+    color: white;
+}*/
 
 h1{
     text-align: center;
-    //margin: 0
+    /*margin: 0*/
 }
 
 h2,h3{
@@ -50,6 +54,8 @@ h6{
 .badge{
     font-size: 20px;
 }
+
+
 
 #instalaciones, #gallery{
     background-color: #E7E8E6;

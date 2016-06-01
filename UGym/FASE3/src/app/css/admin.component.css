@@ -5,7 +5,9 @@
     background: url(app/img/fondoceleste.png);
 }
 
-
+.modal-backdrop.in {
+    opacity: .0;
+}
 
 @media (max-width: 458px){
     #header{

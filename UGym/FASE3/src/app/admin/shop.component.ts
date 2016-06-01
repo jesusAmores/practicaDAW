@@ -1,4 +1,8 @@
 import {Component,Input} from 'angular2/core';
+
+import {HeaderComponent} from './header.component';
+import {NavbarComponent} from './navbar.component';
+
 import {SearchProductComponent} from './searchProduct.component';
 import {UpdateProductComponent} from './updateProduct.component';
 import {Product,CategoryProduct} from '../product.service';
@@ -7,7 +11,9 @@ import {Product,CategoryProduct} from '../product.service';
     selector: 'shop',
     templateUrl: 'app/admin/html/shop.component.html',
     styleUrls: ['app/css/admin.component.css'],
-    directives: [SearchProductComponent,
+    directives: [HeaderComponent,
+                 NavbarComponent,
+                 SearchProductComponent,
                  UpdateProductComponent]
 
 })

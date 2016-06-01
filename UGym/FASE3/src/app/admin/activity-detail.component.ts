@@ -18,31 +18,20 @@ import {Activity,ActivityService} from '../activity.service';
 })
 
 export class ActivityDetailComponent {
-    
-    
-    
+   
     actividad : Activity;
-    newActivity: boolean;
     
     constructor(private router:Router, routeParams:RouteParams,private activityService: ActivityService){
-        
-        /*let id = routeParams.get('id');
-        activityService.getActivity(id).subscribe(
-            actividad => this.actividad = actividad,
-            error => console.error(error)
-        );*/
         
         let id = routeParams.get('id');
         if(id){
             this.activityService.getActivity(id).subscribe(
-            actividad => this.actividad = actividad,
-            error => console.error(error)
-        );
-        this.newActivity = false;
-      } else {
-        this.actividad = new Activity(undefined,'','','');
-        this.newActivity = true;
-      }     
+                actividad => this.actividad = actividad,
+                error => console.error(error)
+            );
+        } else {
+            this.actividad = new Activity(undefined,'','','');
+        }     
     }
 
     cancel() {
@@ -50,7 +39,7 @@ export class ActivityDetailComponent {
     }
     
     edit() {
-        this.activityService.addActivity(this.actividad);
+        this.activityService.editActivity(this.actividad);
         window.alert("La actividad se ha editado de forma correcta");
         window.history.back();
     }

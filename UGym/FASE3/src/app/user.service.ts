@@ -17,7 +17,7 @@ export class User {
 @Injectable()
 export class UserService{
     
-    private administradores = [new User('123','456')];
+    private administradores = [new User('admin','1234')];
     private clientes = [new User('2801', '1994')];
     
     getAdministradores(){

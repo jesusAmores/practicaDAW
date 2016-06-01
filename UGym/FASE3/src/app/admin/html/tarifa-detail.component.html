@@ -1,0 +1,45 @@
+<header></header>
+<nav></nav>
+<br>
+
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="tarifas">
+        <div class="row">
+            <div id="tableButtons" class="col-sm-3">
+                <ul id="nav-tabs-wrapper" class="nav nav-pills nav-stacked well">
+                    <li><a [routerLink]="['AdminActivities']"  data-toggle="tab">Añadir tarifa</a></li>
+                    <li class="active"><a href="#vtab42" data-toggle="tab">Editar/Eliminar tarifa</a></li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="row">
+                <div class="col-sm-9 col-md-6">
+                    <h2>Introduce los nuevos datos de la tarifa</h2>
+                </div>
+                <div class="col-sm-9 col-md-6">
+                    <form role="form">
+                        <div class="form-group">
+                            <!--Campo TIPO-->
+                            <label>  Tipo de tarifa:</label>
+                            <input type="text" class="form-control" id="inputNombreP" [(ngModel)]="tarifa.tipo"  placeholder="Introduce el tipo de tarifa">
+                            <br>
+                            <!--campo PRECIO DE LA TARIFA-->                           
+                            <label>Precio de la tarifa:</label>
+                            <input type="number" id="inputImagen" placeholder="Precio de la tarifa" [(ngModel)]="tarifa.precio">
+                            <br>
+                            <!--campo DESCRIPCION-->
+                            <label>Descripción de la tarifa:</label>
+                            <textarea type="text" class="form-control" id="inputDescripcionP" [(ngModel)]="tarifa.descripcion"  placeholder="Introduce una breve descripción de la actividad"></textarea>
+                            
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-primary btn-lg" (click)="edit()">Editar tarifa</button>
+                    <button type="submit" class="btn btn-primary btn-lg" (click)="remove()">Eliminar tarifa</button>
+                    <button type="submit" class="btn btn-primary btn-lg" (click)="cancel()">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

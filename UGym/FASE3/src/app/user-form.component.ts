@@ -21,5 +21,7 @@ export class UserFormComponent {
 
         usuario:User = new User('','');
         
-        constructor(private router:Router, routeParams:RouteParams){}  
+        constructor(private router:Router, routeParams:RouteParams, private userService:UserService){}
+        
+         
 }

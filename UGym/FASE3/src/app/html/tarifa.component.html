@@ -6,10 +6,10 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="jumbotron jumbotron-tarifas">
-                    <h3 style="background-color:#FF9B28"><b>MENSUAL</b></h3>
-                    <h1 style="color:gray">20€</h1>
+                    <h3 style="background-color:#FF9B28"><b>{{tarifa1.tipo}}</b></h3>
+                    <h1 style="color:gray">{{tarifa1.precio}}€</h1>
                     <hr>
-                    <p>Prueba un mes sin compromiso. Este es el empunjoncito que necesitas para volver al camino de la vida sana y abandonar el sedentarismo. En UGym encontrarás todo lo necesario para sentirte bien y superarte.</p><br><br><br>
+                    <p>{{tarifa1.descripcion}}</p><br><br><br>
                     <hr>
                     <a class="btn" href="#mensual" data-toggle="collapse"><span class="glyphicon glyphicon-plus-sign"> info</span></a>
                     <div id="mensual" class="collapse tarifa">
@@ -25,10 +25,10 @@
             </div>
             <div class="col-md-4">
                 <div class="jumbotron jumbotron-tarifas">
-                    <h3 style="background-color:#FF9B28"><b>TRIMESTRAL</b></h3>
-                    <h1 style="color:gray">50€</h1>    
+                    <h3 style="background-color:#FF9B28"><b>{{tarifa2.tipo}}</b></h3>
+                    <h1 style="color:gray">{{tarifa2.precio}}€</h1>    
                     <hr>
-                    <p>Si ya has dado el primer paso y buscas un sitio donde entrenar duro apuesta por este centro deportivo. Cuenta con un equipamiento moderno, buenos profesionales y un montón de clases virtuales para que tonifiques tu cuerpo.</p><br><br>
+                    <p>{{tarifa2.descripcion}}</p><br><br>
                     <hr>
                     <a class="btn" href="#trimestral" data-toggle="collapse"><span class="glyphicon glyphicon-plus-sign"> info</span></a>
                     <div id="trimestral" class="collapse tarifa">
@@ -44,11 +44,10 @@
             </div>
             <div class="col-md-4">
                 <div class="jumbotron jumbotron-tarifas">
-                    <h3 style="background-color:#FF9B28"><b>ANUAL</b></h3>
-                    <h1 style="color:gray">180€</h1>    
+                    <h3 style="background-color:#FF9B28"><b>{{tarifa3.tipo}}</b></h3>
+                    <h1 style="color:gray">{{tarifa3.precio}}€</h1>    
                     <hr>
-                    <p>¡Paga una vez y olvídate de las cuotas! <br>
-                    Si estás llevando a cabo una rutina estricta, lo mejor será que busques un gimnasio a la altura de tus necesidades. En UGym no sólo encontrarás un lugar en el que entrenar sin pausas ni prisas, sino que te rodearás de buenos profesionales que te ayudarán a alcanzar tus objetivos más inmediatos.</p>
+                    <p>{{tarifa3.descripcion}}</p>
                     <hr>
                     <a class="btn" href="#anual" data-toggle="collapse"><span class="glyphicon glyphicon-plus-sign"> info</span></a>
                     <div id="anual" class="collapse tarifa">

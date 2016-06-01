@@ -2,9 +2,8 @@
 <nav></nav>
 <br>
 
-<div class="tab-content">    
-    
-    <div role="tabpanel" class="tab-pane" id="articulosTienda">
+<div class="tab-content">        
+    <div role="tabpanel" class="tab-pane active" id="articulosTienda">
         <div class="row">
             <div id="tableButtons" class="col-sm-3">
                 <ul id="nav-tabs-wrapper" class="nav nav-pills nav-stacked well">
@@ -13,7 +12,6 @@
                     <li><a href="#vtab23" data-toggle="tab">Eliminar artículo</a></li>
                 </ul>
             </div>
-
             <div class="col-sm-7">
                 <div class="tab-content">
 <!---------------------------------------- AÑADIR ARTICULO NUEVO ------------------------------------------------------------>
@@ -39,7 +37,7 @@
                         <div class="row">
                             <div class="col-sm-9 col-md-6">
                                 <h2>Selecciona el producto que quieres modificar</h2>
-                                <searchProduct [categArray] = 'categoriasCom'></searchProduct>
+                                <!--<searchProduct [categArray] = 'categoriasCom'></searchProduct>-->
                             </div>
                             <div class="row">
                                 <div class="col-sm-9 col-md-6">
@@ -75,7 +73,7 @@
 <!---------------------------------------- ELIMINAR ARTICULO     ------------------------------------------------------------>
                     <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab23">
                         <h2>Selecciona el producto que quieres eliminar</h2>
-                        <searchProduct [categArray] = 'categoriasCom'></searchProduct>
+                        <!--<searchProduct [categArray] = 'categoriasCom'></searchProduct>-->
                         <form role="form">
                             <div class="form-group">
                                 <h3>Formulario para eliminar todos los producto de la misma categoría</h3>
