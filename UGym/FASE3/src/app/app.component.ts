@@ -22,6 +22,7 @@ import {AdminComponent} from './Admin/admin.component';
 import {SharedClassesComponent} from './admin/sharedClasses.component';
 import {ShopComponent} from './admin/shop.component';
 import {InstallationComponent} from './admin/installation.component';
+import {InstallationDetailComponent} from './admin/installation-detail.component';
 
 import {ActivityComponent} from './admin/activity.component';
 import {ActivityDetailComponent} from './admin/activity-detail.component';
@@ -38,38 +39,38 @@ import {ProductService} from './product.service';
 
 
 @Component({
-    
+
     selector: 'app' ,
     template: '<router-outlet></router-outlet>',
-    providers: [UserService,ActivityService,TarifaService,GalleryService,ProductService,SharedService],
+    providers: [UserService,ActivityService,InstallationService,TarifaService,GalleryService,ProductService,SharedService],
     directives: [ROUTER_DIRECTIVES]
 })
 
 @RouteConfig([
-    
+
     {path: '/index',    name:'Index',   component: IndexComponent, useAsDefault:true},
-       
+
     {path: '/client',   name:'Client',  component: ClientComponent},
-    
+
     {path: '/user/new', name:'UserNew', component: UserFormComponent},
-    
+
     /*NAVEGACION POR LA PAGINA DEL ADMIN*/
     {path: '/admin',                name:'Admin',              component: AdminComponent},
     {path: '/admin/shared-classes', name:'AdminSharedClasses', component: SharedClassesComponent},
     {path: '/admin/shop',           name:'AdminShop',          component: ShopComponent},
-    {path: '/admin/installation',   name:'AdminInstallation',  component: InstallationComponent},
-    
+
+    {path: '/admin/installation',   name:'AdminInstallations',  component: InstallationComponent},
+    {path: '/admin/installation/:id',   name: 'InstallationDetail',    component:InstallationDetailComponent},
+
     {path: '/admin/activities',     name:'AdminActivities',    component: ActivityComponent},
     {path: '/admin/activity/:id',   name: 'ActivityDetail',    component: ActivityDetailComponent},
-    
+
     {path: '/admin/tarifas',        name:'AdminTarifas',       component: TarifaComponent},
     {path: '/admin/tarifa/:id',     name: 'TarifaDetail',      component: TarifaDetailComponent},
-    
+
     {path: '/admin/galeria',        name:'AdminGallery',       component: GalleryComponent},
     {path: '/admin/galeria/:id',    name:'GalleryDetail',      component: GalleryDetailComponent},
-        
+
 ])
 
 export class AppComponent { }
-
-

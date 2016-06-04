@@ -1,21 +1,18 @@
 <header></header>
 <nav></nav>
 <br>
-
 <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="instalaciones">
         <div class="row">
             <div id="tableButtons" class="col-sm-3">
                 <ul id="nav-tabs-wrapper" class="nav nav-pills nav-stacked well">
                     <li class="active"><a href="#vtab31" data-toggle="tab">Añadir Instalación</a></li>
-                    <li><a href="#vtab32" data-toggle="tab">Modificar instalación</a></li>
-                    <li><a href="#vtab33" data-toggle="tab">Eliminar instalación</a></li>
+                    <li><a href="#vtab32" data-toggle="tab"> Editar/Eliminar instalación</a></li>
                 </ul>
             </div>
-            
             <div class="col-sm-7">
                 <div class="tab-content">
-<!---------------------------------------- AÑADIR INSTALACION NUEVA ------------------------------------------------------------>                               
+<!---------------------------------------- AÑADIR INSTALACION NUEVA ------------------------------------------------------------>
                     <div role="tabpanel" class="tab-pane fade in active shopSections" id="vtab31">
                         <div class="row">
                             <div class="col-sm-9 col-md-6">
@@ -26,87 +23,41 @@
                                     <div class="form-group">
                                         <!--Campo NOMBRE-->
                                         <label>  Nombre de la instalación:</label>
-                                        <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nombre de la instalación">
+                                        <input type="text" class="form-control" id="inputNombreP" [(ngModel)]="installation.nombre" placeholder="Introduce el nombre de la instalación">
                                         <br>
                                         <!--campo DESCRIPCION-->
                                         <label>  Descripción de la instalación:</label>
-                                        <textarea type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una breve descripción la nueva instalación"></textarea>
+                                        <textarea type="text" class="form-control" id="inputDescripcionP" [(ngModel)]="installation.descripcion" placeholder="Introduce una breve descripción la nueva instalación"></textarea>
                                         <br>
                                         <!--campo IMAGEN-->
                                         <!--imagen ya guardada en una carpeta-->
                                         <label>Imagen de la instalación:</label>
-                                        <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la nueva imagen">
+                                        <input type="text" id="inputImagen" [(ngModel)]="installation.imagen" placeholder="Nombre de la imagen">
                                         <br>
                                     </div>
                                 </form>
-                                <button type="submit" class="btn btn-primary btn-lg">Añadir instalación</button>
+                                <button type="submit" class="btn btn-primary btn-lg" (click)="addInstallation()">Añadir instalación</button>
                             </div>
                         </div>
-                    </div>                    
-<!---------------------------------------- AÑADIR INSTALACION NUEVA ------------------------------------------------------------>                               
-<!---------------------------------------- MODIFICAR INSTALACION    ------------------------------------------------------------>                
+                    </div>
+<!---------------------------------------- AÑADIR INSTALACION NUEVA ------------------------------------------------------------>
+<!---------------------------------------- MODIFICAR/ELIMINAR INSTALACION    ------------------------------------------------------------>
                     <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab32">
                         <div class="row">
                             <div class="col-sm-9 col-md-6">
-                                <h2>Selecciona la instalación que quieres modificar:</h2>
-                                <form role="form">
-                                    <div class="form-group">
-                                        <!--campo NOMBRE DE LA INSTALACIÓN-->
-                                        <label for="select"> Nombre de la instalación:</label>
-                                        <select id="tipoProducto" class="form-control">
-                                            <option> </option>
-                                            <option>Piscina</option>
-                                            <option>Sauna</option>
-                                            <option>Sala de máquinas</option>
-                                        </select>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-sm-9 col-md-6">
-                                <form role="form">
-                                        <h2>Modifica las propiedades que quieras de la instalación</h2>
-                                        <p>Si no modificas alguna propiedad, dicha propiedad no sufrirá cambios.</p>
-                                    <div class="form-group">
-                                        <!--Campo NOMBRE-->
-                                        <label>  Nombre de la instalación:</label>
-                                        <input type="text" class="form-control" id="inputNombreP"  placeholder="Introduce el nombre de la instalación">
-                                        <br>
-                                        <!--campo DESCRIPCION-->
-                                        <label>  Descripción del producto:</label>
-                                        <textarea type="text" class="form-control" id="inputDescripcionP"  placeholder="Introduce una breve descripción dela instalación"></textarea>
-                                        <br>
-                                        <!--campo IMAGEN DE LA INSTALACIÓN-->
-                                        <!--imagen ya guardada en una carpeta-->
-                                        <label>Imagen del producto:</label>
-                                        <input type="file" id="inputImagen" placeholder="Copia aqui la ruta donde está guardada la nueva imagen">            
-                                        <br>
-                                    </div>
-                                </form>
-                                <button type="submit" class="btn btn-primary btn-lg">Modificar instalación</button>
+                                <h2>Selecciona la instalación que desea editar/eliminar</h2>
+                                <p>Las 3 primeras instalaciones serán expuestas en la página principal del gimnasio.</p>
+                                <ul class="items">
+                                    <li *ngFor="#installation of installations">
+                                        <a [routerLink]="['InstallationDetail', {id: installation.id}]">{{installation.nombre}}</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-<!---------------------------------------- MODIFICAR INSTALACION    ------------------------------------------------------------>                
-<!---------------------------------------- ELIMINAR INSTALACION     ------------------------------------------------------------>                
-                    <div role="tabpanel" class="tab-pane fade in shopSections" id="vtab33">
-                        <h2>Selecciona la instalación que quieres eliminar</h2>
-                        <form role="form">
-                            <div class="form-group">
-                                <!--campo NOMBRE DE LA INSTALACIÓN-->
-                                <label for="select"> Nombre de la instalación:</label>
-                                <select id="tipoProducto" class="form-control">
-                                    <option> </option>
-                                    <option>Piscina</option>
-                                    <option>Sauna</option>
-                                    <option>Sala de máquinas</option>
-                                </select>
-                            </div>
-                        </form>
-                        <button type="submit" class="btn btn-primary btn-lg">Eliminar instalación</button>
-                    </div>
-<!---------------------------------------- ELIMINAR INSTALACION     ------------------------------------------------------------>                
+<!---------------------------------------- MODIFICAR/ELIMINAR INSTALACION     ------------------------------------------------------------>
                 </div>
-            </div>           
+            </div>
         </div>
     </div>
-</div>            
+</div>

@@ -1,14 +1,4 @@
 import {Component, OnInit}   from 'angular2/core';
-//import {ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/router';
-
-import {HeaderComponent} from './header.component';
-import {NavbarComponent} from './navbar.component';
-import {ActivityIndexComponent} from './activity.component';
-import {TarifaComponent} from './tarifa.component';
-import {GalleryComponent} from './gallery.component';
-import {SocioComponent} from './socio.component';
-import {FooterComponent} from './footer.component';
-
 import {Installation, InstallationService}   from './installation.service';
 
 
@@ -17,27 +7,35 @@ import {Installation, InstallationService}   from './installation.service';
 
     selector: 'installation',
     templateUrl: 'app/html/installation.component.html',
-    styleUrls: ['app/css/style.component.css'],
-    
-    /*directives:[HeaderComponent,
-                NavbarComponent,
-                ActivityIndexComponent,
-                TarifaComponent,
-                GalleryComponent,
-                SocioComponent,
-                FooterComponent]*/
+    styleUrls: ['app/css/style.component.css']
 })
 
-export class InstallationComponent{}
-/*export class InstallationComponent implements OnInit{
-  installations: Installation[];
+export class InstallationComponent{
 
-  constructor(private router: Router, private service: InstallationService){}
+    installations : Installation[];
+    installation1 : Installation;
+    installation2 : Installation;
+    installation3 : Installation;
 
-  ngOnInit(){
-    this.service.getInstalaciones().subscribe(
-      installations => this.installations = installations,
-      error => console.log(error)
-    );
-  }
-}*/
+    constructor(private installationService: InstallationService){
+
+
+    }
+
+    ngOnInit(){
+
+        this.installationService.getInstallations().subscribe(
+            installations => this.installations = installations,
+            error => console.log(error)
+        );
+
+        this.installation1 = this.installations[0];
+        this.installation2 = this.installations[1];
+        this.installation3 = this.installations[2];
+
+        console.log(this.installations);
+        console.log(this.installation1);
+        console.log(this.installation2);
+        console.log(this.installation3);
+    }
+}

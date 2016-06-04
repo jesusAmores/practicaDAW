@@ -1,0 +1,46 @@
+<header></header>
+<nav></nav>
+<br>
+
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="instalaciones">
+        <div class="row">
+            <div id="tableButtons" class="col-sm-3">
+                <ul id="nav-tabs-wrapper" class="nav nav-pills nav-stacked well">
+                    <li><a [routerLink]="['AdminInstallations']"  data-toggle="tab">Añadir instalación</a></li>
+                    <li class="active"><a href="#vtab32" data-toggle="tab">Editar/Eliminar instalación</a></li>
+
+                </ul>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-9 col-md-6">
+                    <h2>Introduce los nuevos datos de la instalación</h2>
+                </div>
+                <div class="col-sm-9 col-md-6">
+                    <form role="form">
+                        <div class="form-group">
+                            <!--Campo NOMBRE-->
+                            <label>  Nombre de la instalación:</label>
+                            <input type="text" class="form-control" id="inputNombreP" [(ngModel)]="installation.nombre"  placeholder="Introduce el nombre de la instalación">
+                            <br>
+                            <!--campo DESCRIPCION-->
+                            <label>Descripción de la instalación:</label>
+                            <textarea type="text" class="form-control" id="inputDescripcionP" [(ngModel)]="installation.descripcion"  placeholder="Introduce una breve descripción de la instalación"></textarea>
+                            <br>
+                            <!--campo IMAGEN DE LA INSTALACIÖN->
+                            <!--imagen ya guardada en una carpeta-->
+                            <label>Imagen de la actividad:</label>
+                            <input type="text" id="inputImagen" [(ngModel)]="installation.imagen" placeholder="Nombre de la imagen">
+                            <br>
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-primary btn-lg" (click)="edit()">Editar instalación</button>
+                    <button type="submit" class="btn btn-primary btn-lg" (click)="remove()">Eliminar instalación</button>
+                    <button type="submit" class="btn btn-primary btn-lg" (click)="cancel()">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

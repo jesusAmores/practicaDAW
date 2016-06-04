@@ -1,4 +1,4 @@
-import {Component,OnInit} from 'angular2/core';
+import  {Component,OnInit} from 'angular2/core';
 import {ROUTER_DIRECTIVES,RouteParams, Router} from 'angular2/router';
 
 import {HeaderComponent} from './header.component';
@@ -10,7 +10,7 @@ import {Activity,ActivityService} from '../activity.service';
     selector: 'activities',
     templateUrl: 'app/admin/html/activity.component.html',
     styleUrls: ['app/css/admin.component.css'],
-    
+
     directives: [ROUTER_DIRECTIVES,
                  HeaderComponent,
                  NavbarComponent]
