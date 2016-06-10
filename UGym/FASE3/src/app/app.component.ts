@@ -20,6 +20,7 @@ import {GalleryService} from './gallery.service';
 /*COMPONENTES DE LA CARPETA ADMIN */
 import {AdminComponent} from './Admin/admin.component';
 import {SharedClassesComponent} from './admin/sharedClasses.component';
+import {SharedClassesDetailComponent} from './admin/sharedClasses-detail.component';
 import {ShopComponent} from './admin/shop.component';
 import {InstallationComponent} from './admin/installation.component';
 import {InstallationDetailComponent} from './admin/installation-detail.component';
@@ -57,6 +58,7 @@ import {ProductService} from './product.service';
     /*NAVEGACION POR LA PAGINA DEL ADMIN*/
     {path: '/admin',                name:'Admin',              component: AdminComponent},
     {path: '/admin/shared-classes', name:'AdminSharedClasses', component: SharedClassesComponent},
+    {path: '/admin/shared-classes/:id',name: 'SharedClassesDetail',    component:SharedClassesDetailComponent},
     {path: '/admin/shop',           name:'AdminShop',          component: ShopComponent},
 
     {path: '/admin/installation',   name:'AdminInstallations',  component: InstallationComponent},

@@ -24,7 +24,13 @@ export class SharedService{
         return withObserver(this.colectivas);
     }
 
-    addActivity(shared: Shared){
+    getSharedClase(id: number | string) {
+        let clase = this.colectivas.filter(h => h.id === +id)[0];
+        return withObserver(new Shared(clase.id, clase.nombre, clase.descripcion, clase.horario, clase.numeroPlazas));
+
+    }
+
+    addSharedClass(shared: Shared){
         shared.id = this.colectivas.length+1;
         this.colectivas.push(shared);
         return withObserver(shared);
@@ -38,5 +44,14 @@ export class SharedService{
             }
         }
         return withObserver(undefined);
+    }
+
+    editSharedClass(shared:Shared){
+        let oldShared = this.colectivas.filter(c => c.id === shared.id)[0];
+        oldShared.nombre = shared.nombre;
+        oldShared.descripcion = shared.descripcion;
+        oldShared.horario = shared.horario;
+        oldShared.numeroPlazas = shared.numeroPlazas;
+        return withObserver(shared);
     }
 }

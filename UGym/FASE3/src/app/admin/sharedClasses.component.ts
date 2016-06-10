@@ -7,22 +7,24 @@ import {HeaderComponent} from './header.component';
 import {NavbarComponent} from './navbar.component';
 
 @Component({
-  
+
   templateUrl:'app/admin/html/sharedClasses.component.html',
   styleUrls: ['app/css/admin.component.css'],
 
   directives: [ROUTER_DIRECTIVES,
                HeaderComponent,
-               NavbarComponent], 
+               NavbarComponent],
 
 })
 
 export class SharedClassesComponent{
-  
+
   colectivas: Shared[];
-  
+
+  clase : Shared = new Shared(undefined, " "," "," ",undefined);
+
   constructor(private sharedService: SharedService){}
-  
+
   ngOnInit(){
     this.sharedService.getSharedClasses().subscribe(
       colectivas => this.colectivas = colectivas,
@@ -30,4 +32,13 @@ export class SharedClassesComponent{
     );
     console.log(this.colectivas);
   }
+
+  addClase(){
+          this.sharedService.addSharedClass(this.clase);
+          window.alert("La clase se ha añadido de forma correcta");
+          this.clase = new Shared(undefined," "," ",undefined,undefined);
+          console.log(this.colectivas);
+      }
+
+
 }
