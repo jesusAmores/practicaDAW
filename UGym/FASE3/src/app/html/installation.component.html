@@ -11,58 +11,26 @@
 
         <nav class="navbar-inverse">
             <ul class="nav navbar-nav" id="menu-instalaciones">
-                <li class="active" ><a data-toggle="tab" href="#installation1"> {{installation1.nombre}}</a></li>
-                <li><a data-toggle="tab" href="#installation2"> {{installation2.nombre}}</a></li>
-                <li><a data-toggle="tab" href="#installation3"> {{installation3.nombre}}</a></li>
+              <li *ngFor="#installation of installations">
+                  <a data-toggle="tab" href="#{{installation.id}}">{{installation.nombre}}</a>
+              </li>
             </ul>
         </nav>
     </div>
     <div class="container">
-        <div class="tab-content" >
-            <div  id="installation1" class="tab-pane fade in active contenido-instalaciones">
+        <div class="tab-content">
+            <div  id="{{installation.id}}" class="tab-pane fade in active contenido-instalaciones"  *ngFor="#installation of installations">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <br><h3>{{installation1.nombre}}</h3><br>
-                            <p>{{installation1.descripcion}}<p>
+                            <br><h3>{{installation.nombre}}</h3><br>
+                            <p>{{installation.descripcion}}<p>
                             </p>
                             <br>
                         </div>
                         <div class="col-md-6">
                             <br>
-                            <div align="center"><img src="app/img/{{installation1.imagen}}" class="img-responsive"></div>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="installation2" class="tab-pane fade contenido-instalaciones">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <br><h3>{{installation2.nombre}}</h3><br>
-                            <p>{{installation2.descripcion}}<p>
-                        </div>
-                        <div class="col-md-6">
-                            <br>
-                            <div align="center"><img src="app/img/{{installation2.imagen}}" class="img-responsive"></div>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="installation3" class="tab-pane fade contenido-instalaciones">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <br><h3>{{installation3.nombre}}</h3><br>
-                            <p>{{installation3.descripcion}}
-                            </p>
-                            <br>
-                        </div>
-                        <div class="col-md-6">
-                            <br>
-                            <div align="center"><img src="app/img/{{installation3.imagen}}" class="img-responsive"></div>
+                            <div align="center"><img src="app/img/{{installation.imagen}}" class="img-responsive"></div>
                             <br>
                         </div>
                     </div>
