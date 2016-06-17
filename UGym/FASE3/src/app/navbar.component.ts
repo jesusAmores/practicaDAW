@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit{
     administradores : User[];
     clientes : User[];
     
-    usuario : User = new User('','');
+    usuario:User = new User('','','','',undefined,'',undefined,'','','',undefined,'','',undefined,'','');
     
     constructor(private router: Router, private userService: UserService){}
     
@@ -33,8 +33,8 @@ export class NavbarComponent implements OnInit{
             error => console.log(error)    
         );
                 
-        console.log(this.administradores);
-        console.log(this.clientes);
+        /*console.log(this.administradores);
+        console.log(this.clientes);*/
     }
     
     Entrar(){

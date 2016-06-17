@@ -23,27 +23,28 @@
                 <p>Más tarde podrás modificar estos datos desde tu área personal.</p>
                 <form role="form">
                     <div class="form-group">
-                        <!--Campo NOMBRE-->
-                        <label>  Nombre:</label>
-                        <input type="text" class="form-control" id="inputNombre"  placeholder="Nombre">
-
-                        <!--campo APELLIDOS-->
-                        <label>  Apellidos:</label>
-                        <input type="text" class="form-control" id="inputApellidos"  placeholder="Apellidos">
 
                         <!--campo DNI-->
                         <label>  DNI:</label>
-                        <input type="text" class="form-control" id="inputDNI"  placeholder="DNI">
-                        
+                        <input type="text" class="form-control" id="inputDNI" [(ngModel)]="usuario.dni" placeholder="DNI">
+
+                        <!--Campo NOMBRE-->
+                        <label>  Nombre:</label>
+                        <input type="text" class="form-control" id="inputNombre" [(ngModel)]="usuario.nombre" placeholder="Nombre">
+
+                        <!--campo APELLIDOS-->
+                        <label>  Apellidos:</label>
+                        <input type="text" class="form-control" id="inputApellidos" [(ngModel)]="usuario.apellidos" placeholder="Apellidos">
+
                         <!--campo SEXO-->
                         <label>Sexo: </label>
-                        <input type="radio" name="sexo" id="inputSexoH"  value="h"> Hombre
-                        <input type="radio" name="sexo" id="inputSexoM"  value="m"> Mujer
+                        <input name="usuario.sexo" type="radio" (click)="usuario.sexo = 'Hombre'" /> Hombre
+                        <input name="usuario.sexo" type="radio" (click)="usuario.sexo = 'Mujer'" /> Mujer
                         <br>
                         
                         <!--campo FECHA DE NACIMIENTO-->
                         <label for="select"> Fecha de nacimiento:</label>
-                        <select id="dia">
+                        <select id="dia" [(ngModel)]="usuario.dia">
                             <option> </option>
                             <option>1</option>
                             <option>2</option>
@@ -78,7 +79,7 @@
                             <option>31</option>        
                         </select>
                         
-                        <select id="mes">
+                        <select id="mes" [(ngModel)]="usuario.mes">
                             <option> </option>
                             <option>Enero</option>
                             <option>Febrero</option>
@@ -94,7 +95,7 @@
                             <option>Diciembre</option>
                         </select>
                         
-                        <select id="dia">
+                        <select id="anio" [(ngModel)]="usuario.anio">
                             <option> </option>
                             <option>1998</option>
                             <option>1997</option>
@@ -125,11 +126,11 @@
                         
                         <!--campo EMAIL-->
                         <label for="email">  Correo electronico:</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Correo electronico">
+                        <input type="email" class="form-control" id="inputEmail" [(ngModel)]="usuario.correo" placeholder="Correo electronico">
 
                         <!--campo DIRECCION-->
                         <label for="select"> Direccion:</label>
-                        <select id="inputTipoVia">
+                        <select id="inputTipoVia" [(ngModel)]="usuario.direccion">
                             <option> </option>
                             <option>Calle</option>
                             <option>Plaza</option>
@@ -141,41 +142,37 @@
                             <option>Camino</option>
                         </select>
                         
-                        <input type="text" class="form-control" id="inputDireccion" placeholder="Direccion">
+                        <input type="text" class="form-control" id="inputDireccion" [(ngModel)]="usuario.calle" placeholder="Direccion">
                         
                         <label> Codigo postal:</label>
-                        <input type="text" class="form-control" id="inputCodPostal" placeholder="Codigo postal">
+                        <input type="text" class="form-control" id="inputCodPostal" [(ngModel)]="usuario.CP" placeholder="Codigo postal">
 
                         <label> Localidad:</label>
-                        <input type="text" class="form-control" id="inputLocalidad" placeholder="Localidad">
+                        <input type="text" class="form-control" id="inputLocalidad" [(ngModel)]="usuario.localidad" placeholder="Localidad">
 
                         <label> Provincia</label>
-                        <input type="text" class="form-control" id="inputProvincia" placeholder="Provincia">
+                        <input type="text" class="form-control" id="inputProvincia" [(ngModel)]="usuario.provincia" placeholder="Provincia">
 
                         <!--campo TELEFONO-->
                         <label> Telefono de contacto:</label>
-                        <input type="number" class="form-control" id="inputTelefono" placeholder="Telefono">
+                        <input type="text" class="form-control" id="inputTelefono" [(ngModel)]="usuario.telefono" placeholder="Telefono">
                         
                         <!--campo PWD-->
                         <label for="pwd">  Contraseña:</label>
-                        <input type="pwd" class="form-control" id="inputPwd" placeholder="Contraseña">
+                        <input type="password" class="form-control" id="inputPwd" [(ngModel)]="usuario.pwd" placeholder="Contraseña">
                         
                         <label for="select"> Tarifa:</label>
-                        <select class="form-select select" id="tarifa">
+                        <select class="form-select select" id="tarifa" [(ngModel)]="usuario.tarifa">
                             <option> </option>
                             <option>Mensual (20€)</option>
                             <option>Trimestral (50€)</option>
                             <option>Anual (190€)</option>
                         </select>    
-                        <br>
-                        
-                        <input type="checkBox" name="aceptar" id="inputAceptar"><label>Confirmo que he leido y acepto las condiciones y la Política de datos.</label>
-                            
-                            
+                        <br>   
                     </div>
                 </form>
                 <p>Una vez enviada la solicitud, debe acudir a nuestro gimnasio con una fotocopia de su DNI y una foto carnet para dar de alta su cuenta online y recibir su carnet de socio.</p>
-                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                <button type="submit" class="btn btn-primary btn-lg" (click)="Enviar()">Enviar</button>
             </div>   
             
         </div>    

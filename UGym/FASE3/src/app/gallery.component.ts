@@ -24,7 +24,7 @@ export class GalleryComponent{
             error => console.log(error)       
         );
         this.image1 = this.galeria[0];
-        console.log(this.galeria);
+        //console.log(this.galeria);
     }
     
 }

@@ -22,7 +22,7 @@ export class ClientComponent {
             categories => this.categorias = categories,
             error => console.log(error)
         );
-        console.log(this.categorias);
+        //console.log(this.categorias);
     }
 
     /*getTipoProducto(){

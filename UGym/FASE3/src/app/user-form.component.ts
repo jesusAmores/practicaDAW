@@ -19,9 +19,12 @@ import {User,UserService} from './user.service';
 
 export class UserFormComponent {
 
-        usuario:User = new User('','');
+        usuario:User = new User('','','','',undefined,'',undefined,'','','',undefined,'','',undefined,'','');
         
         constructor(private router:Router, routeParams:RouteParams, private userService:UserService){}
         
-         
+        Enviar(){
+                this.userService.addUsuario(this.usuario);
+                console.log(this.usuario);
+        } 
 }

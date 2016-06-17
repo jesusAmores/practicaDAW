@@ -17,10 +17,7 @@ export class InstallationComponent{
     installation2 : Installation;
     installation3 : Installation;
 
-    constructor(private installationService: InstallationService){
-
-
-    }
+    constructor(private installationService: InstallationService){}
 
     ngOnInit(){
 
@@ -33,9 +30,9 @@ export class InstallationComponent{
         this.installation2 = this.installations[1];
         this.installation3 = this.installations[2];
 
-        console.log(this.installations);
+        /*console.log(this.installations);
         console.log(this.installation1);
         console.log(this.installation2);
-        console.log(this.installation3);
+        console.log(this.installation3);*/
     }
 }

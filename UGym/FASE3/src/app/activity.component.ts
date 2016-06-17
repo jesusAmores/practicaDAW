@@ -47,10 +47,10 @@ export class ActivityIndexComponent{
         this.actividad3 = this.actividades[2];
         this.actividad4 = this.actividades[3];
 
-        console.log(this.actividades);
+        /*console.log(this.actividades);
         console.log(this.actividad1);
         console.log(this.actividad2);
         console.log(this.actividad3);
-        console.log(this.actividad4);
+        console.log(this.actividad4);*/
     }    
 }

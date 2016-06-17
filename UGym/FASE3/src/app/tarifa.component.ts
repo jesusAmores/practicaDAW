@@ -29,9 +29,9 @@ export class TarifaComponent{
         this.tarifa2 = this.tarifas[1];
         this.tarifa3 = this.tarifas[2];
         
-        console.log(this.tarifas);
+        /*console.log(this.tarifas);
         console.log(this.tarifa1);
         console.log(this.tarifa2);
-        console.log(this.tarifa3);
+        console.log(this.tarifa3);*/
     }      
 }
