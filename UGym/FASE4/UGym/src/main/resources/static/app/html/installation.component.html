@@ -1,0 +1,42 @@
+
+
+<section id="instalaciones">
+    <br>
+    <div class="container">
+        <div class="page-header">
+            <h1>Instalaciones</h1>
+        </div>
+    </div>
+    <div class="container">
+
+        <nav class="navbar-inverse">
+            <ul class="nav navbar-nav" id="menu-instalaciones">
+              <li *ngFor="#installation of installations">
+                  <a data-toggle="tab" href="#{{installation.id}}">{{installation.nombre}}</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="tab-content">
+            <div  id="{{installation.id}}" class="tab-pane fade in active contenido-instalaciones"  *ngFor="#installation of installations">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <br><h3>{{installation.nombre}}</h3><br>
+                            <p>{{installation.descripcion}}<p>
+                            </p>
+                            <br>
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <div align="center"><img src="app/img/{{installation.imagen}}" class="img-responsive"></div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</section>

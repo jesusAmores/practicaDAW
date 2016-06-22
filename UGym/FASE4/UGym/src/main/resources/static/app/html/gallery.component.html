@@ -1,0 +1,41 @@
+<section id="gallery">
+    <div class="container">
+        <div class="page-header">
+            <h1>Galería</h1>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                
+                
+                <div class="item active" >     
+                    <img src="app/img/{{image1.nombre}}" width="460" height="345">                   
+                </div>
+                
+                <div class="item" *ngFor="#image of galeria">
+                    <img src="app/img/{{image.nombre}}" width="460" height="345">
+                </div>
+              
+                <!--<div class="item">
+                    <img src="app/img/carousel-3.jpg" width="460" height="345">
+                </div>
+                <div class="item">
+                    <img src="app/img/carousel-4.jpg" width="460" height="345">
+                </div>-->    
+            </div>
+            
+                    
+            <!--Controles derecha e izquierda -->
+            <a class="left carousel-control b" href="#myCarousel" role="button" data-slide="prev">
+                <span style="color: black" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span style="color: black" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+</section>
