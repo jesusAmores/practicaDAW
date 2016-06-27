@@ -7,7 +7,7 @@
 	</configSuffixes>
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
-		<config>java:es.urjc.code.daw.library.Application</config>
+		<config>java:es.urjc.code.daw.fase4.Application</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

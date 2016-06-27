@@ -23,7 +23,7 @@ import {User,UserService} from './user.service';
                 TarifaComponent,
                 GalleryComponent,
                 SocioComponent,
-                FooterComponent]  
+                FooterComponent]
 })
 
 export class IndexComponent { }

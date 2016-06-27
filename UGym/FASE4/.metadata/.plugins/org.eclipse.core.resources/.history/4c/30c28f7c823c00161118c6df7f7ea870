@@ -1,0 +1,46 @@
+import {Component,OnInit} from 'angular2/core';
+import {ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/router';
+
+import {HeaderComponent} from './header.component';
+import {NavbarComponent} from './navbar.component';
+import {InstallationComponent} from './installation.component';
+import {TarifaComponent} from './tarifa.component';
+import {GalleryComponent} from './gallery.component';
+import {SocioComponent} from './socio.component';
+import {FooterComponent} from './footer.component';
+
+import {Activity,ActivityService} from './activity.service';
+import {LoginService}   from './login.service';
+
+@Component({
+    
+    selector: 'activity',
+    templateUrl: 'app/html/activity.component.html',
+    styleUrls: ['app/css/style.component.css'],
+    
+    directives:[HeaderComponent,
+                NavbarComponent,
+                InstallationComponent,
+                TarifaComponent,
+                GalleryComponent,
+                SocioComponent,
+                FooterComponent]  
+})
+
+export class ActivityIndexComponent{
+
+	actividades:Activity[];
+
+   
+
+    constructor(private router:Router, private service: ActivityService, 
+    		private loginService:LoginService) {}
+
+    ngOnInit(){
+      this.service.getActivities().subscribe(
+        actividades => this.actividades = actividades,
+        error => console.log(error)
+      );
+    }
+
+}

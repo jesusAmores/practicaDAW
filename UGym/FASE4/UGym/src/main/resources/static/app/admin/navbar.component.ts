@@ -1,6 +1,6 @@
 import {Component} from 'angular2/core';
 import {ROUTER_DIRECTIVES,RouteParams, Router} from 'angular2/router';
-import {ShopComponent} from './shop.component';
+//import {ShopComponent} from './shop.component';
 
 //import {ActivityComponent} from './activity.component';
 

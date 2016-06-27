@@ -1,0 +1,46 @@
+<nav class="navbar-inverse" id="menu">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                 
+        </button>
+        <a class="navbar-brand" [routerLink]="['Index']">UGym</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="#activities">Actividades</a> 
+            </li>
+            <li>
+                <a href="#instalaciones">Instalaciones</a>
+            </li>
+            <li>
+                <a href="#tarifas">Tarifas</a> 
+            </li>
+            <li>
+                <a href="#gallery">Galería</a> 
+            </li>
+            <li>
+                <a href="#cuenta">Quiero una cuenta</a> 
+            </li>
+        </ul>
+        <ul>
+		<form *ngIf="!loginService.isLogged" class="navbar-form navbar-right"
+	role="search">
+
+	<div class="form-group">
+		<input  #user type="text" class="form-control" name="username"
+			placeholder="Username">
+	</div>
+
+	<div class="form-group">
+		<input #pass type="password" class="form-control" name="password"
+			placeholder="Password">
+	</div>
+
+	<button type="submit" (click)="logIn($event, user.value, pass.value)" class="btn btn-default">Sign In</button>
+
+</form> </ul>
+    </div>
+</nav>

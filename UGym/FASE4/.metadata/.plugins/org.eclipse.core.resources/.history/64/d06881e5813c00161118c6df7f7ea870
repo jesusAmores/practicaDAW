@@ -1,0 +1,25 @@
+
+
+<div class="navbar navbar-default navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">			
+			<a class="navbar-brand" href="#">UGym</a>
+		</div>
+		<center>		
+			<div class="navbar-collapse collapse" id="navbar-main">
+				
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Actividades</a></li>
+					<li><a href="#">Instalaciones</a></li>
+					<li><a href="#">Tarifas</a></li>
+					<li><a href="#">Galeria</a></li>
+					<li><a href="#">Quiero una cuenta</a></li>				
+				</ul>
+				
+				<login></login>
+
+			</div>
+		</center>
+	</div>
+</div>
+

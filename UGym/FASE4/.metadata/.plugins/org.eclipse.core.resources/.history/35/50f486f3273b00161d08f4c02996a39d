@@ -1,0 +1,9 @@
+package es.daw.fase4.UGym.user;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+	
+	User findByDni(String dni);
+
+}

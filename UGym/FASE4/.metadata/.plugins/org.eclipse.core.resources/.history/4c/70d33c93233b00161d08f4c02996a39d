@@ -1,0 +1,19 @@
+package es.daw.fase4.UGym.user;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+
+import es.daw.fase4.UGym.user.User;
+import es.daw.fase4.UGym.user.UserRepository;
+
+public class DatabaseInitializer implements CommandLineRunner {
+
+	@Autowired
+	private UserRepository userRepository;
+	
+	@Override
+	public void run(String... args) throws Exception {
+		userRepository.save(new User("user", "pass", "ROLE_USER"));
+		userRepository.save(new User("admin", "pass", "ROLE_USER", "ROLE_ADMIN"));
+	}
+}

@@ -1,4 +1,5 @@
 import {Component,OnInit} from 'angular2/core';
+import {ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/router';
 
 import {HeaderComponent} from './header.component';
 import {NavbarComponent} from './navbar.component';
@@ -9,6 +10,7 @@ import {SocioComponent} from './socio.component';
 import {FooterComponent} from './footer.component';
 
 import {Activity,ActivityService} from './activity.service';
+import {LoginService}   from './login.service';
 
 @Component({
     
@@ -26,8 +28,8 @@ import {Activity,ActivityService} from './activity.service';
 })
 
 export class ActivityIndexComponent{
-    
-    actividades : Activity[];
+
+	actividades : Activity[];
     actividad1 : Activity;
     actividad2 : Activity;
     actividad3 : Activity;
@@ -37,10 +39,15 @@ export class ActivityIndexComponent{
 
     ngOnInit(){
     
-        this.activityService.getActividades().subscribe(
+        this.activityService.getActivities().subscribe(
             actividades => this.actividades = actividades,
             error => console.log(error)  
         );
+        
+        /*this.activityService.getActivity(1).subscribe(
+            actividad1 => this.actividad1 = actividad1,
+            error => console.log(error)  
+        );*/
         
         this.actividad1 = this.actividades[0];
         this.actividad2 = this.actividades[1];
@@ -53,4 +60,5 @@ export class ActivityIndexComponent{
         console.log(this.actividad3);
         console.log(this.actividad4);*/
     }    
+
 }

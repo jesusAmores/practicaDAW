@@ -1,0 +1,5 @@
+package es.daw.fase4.UGym.user;
+
+public interface UserRepository {
+
+}
