@@ -14,7 +14,9 @@ const URL = 'index/';
 @Injectable()
 export class ActivityService {
 
-  constructor(private http: Http) { }
+  constructor(private http: Http) {
+  	//this.reqIsLogged();
+   }
 
   getActivities() {
     return this.http.get(URL)
@@ -54,7 +56,7 @@ export class ActivityService {
       .catch(error => this.handleError(error));
   }
 
-  updateBook(activity: Activity) {
+  updateActivity(activity: Activity) {
 
     let body = JSON.stringify(activity);
     let headers = new Headers({

@@ -1099,3 +1099,175 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2016-06-27 18:22:36,393 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2016-06-27 18:22:36,408 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-06-27 18:22:36,408 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-27 18:30:42,960 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:30:42,960 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-27 18:30:42,976 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 70 resources
+2016-06-27 18:30:42,992 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:30:42,992 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-27 18:33:02,113 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:33:02,113 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-27 18:33:02,128 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 70 resources
+2016-06-27 18:33:02,144 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:33:02,144 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-27 18:33:04,957 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:33:04,957 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-27 18:33:04,957 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-27 18:33:05,176 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:33:05,176 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-27 18:34:54,809 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:34:54,809 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-27 18:34:54,825 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-27 18:34:54,825 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:34:54,841 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-27 18:36:00,915 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:36:00,931 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-27 18:36:00,931 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 70 resources
+2016-06-27 18:36:00,946 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:36:00,946 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-27 18:36:43,678 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:36:43,678 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-27 18:36:43,678 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-27 18:36:43,694 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:36:43,694 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-27 18:39:07,065 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:39:07,081 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-27 18:39:07,081 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-27 18:39:07,081 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:39:07,081 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-27 18:39:34,017 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:39:34,017 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-27 18:39:34,033 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-27 18:39:34,049 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:39:34,049 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-27 18:47:20,662 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:47:20,677 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-27 18:47:20,677 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-27 18:47:20,677 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-27 18:47:20,693 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 17:45:09,770 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:45:09,952 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 17:45:10,003 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 70 resources
+2016-06-28 17:45:10,446 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:45:10,446 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 17:45:29,313 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:45:29,334 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 17:45:29,337 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 70 resources
+2016-06-28 17:45:29,353 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:45:29,353 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 17:45:44,251 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:45:44,258 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 17:45:44,271 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 70 resources
+2016-06-28 17:45:44,287 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:45:44,288 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 17:45:51,159 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:45:51,172 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 17:45:51,183 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 70 resources
+2016-06-28 17:45:51,210 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:45:51,210 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 17:46:03,218 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:46:03,233 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 17:46:03,249 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 70 resources
+2016-06-28 17:46:03,274 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:46:03,280 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 17:46:15,303 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:46:15,334 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 17:46:15,350 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 70 resources
+2016-06-28 17:46:15,365 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:46:15,365 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 17:49:47,320 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:49:47,335 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 17:49:47,533 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 70 resources
+2016-06-28 17:49:47,548 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:49:47,552 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 17:53:02,430 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:53:02,450 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 17:53:02,463 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 70 resources
+2016-06-28 17:53:02,473 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 17:53:02,473 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:16:08,870 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:16:08,870 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:16:08,886 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 71 resources
+2016-06-28 18:16:08,964 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:16:08,964 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:16:24,122 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:16:24,130 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:16:24,137 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 71 resources
+2016-06-28 18:16:24,292 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:16:24,292 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:16:40,330 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:16:40,330 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:16:40,346 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 71 resources
+2016-06-28 18:16:40,377 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:16:40,377 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:18:23,164 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:18:23,179 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:18:23,193 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 71 resources
+2016-06-28 18:18:23,215 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:18:23,215 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:18:48,026 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:18:48,034 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:18:48,071 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 71 resources
+2016-06-28 18:18:48,080 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:18:48,085 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:19:17,677 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:19:17,690 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:19:17,695 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 71 resources
+2016-06-28 18:19:17,711 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:19:17,711 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:19:42,798 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:19:42,798 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:19:42,813 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 71 resources
+2016-06-28 18:19:42,829 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:19:42,845 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:20:14,241 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:20:14,253 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:20:14,267 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 71 resources
+2016-06-28 18:20:14,286 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:20:14,286 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:22:50,265 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:22:50,280 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:22:50,296 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 71 resources
+2016-06-28 18:22:50,296 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:22:50,296 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:33:57,509 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:33:57,509 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:33:57,524 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 72 resources
+2016-06-28 18:33:57,556 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:33:57,556 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:36:28,270 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:36:28,295 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:36:28,311 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 72 resources
+2016-06-28 18:36:28,327 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:36:28,327 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:36:34,261 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:36:34,277 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:36:34,293 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 72 resources
+2016-06-28 18:36:34,293 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:36:34,293 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:37:05,003 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:37:05,019 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:37:05,019 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 72 resources
+2016-06-28 18:37:05,040 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:37:05,044 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:40:53,973 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:40:54,062 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:40:54,078 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 72 resources
+2016-06-28 18:40:54,094 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:40:54,094 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:41:54,957 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:41:54,972 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:41:54,972 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 72 resources
+2016-06-28 18:41:54,988 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:41:54,988 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources
+2016-06-28 18:45:37,951 [Worker-31] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-06-28 18:45:42,468 [Worker-31] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: es.sidelab:image_uploader:0.1.0 @ C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\pom.xml.
+2016-06-28 18:45:44,919 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /UGym/src/main/java
+2016-06-28 18:45:44,919 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /UGym/src/main/resources
+2016-06-28 18:45:44,919 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /UGym/src/main/resources
+2016-06-28 18:45:44,919 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /UGym/src/test/java
+2016-06-28 18:45:45,497 [Worker-31] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 7 sec
+2016-06-28 18:45:48,216 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:45:48,217 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-28 18:45:48,237 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 72 resources
+2016-06-28 18:45:49,852 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-28 18:45:49,852 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Blanca\Documents\GitHub\practicaDAW\UGym\FASE4\UGym\src\test\resources

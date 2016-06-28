@@ -1,0 +1,15 @@
+1467128687966	Copy package
+1467128726833	Rename package 'es.urjc.code.daw.fase4.activity.copy'
+1467128742612	Rename type 'Activity'
+1467128750185	Delete element
+1467128761891	Rename type 'ActivityRepository'
+1467128774000	Rename type 'ActivityController'
+1467130567685	Copy package
+1467130581989	Rename package 'es.urjc.code.daw.fase4.tarifa.copy'
+1467130599135	Rename type 'Tarifa'
+1467130726980	Rename type 'TarifaRepository'
+1467130756553	Rename type 'Gallery'
+1467130813080	Rename type 'TarifaController'
+1467131787625	Delete element
+1467131793316	Copy compilation unit
+1467131823983	Rename type 'TarifaController'

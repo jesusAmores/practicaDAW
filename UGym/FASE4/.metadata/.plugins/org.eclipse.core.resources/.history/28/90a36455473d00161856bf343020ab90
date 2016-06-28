@@ -1,0 +1,7 @@
+package es.urjc.code.daw.fase4.activity.copy;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ActivityRepository extends JpaRepository<Activity, Long> {
+
+}

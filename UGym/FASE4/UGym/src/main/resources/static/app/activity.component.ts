@@ -35,7 +35,8 @@ export class ActivityIndexComponent{
     actividad3 : Activity;
     actividad4 : Activity;
     
-    constructor(private activityService: ActivityService){}
+    constructor(private router:Router, private activityService: ActivityService, 
+    		private loginService:LoginService){}
 
     ngOnInit(){
     
@@ -47,15 +48,15 @@ export class ActivityIndexComponent{
         /*this.activityService.getActivity(1).subscribe(
             actividad1 => this.actividad1 = actividad1,
             error => console.log(error)  
-        );*/
+        );
         
         this.actividad1 = this.actividades[0];
         this.actividad2 = this.actividades[1];
         this.actividad3 = this.actividades[2];
-        this.actividad4 = this.actividades[3];
+        this.actividad4 = this.actividades[3];*/
 
-        /*console.log(this.actividades);
-        console.log(this.actividad1);
+        console.log(this.actividades);
+        /*console.log(this.actividad1);
         console.log(this.actividad2);
         console.log(this.actividad3);
         console.log(this.actividad4);*/

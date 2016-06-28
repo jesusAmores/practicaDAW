@@ -58,6 +58,14 @@ public class User {
 		this.roles = new ArrayList<>(Arrays.asList(roles));
 	}
 
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public String getName() {
 		return name;
 	}
